@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders History — MDMA Spices and Foods</title>
+  <meta name="description" content="View past spice orders, track in-transit packages, and reorder favourite blends.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left"><span class="top-bar-badge">Orders</span><span>Track shipments in real-time</span></div>
+      <div class="top-bar-center"><span>Pure • Natural • Healthy</span></div>
+      <div class="top-bar-right"><a href="order-tracking.html" class="top-bar-link"><i class="fa-solid fa-truck-fast"></i> Track Order</a></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="category.html" class="nav-link">Categories</a>
+        <a href="about.html" class="nav-link">About Us</a>
+      </nav>
+      <div class="header-actions">
+        <a href="my-account.html" class="header-action-btn"><i class="fa-regular fa-user"></i></a>
+        <a href="wishlist.html" class="header-action-btn"><i class="fa-regular fa-heart"></i></a>
+        <a href="cart.html" class="header-action-btn"><i class="fa-solid fa-basket-shopping"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-wrapper">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <span class="breadcrumb-item"><a href="index.html">Home</a></span>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem; color: #999;"></i>
+        <span class="breadcrumb-item"><a href="my-account.html">My Account</a></span>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem; color: #999;"></i>
+        <span class="breadcrumb-item active">Order History</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Orders Section -->
+  <section class="section section-light" style="padding-top: 40px; min-height: 65vh;">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+        <h1 style="font-size: 2.2rem;">Order History</h1>
+        <a href="shop.html" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-store"></i> Shop More Spices</a>
+      </div>
+
+      <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 24px; box-shadow: var(--shadow-sm);">
+        <div class="table-responsive">
+          <table style="width: 100%; border-collapse: collapse; text-align: left;">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--border-light); font-size: 0.85rem; text-transform: uppercase; color: var(--text-dark-muted);">
+                <th style="padding: 14px 12px;">Order ID</th>
+                <th style="padding: 14px 12px;">Date</th>
+                <th style="padding: 14px 12px;">Products</th>
+                <th style="padding: 14px 12px;">Total</th>
+                <th style="padding: 14px 12px;">Status</th>
+                <th style="padding: 14px 12px; text-align: right;">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="orders-table-body">
+              <!-- Rendered by js/account.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>© 2026 MDMA Spices and Foods. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

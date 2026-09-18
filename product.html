@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details — MDMA Spices and Foods</title>
+  <meta name="description" content="View product specifications, ingredients, culinary uses, storage guide, and verified reviews.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Offer</span>
+        <span>Free Shipping on all orders above ₹499</span>
+      </div>
+      <div class="top-bar-center">
+        <span>Pure • Natural • Healthy</span>
+        <span>|</span>
+        <span>MDMA Spices and Foods</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="order-tracking.html" class="top-bar-link"><i class="fa-solid fa-truck-fast"></i> Track Order</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link active">Shop</a>
+        <a href="category.html" class="nav-link">Categories</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="header-action-btn open-search-modal"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="my-account.html" class="header-action-btn"><i class="fa-regular fa-user"></i></a>
+        <a href="wishlist.html" class="header-action-btn"><i class="fa-regular fa-heart"></i><span class="action-badge" id="header-wishlist-badge" style="display:none;">0</span></a>
+        <a href="cart.html" class="header-action-btn"><i class="fa-solid fa-basket-shopping"></i><span class="action-badge" id="header-cart-badge" style="display:none;">0</span></a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices">
+      <button class="close-drawer-btn" id="close-mobile-drawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-angle-right"></i></a>
+      <a href="shop.html" class="mobile-nav-link">Shop Catalog <i class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html" class="mobile-nav-link">Categories <i class="fa-solid fa-angle-right"></i></a>
+      <a href="cart.html" class="mobile-nav-link">Cart <i class="fa-solid fa-angle-right"></i></a>
+      <a href="wishlist.html" class="mobile-nav-link">Wishlist <i class="fa-solid fa-angle-right"></i></a>
+      <a href="my-account.html" class="mobile-nav-link">My Account <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-box">
+      <div class="search-form-header">
+        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search Spices</h3>
+        <button class="close-search-btn" id="close-search-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form action="search.html" method="GET">
+        <div class="search-input-group">
+          <input type="text" name="q" id="header-search-input" placeholder="Search turmeric, pepper, saffron...">
+          <button type="submit" class="search-submit-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </form>
+      <div class="search-live-results" id="search-live-results"></div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-wrapper">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <span class="breadcrumb-item"><a href="index.html">Home</a></span>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem; color: #999;"></i>
+        <span class="breadcrumb-item"><a href="shop.html">Shop</a></span>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem; color: #999;"></i>
+        <span class="breadcrumb-item active" id="pdp-breadcrumb-title">Product Details</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Main Detail Section -->
+  <section class="section section-light" style="padding-top: 40px;" id="product-detail-container">
+    <!-- Populated dynamically via JS -->
+  </section>
+
+  <!-- Related Products Section -->
+  <section class="section section-cream" style="border-top: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="section-header text-left" style="margin-bottom: 30px;">
+        <span class="section-tag">Pairings &amp; Recommendations</span>
+        <h2 class="section-title">Related Spices &amp; Foods</h2>
+      </div>
+      <div class="products-grid" id="related-products-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="footer-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+          <p>MDMA Spices and Foods represents the gold standard of single-origin Indian spices and foods.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="shipping-policy.html">Shipping</a></li>
+            <li><a href="refund-policy.html">Refunds</a></li>
+            <li><a href="privacy-policy.html">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact MDMA</h4>
+          <p style="color: var(--text-light-muted); font-size: 0.9rem;">care@mdmaspices.com<br>Connaught Place, New Delhi</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>© 2026 MDMA Spices and Foods. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    let currentProduct = null;
+    let selectedWeight = '';
+
+    function renderProductDetails() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const idParam = urlParams.get('id');
+      const slugParam = urlParams.get('slug');
+
+      if (idParam) {
+        currentProduct = getProductById(idParam);
+      } else if (slugParam) {
+        currentProduct = getProductBySlug(slugParam);
+      } else {
+        currentProduct = getAllProducts()[0];
+      }
+
+      if (!currentProduct) {
+        currentProduct = getAllProducts()[0];
+      }
+
+      selectedWeight = currentProduct.weightOptions[0];
+
+      // Update Page Title
+      document.title = `${currentProduct.name} — MDMA Spices and Foods`;
+      document.getElementById('pdp-breadcrumb-title').textContent = currentProduct.name;
+
+      const container = document.getElementById('product-detail-container');
+      const isWish = isInWishlist(currentProduct.id);
+
+      container.innerHTML = `
+        <div class="container">
+          <div style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 48px;" class="pdp-layout">
+            <!-- Left: Gallery -->
+            <div>
+              <div style="border-radius: 16px; overflow: hidden; background: #FFF; border: 1px solid var(--border-light); margin-bottom: 16px; box-shadow: var(--shadow-md); position: relative;">
+                <img id="main-gallery-img" src="${currentProduct.image}" alt="${currentProduct.name}" style="width: 100%; height: 480px; object-fit: cover; transition: transform 0.4s ease;" onmousemove="zoomImage(event, this)" onmouseleave="resetZoom(this)">
+                ${currentProduct.badge ? `<span class="product-badge badge-${currentProduct.badgeType || 'bestseller'}" style="top: 18px; left: 18px;">${currentProduct.badge}</span>` : ''}
+              </div>
+
+              <!-- Thumbnails -->
+              <div style="display: flex; gap: 12px;">
+                ${(currentProduct.gallery || [currentProduct.image]).map((img, idx) => `
+                  <div onclick="switchMainImage('${img}', this)" class="gallery-thumb ${idx === 0 ? 'active' : ''}" style="width: 80px; height: 80px; border-radius: 8px; overflow: hidden; cursor: pointer; border: 2px solid ${idx === 0 ? 'var(--color-gold)' : 'var(--border-light)'};">
+                    <img src="${img}" alt="Thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Right: Product Information & Purchase Controls -->
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-gold-dark); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px;">
+                <a href="category.html?cat=${currentProduct.categorySlug}">${currentProduct.category}</a>
+              </div>
+              <h1 style="font-size: 2.2rem; margin-bottom: 12px; line-height: 1.25;">${currentProduct.name}</h1>
+
+              <!-- Rating & SKU -->
+              <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px; font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <div class="stars" style="color: #F5A623;">
+                    ${'<i class="fa-solid fa-star"></i>'.repeat(Math.floor(currentProduct.rating))}
+                    ${currentProduct.rating % 1 !== 0 ? '<i class="fa-solid fa-star-half-stroke"></i>' : ''}
+                  </div>
+                  <strong style="color: var(--text-dark);">${currentProduct.rating}</strong>
+                  <span style="color: var(--text-dark-muted);">(${currentProduct.reviewCount} Verified Reviews)</span>
+                </div>
+                <span>•</span>
+                <span style="color: var(--text-dark-muted);">SKU: <strong>MDMA-SP-${100 + currentProduct.id}</strong></span>
+              </div>
+
+              <!-- Price Box -->
+              <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; padding: 16px 20px; background: var(--bg-light-secondary); border-radius: 12px; border: 1px solid var(--border-light);">
+                <span style="font-size: 2rem; font-weight: 800; color: var(--color-red);">₹${currentProduct.price}</span>
+                ${currentProduct.oldPrice ? `<span style="font-size: 1.2rem; color: #999; text-decoration: line-through;">₹${currentProduct.oldPrice}</span>` : ''}
+                ${currentProduct.oldPrice ? `<span style="background: #2D6A4F; color: #FFF; font-weight: 700; font-size: 0.8rem; padding: 4px 10px; border-radius: 4px;">Save ₹${currentProduct.oldPrice - currentProduct.price} (${Math.round(((currentProduct.oldPrice - currentProduct.price)/currentProduct.oldPrice)*100)}% OFF)</span>` : ''}
+                <span style="margin-left: auto; font-size: 0.8rem; color: var(--color-green); font-weight: 700;"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+              </div>
+
+              <p style="font-size: 1rem; color: var(--text-dark-muted); line-height: 1.7; margin-bottom: 24px;">
+                ${currentProduct.shortDesc}
+              </p>
+
+              <!-- Pack Size / Weight Selection -->
+              <div style="margin-bottom: 24px;">
+                <label style="display: block; font-weight: 700; font-size: 0.92rem; margin-bottom: 10px;">Select Pack Size:</label>
+                <div style="display: flex; gap: 10px;" id="pdp-weight-container">
+                  ${currentProduct.weightOptions.map((w, idx) => `
+                    <button type="button" class="pdp-w-btn ${idx === 0 ? 'active' : ''}" onclick="setPdpWeight(this, '${w}')" style="padding: 8px 18px; border: 1.5px solid ${idx === 0 ? 'var(--color-gold-dark)' : 'var(--border-light)'}; background: ${idx === 0 ? 'var(--bg-dark-primary)' : '#FFF'}; color: ${idx === 0 ? '#FFF' : 'var(--text-dark)'}; font-weight: 700; border-radius: 8px; cursor: pointer; transition: all 0.2s;">
+                      ${w}
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+
+              <!-- Quantity & Purchase Actions -->
+              <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 24px; flex-wrap: wrap;">
+                <div class="qty-picker" style="height: 48px;">
+                  <button class="qty-btn" onclick="adjustPdpQty(-1)"><i class="fa-solid fa-minus"></i></button>
+                  <input type="text" id="pdp-qty-input" class="qty-input" value="1" readonly style="font-size: 1.1rem;">
+                  <button class="qty-btn" onclick="adjustPdpQty(1)"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <button class="btn btn-primary" style="flex-grow: 1; height: 48px; font-size: 1rem;" onclick="handlePdpAddToCart()">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+
+                <button class="btn btn-secondary" style="height: 48px; font-size: 1rem;" onclick="handlePdpBuyNow()">
+                  <i class="fa-solid fa-bolt"></i> Buy Now
+                </button>
+
+                <button class="card-action-btn wishlist-btn ${isWish ? 'wishlist-active' : ''}" onclick="toggleWishlist(${currentProduct.id})" style="width: 48px; height: 48px; font-size: 1.1rem;" title="Save to Wishlist">
+                  <i class="fa-${isWish ? 'solid' : 'regular'} fa-heart"></i>
+                </button>
+              </div>
+
+              <!-- Shipping & Trust Strip -->
+              <div style="border: 1px solid var(--border-gold); border-radius: 12px; padding: 18px 20px; background: rgba(212, 175, 55, 0.05); font-size: 0.88rem; display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; align-items: center; gap: 10px; color: var(--text-dark);">
+                  <i class="fa-solid fa-truck" style="color: var(--color-gold-dark);"></i>
+                  <span><strong>Free Shipping</strong> on orders above ₹499 (Standard Delivery 3-5 Days)</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px; color: var(--text-dark);">
+                  <i class="fa-solid fa-rotate-left" style="color: var(--color-gold-dark);"></i>
+                  <span><strong>Quality Assurance:</strong> 100% replacement guarantee if damaged or unsealed</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px; color: var(--text-dark);">
+                  <i class="fa-solid fa-shield-halved" style="color: var(--color-gold-dark);"></i>
+                  <span>Hygienically vacuum-sealed in multi-barrier moisture foil pouch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Tabs: Detailed Description, Ingredients, How to Use, Storage, Reviews -->
+          <div style="margin-top: 60px; background: #FFF; border: 1px solid var(--border-light); border-radius: 16px; padding: 36px; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; gap: 20px; border-bottom: 2px solid var(--border-light); padding-bottom: 12px; margin-bottom: 28px; flex-wrap: wrap;" id="pdp-tabs-header">
+              <button class="tab-btn active" onclick="switchPdpTab('tab-desc', this)" style="font-size: 1.05rem; font-weight: 700; color: var(--color-gold-dark); cursor: pointer; padding-bottom: 8px; border-bottom: 2px solid var(--color-gold-dark);">Full Description</button>
+              <button class="tab-btn" onclick="switchPdpTab('tab-ingredients', this)" style="font-size: 1.05rem; font-weight: 700; color: var(--text-dark-muted); cursor: pointer; padding-bottom: 8px;">Ingredients &amp; Sourcing</button>
+              <button class="tab-btn" onclick="switchPdpTab('tab-usage', this)" style="font-size: 1.05rem; font-weight: 700; color: var(--text-dark-muted); cursor: pointer; padding-bottom: 8px;">How to Use &amp; Storage</button>
+              <button class="tab-btn" onclick="switchPdpTab('tab-reviews', this)" style="font-size: 1.05rem; font-weight: 700; color: var(--text-dark-muted); cursor: pointer; padding-bottom: 8px;">Customer Reviews (${currentProduct.reviewCount})</button>
+            </div>
+
+            <!-- Tab 1: Description -->
+            <div id="tab-desc" class="pdp-tab-pane" style="line-height: 1.8; font-size: 1rem; color: var(--text-dark);">
+              <h3 style="font-size: 1.3rem; margin-bottom: 12px;">About ${currentProduct.name}</h3>
+              <p style="margin-bottom: 16px;">${currentProduct.description}</p>
+              <h4 style="font-size: 1.1rem; margin-top: 20px; margin-bottom: 10px; color: var(--color-gold-dark);">Key Distinctive Features:</h4>
+              <ul style="list-style: disc; padding-left: 24px; color: var(--text-dark-muted);">
+                ${currentProduct.features.map(f => `<li style="margin-bottom: 6px;"><strong>${f}</strong></li>`).join('')}
+              </ul>
+            </div>
+
+            <!-- Tab 2: Ingredients -->
+            <div id="tab-ingredients" class="pdp-tab-pane" style="display: none; line-height: 1.8; font-size: 1rem;">
+              <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Pure Ingredients Statement</h3>
+              <p style="margin-bottom: 16px; background: var(--bg-light-secondary); padding: 18px; border-radius: 8px; border-left: 4px solid var(--color-green);">
+                ${currentProduct.ingredients}
+              </p>
+              <h4 style="font-size: 1.1rem; margin-bottom: 8px; color: var(--color-gold-dark);">Nutritional Profile:</h4>
+              <p style="color: var(--text-dark-muted);">${currentProduct.nutrition}</p>
+            </div>
+
+            <!-- Tab 3: Usage & Storage -->
+            <div id="tab-usage" class="pdp-tab-pane" style="display: none; line-height: 1.8; font-size: 1rem;">
+              <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Culinary Usage &amp; Storage Guidelines</h3>
+              <p style="margin-bottom: 16px;">
+                <strong>Recommended Use:</strong> Add during hot oil tempering (tadka) or mix directly into simmering curries, gravies, and marinades according to recipe taste.
+              </p>
+              <div style="background: rgba(212, 175, 55, 0.1); border: 1px solid var(--border-gold); padding: 18px; border-radius: 8px;">
+                <h4 style="color: var(--color-gold-dark); margin-bottom: 6px;"><i class="fa-solid fa-box-archive"></i> Storage Instructions:</h4>
+                <p style="color: var(--text-dark);">${currentProduct.storage}</p>
+              </div>
+            </div>
+
+            <!-- Tab 4: Reviews -->
+            <div id="tab-reviews" class="pdp-tab-pane" style="display: none;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <h3 style="font-size: 1.3rem;">Customer Reviews (${currentProduct.reviewCount})</h3>
+                <button class="btn btn-outline-dark btn-sm" onclick="showToast('info', 'Review Submission', 'Review portal open for verified purchasers.')"><i class="fa-solid fa-pen"></i> Write a Review</button>
+              </div>
+
+              <!-- Demo Reviews List -->
+              <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="border-bottom: 1px solid var(--border-light); padding-bottom: 16px;">
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                    <strong>Vipin N. (Verified Buyer)</strong>
+                    <span style="font-size: 0.8rem; color: var(--text-dark-muted);">2 days ago</span>
+                  </div>
+                  <div class="stars" style="color: #F5A623; margin-bottom: 6px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <p style="color: var(--text-dark-muted); font-size: 0.95rem;">Exceptional aroma and purity! MDMA spices make an unforgettable difference in our everyday cooking.</p>
+                </div>
+
+                <div style="border-bottom: 1px solid var(--border-light); padding-bottom: 16px;">
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                    <strong>Kavita M. (Verified Buyer)</strong>
+                    <span style="font-size: 0.8rem; color: var(--text-dark-muted);">1 week ago</span>
+                  </div>
+                  <div class="stars" style="color: #F5A623; margin-bottom: 6px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <p style="color: var(--text-dark-muted); font-size: 0.95rem;">Loved the aroma-lock packaging. You can see and smell the difference immediately. Will definitely buy again!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Render Related Products
+      const related = getAllProducts().filter(p => p.id !== currentProduct.id).slice(0, 4);
+      const relGrid = document.getElementById('related-products-grid');
+      if (relGrid) {
+        let relHtml = '';
+        related.forEach(p => {
+          relHtml += renderProductCardHTML(p);
+        });
+        relGrid.innerHTML = relHtml;
+      }
+    }
+
+    function switchMainImage(src, thumbEl) {
+      document.getElementById('main-gallery-img').src = src;
+      document.querySelectorAll('.gallery-thumb').forEach(t => t.style.borderColor = 'var(--border-light)');
+      thumbEl.style.borderColor = 'var(--color-gold)';
+    }
+
+    function zoomImage(e, img) {
+      const { left, top, width, height } = img.getBoundingClientRect();
+      const x = ((e.clientX - left) / width) * 100;
+      const y = ((e.clientY - top) / height) * 100;
+      img.style.transformOrigin = `${x}% ${y}%`;
+      img.style.transform = "scale(1.25)";
+    }
+
+    function resetZoom(img) {
+      img.style.transform = "scale(1)";
+    }
+
+    function setPdpWeight(btn, weight) {
+      document.querySelectorAll('.pdp-w-btn').forEach(b => {
+        b.style.background = '#FFF';
+        b.style.color = 'var(--text-dark)';
+        b.style.borderColor = 'var(--border-light)';
+      });
+      btn.style.background = 'var(--bg-dark-primary)';
+      btn.style.color = '#FFF';
+      btn.style.borderColor = 'var(--color-gold-dark)';
+      selectedWeight = weight;
+    }
+
+    function adjustPdpQty(delta) {
+      const input = document.getElementById('pdp-qty-input');
+      let val = parseInt(input.value) + delta;
+      if (val < 1) val = 1;
+      input.value = val;
+    }
+
+    function handlePdpAddToCart() {
+      const qty = parseInt(document.getElementById('pdp-qty-input').value);
+      addToCart(currentProduct.id, qty, selectedWeight);
+    }
+
+    function handlePdpBuyNow() {
+      const qty = parseInt(document.getElementById('pdp-qty-input').value);
+      addToCart(currentProduct.id, qty, selectedWeight);
+      window.location.href = 'checkout.html';
+    }
+
+    function switchPdpTab(tabId, btn) {
+      document.querySelectorAll('.pdp-tab-pane').forEach(pane => pane.style.display = 'none');
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.style.color = 'var(--text-dark-muted)';
+        b.style.borderBottom = 'none';
+      });
+      document.getElementById(tabId).style.display = 'block';
+      btn.style.color = 'var(--color-gold-dark)';
+      btn.style.borderBottom = '2px solid var(--color-gold-dark)';
+    }
+
+    document.addEventListener('DOMContentLoaded', renderProductDetails);
+  </script>
+</body>
+</html>

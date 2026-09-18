@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120">
+  <defs>
+    <!-- Metallic Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E08E" />
+      <stop offset="25%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#AA771C" />
+      <stop offset="75%" stop-color="#E5C365" />
+      <stop offset="100%" stop-color="#8E6310" />
+    </linearGradient>
+
+    <!-- Deep Spice Crimson Gradient -->
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BD2D2B" />
+      <stop offset="50%" stop-color="#8B0000" />
+      <stop offset="100%" stop-color="#560707" />
+    </linearGradient>
+
+    <!-- Natural Forest Green Gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#40916C" />
+      <stop offset="50%" stop-color="#1E4D2B" />
+      <stop offset="100%" stop-color="#0F2817" />
+    </linearGradient>
+
+    <!-- Gold Shine Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Left Emblem / Crest -->
+  <g transform="translate(10, 5)">
+    <!-- Outer Gold Ring -->
+    <circle cx="55" cy="55" r="50" fill="url(#redGrad)" stroke="url(#goldGrad)" stroke-width="3" />
+    <circle cx="55" cy="55" r="45" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="3,2" />
+    
+    <!-- Laurel Leaf Accents (Green & Gold) -->
+    <path d="M 30 65 C 25 50 35 30 55 25 C 48 35 48 48 55 58 Z" fill="url(#greenGrad)" opacity="0.85" />
+    <path d="M 80 65 C 85 50 75 30 55 25 C 62 35 62 48 55 58 Z" fill="url(#greenGrad)" opacity="0.85" />
+
+    <!-- Royal Spice Star / Star Anise Flower Motif -->
+    <g transform="translate(55,55) scale(0.65)">
+      <!-- 8-Petal Royal Spice Star -->
+      <path d="M 0 -35 L 8 -12 L 32 -12 L 14 3 L 22 28 L 0 14 L -22 28 L -14 3 L -32 -12 L -8 -12 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+      <!-- Central Gem / Spice Pod -->
+      <circle cx="0" cy="0" r="10" fill="url(#redGrad)" stroke="url(#goldGrad)" stroke-width="2" />
+      <circle cx="0" cy="0" r="5" fill="url(#goldGrad)" />
+    </g>
+
+    <!-- Tiny Spice Berries -->
+    <circle cx="55" cy="18" r="3" fill="url(#goldGrad)" />
+    <circle cx="28" cy="76" r="2.5" fill="url(#goldGrad)" />
+    <circle cx="82" cy="76" r="2.5" fill="url(#goldGrad)" />
+    <path d="M 45 92 Q 55 96 65 92" stroke="url(#goldGrad)" stroke-width="1.5" fill="none" />
+  </g>
+
+  <!-- Typography: Wordmark "MDMA" -->
+  <g transform="translate(130, 20)">
+    <!-- Main Acronym: MDMA -->
+    <text x="0" y="44" font-family="'Playfair Display', 'Cinzel', 'Georgia', serif" font-size="44" font-weight="900" letter-spacing="4" fill="url(#goldGrad)" filter="url(#glow)">MDMA</text>
+    
+    <!-- Deep Red Decorative Underline with Green Leaf Accent -->
+    <path d="M 2 54 L 330 54" stroke="url(#goldGrad)" stroke-width="2" />
+    <circle cx="165" cy="54" r="4" fill="url(#redGrad)" stroke="url(#goldGrad)" stroke-width="1.5" />
+    
+    <!-- Subtitle: SPICES AND FOODS -->
+    <text x="2" y="74" font-family="'Plus Jakarta Sans', 'Inter', 'Montserrat', sans-serif" font-size="15" font-weight="700" letter-spacing="6.5" fill="#FFFFFF">SPICES &amp; FOODS</text>
+    
+    <!-- Tagline: PURE • NATURAL • AUTHENTIC -->
+    <text x="2" y="90" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="9.5" font-weight="600" letter-spacing="3.5" fill="#A3E635">PURE <tspan fill="url(#goldGrad)">•</tspan> NATURAL <tspan fill="url(#goldGrad)">•</tspan> AUTHENTIC</text>
+  </g>
+</svg>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Spices &amp; Gourmet Foods — MDMA Spices and Foods</title>
+  <meta name="description" content="Shop our complete range of premium whole spices, ground masalas, herbs, and dry fruits with uncompromised Indian purity.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Special Offer</span>
+        <span>Get 10% OFF on your first order with code: <strong>MDMA10</strong></span>
+      </div>
+      <div class="top-bar-center">
+        <span>Pure • Natural • Healthy</span>
+        <span>|</span>
+        <span>Authentic Indian Spices &amp; Gourmet Foods</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="order-tracking.html" class="top-bar-link"><i class="fa-solid fa-truck-fast"></i> Track Order</a>
+        <a href="contact.html" class="top-bar-link"><i class="fa-solid fa-headset"></i> Support</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices and Foods">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link active">Shop</a>
+        <div class="nav-item-dropdown">
+          <a href="category.html" class="nav-link">Categories <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 2px;"></i></a>
+          <div class="nav-dropdown">
+            <a href="category.html?cat=ground-spices" class="dropdown-link">Ground Spices <i class="fa-solid fa-pepper-hot"></i></a>
+            <a href="category.html?cat=whole-spices" class="dropdown-link">Whole Spices <i class="fa-solid fa-seedling"></i></a>
+            <a href="category.html?cat=signature-blends" class="dropdown-link">Signature Blends <i class="fa-solid fa-mortar-pestle"></i></a>
+            <a href="category.html?cat=organic-herbs" class="dropdown-link">Organic Herbs <i class="fa-solid fa-leaf"></i></a>
+            <a href="category.html?cat=dry-fruits-nuts" class="dropdown-link">Dry Fruits &amp; Nuts <i class="fa-solid fa-bowl-rice"></i></a>
+            <a href="category.html?cat=traditional-foods" class="dropdown-link">Traditional Foods <i class="fa-solid fa-bottle-droplet"></i></a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="shop.html?featured=true" class="nav-link">Our Products</a>
+        <a href="about.html#why-mdma" class="nav-link">Why MDMA</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-action-btn open-search-modal" title="Search Spices"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="my-account.html" class="header-action-btn" title="My Account"><i class="fa-regular fa-user"></i></a>
+        <a href="wishlist.html" class="header-action-btn" title="Saved Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge" id="header-wishlist-badge" style="display: none;">0</span>
+        </a>
+        <a href="cart.html" class="header-action-btn" title="Shopping Cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="action-badge" id="header-cart-badge" style="display: none;">0</span>
+        </a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices">
+      <button class="close-drawer-btn" id="close-mobile-drawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-angle-right"></i></a>
+      <a href="shop.html" class="mobile-nav-link active">Shop All Spices <i class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html" class="mobile-nav-link">Categories <i class="fa-solid fa-angle-right"></i></a>
+      <a href="about.html" class="mobile-nav-link">About MDMA <i class="fa-solid fa-angle-right"></i></a>
+      <a href="wishlist.html" class="mobile-nav-link">My Wishlist <i class="fa-solid fa-angle-right"></i></a>
+      <a href="cart.html" class="mobile-nav-link">My Cart <i class="fa-solid fa-angle-right"></i></a>
+      <a href="my-account.html" class="mobile-nav-link">My Account <i class="fa-solid fa-angle-right"></i></a>
+      <a href="order-tracking.html" class="mobile-nav-link">Track Order <i class="fa-solid fa-angle-right"></i></a>
+      <a href="contact.html" class="mobile-nav-link">Contact Support <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-box">
+      <div class="search-form-header">
+        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search MDMA Spices &amp; Foods</h3>
+        <button class="close-search-btn" id="close-search-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form action="search.html" method="GET">
+        <div class="search-input-group">
+          <input type="text" name="q" id="header-search-input" placeholder="Type turmeric, saffron, cardamom, masala..." autocomplete="off">
+          <button type="submit" class="search-submit-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </form>
+      <div class="search-live-results" id="search-live-results"></div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-wrapper">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <span class="breadcrumb-item"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></span>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem; color: #999;"></i>
+        <span class="breadcrumb-item active">Shop Spices &amp; Foods</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shop Main Content -->
+  <section class="section section-light" style="padding-top: 40px;">
+    <div class="container">
+      <!-- Shop Header Bar -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; flex-wrap: wrap; gap: 16px; padding-bottom: 20px; border-bottom: 1px solid var(--border-light);">
+        <div>
+          <h1 style="font-size: 2.2rem; margin-bottom: 4px;">MDMA Spice &amp; Food Catalog</h1>
+          <p style="color: var(--text-dark-muted); font-size: 0.95rem;" id="shop-count-display">Showing all products</p>
+        </div>
+
+        <!-- Sorting Control -->
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <label for="shop-sort" style="font-size: 0.9rem; font-weight: 600;">Sort By:</label>
+          <select id="shop-sort" class="form-control" style="width: auto; padding: 8px 16px; border-radius: 6px;" onchange="filterAndSortProducts()">
+            <option value="featured">Featured Picks</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+            <option value="name">Alphabetical (A-Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Shop Layout: Sidebar + Grid -->
+      <div style="display: grid; grid-template-columns: 280px 1fr; gap: 36px;" class="shop-layout">
+        <!-- Filter Sidebar -->
+        <aside class="shop-sidebar" style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 24px; height: fit-content;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border-light);">
+            <h3 style="font-size: 1.15rem;"><i class="fa-solid fa-sliders" style="color: var(--color-gold-dark);"></i> Filters</h3>
+            <button onclick="resetShopFilters()" style="font-size: 0.8rem; color: var(--color-red); font-weight: 700;">Reset All</button>
+          </div>
+
+          <!-- Category Filter -->
+          <div style="margin-bottom: 24px;">
+            <h4 style="font-size: 0.95rem; margin-bottom: 12px; color: var(--color-gold-dark);">Categories</h4>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <label style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; cursor: pointer;">
+                <input type="radio" name="shop_category" value="all" checked onchange="filterAndSortProducts()">
+                <span>All Categories</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; cursor: pointer;">
+                <input type="radio" name="shop_category" value="ground-spices" onchange="filterAndSortProducts()">
+                <span>Ground Spices</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; cursor: pointer;">
+                <input type="radio" name="shop_category" value="whole-spices" onchange="filterAndSortProducts()">
+                <span>Whole Spices</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; cursor: pointer;">
+                <input type="radio" name="shop_category" value="signature-blends" onchange="filterAndSortProducts()">
+                <span>Signature Blends</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; cursor: pointer;">
+                <input type="radio" name="shop_category" value="organic-herbs" onchange="filterAndSortProducts()">
+                <span>Organic Herbs</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; cursor: pointer;">
+                <input type="radio" name="shop_category" value="dry-fruits-nuts" onchange="filterAndSortProducts()">
+                <span>Dry Fruits &amp; Nuts</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 10px; font-size: 0.9rem; cursor: pointer;">
+                <input type="radio" name="shop_category" value="traditional-foods" onchange="filterAndSortProducts()">
+                <span>Traditional Foods</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Price Range Filter -->
+          <div style="margin-bottom: 24px; border-top: 1px solid var(--border-light); padding-top: 18px;">
+            <h4 style="font-size: 0.95rem; margin-bottom: 12px; color: var(--color-gold-dark);">Max Price: <span id="price-val" style="color: var(--color-red);">₹1200</span></h4>
+            <input type="range" id="price-range" min="100" max="1200" step="50" value="1200" style="width: 100%; accent-color: var(--color-gold);" oninput="document.getElementById('price-val').textContent = '₹' + this.value; filterAndSortProducts();">
+            <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-dark-muted); margin-top: 4px;">
+              <span>₹100</span>
+              <span>₹1200</span>
+            </div>
+          </div>
+
+          <!-- Rating Filter -->
+          <div style="border-top: 1px solid var(--border-light); padding-top: 18px;">
+            <h4 style="font-size: 0.95rem; margin-bottom: 12px; color: var(--color-gold-dark);">Customer Rating</h4>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <label style="display: flex; align-items: center; gap: 10px; font-size: 0.88rem; cursor: pointer;">
+                <input type="checkbox" id="rating-4" onchange="filterAndSortProducts()">
+                <span class="stars" style="color: #F5A623;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                <span>4.0 &amp; Above</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 10px; font-size: 0.88rem; cursor: pointer;">
+                <input type="checkbox" id="rating-48" onchange="filterAndSortProducts()">
+                <span class="stars" style="color: #F5A623;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+                <span>4.8 &amp; Above</span>
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Product Grid Wrapper -->
+        <div>
+          <div class="products-grid" id="shop-products-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="main-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="footer-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+          <p>MDMA Spices and Foods represents the gold standard of single-origin Indian spices and pristine pantry essentials.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="about.html">About MDMA</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="order-tracking.html">Track Order</a></li>
+            <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            <li><a href="refund-policy.html">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact MDMA</h4>
+          <p style="color: var(--text-light-muted); font-size: 0.9rem;">New Delhi - 110001 (Placeholder)<br>care@mdmaspices.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>© 2026 MDMA Spices and Foods. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    function filterAndSortProducts() {
+      const category = document.querySelector('input[name="shop_category"]:checked')?.value || 'all';
+      const maxPrice = parseInt(document.getElementById('price-range')?.value || '1200');
+      const sort = document.getElementById('shop-sort')?.value || 'featured';
+      const rating48 = document.getElementById('rating-48')?.checked;
+      const rating4 = document.getElementById('rating-4')?.checked;
+
+      let list = getAllProducts();
+
+      if (category !== 'all') {
+        list = list.filter(p => p.categorySlug === category);
+      }
+
+      list = list.filter(p => p.price <= maxPrice);
+
+      if (rating48) {
+        list = list.filter(p => p.rating >= 4.8);
+      } else if (rating4) {
+        list = list.filter(p => p.rating >= 4.0);
+      }
+
+      if (sort === 'price-low') {
+        list.sort((a, b) => a.price - b.price);
+      } else if (sort === 'price-high') {
+        list.sort((a, b) => b.price - a.price);
+      } else if (sort === 'rating') {
+        list.sort((a, b) => b.rating - a.rating);
+      } else if (sort === 'name') {
+        list.sort((a, b) => a.name.localeCompare(b.name));
+      }
+
+      const grid = document.getElementById('shop-products-grid');
+      const countDisplay = document.getElementById('shop-count-display');
+
+      if (countDisplay) {
+        countDisplay.textContent = `Showing ${list.length} Products`;
+      }
+
+      if (!grid) return;
+
+      if (list.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: var(--bg-light-card); border-radius: var(--border-radius-md); border: 1px solid var(--border-light);">
+            <i class="fa-solid fa-filter-circle-xmark" style="font-size: 3rem; color: var(--color-gold); margin-bottom: 16px;"></i>
+            <h3>No Products Match Selected Filters</h3>
+            <p style="color: var(--text-dark-muted); margin-bottom: 20px;">Try adjusting your price range or category filter.</p>
+            <button onclick="resetShopFilters()" class="btn btn-primary">Reset Filters</button>
+          </div>
+        `;
+        return;
+      }
+
+      let html = '';
+      list.forEach(product => {
+        html += renderProductCardHTML(product);
+      });
+      grid.innerHTML = html;
+    }
+
+    function resetShopFilters() {
+      const allRadio = document.querySelector('input[name="shop_category"][value="all"]');
+      if (allRadio) allRadio.checked = true;
+      const priceSlider = document.getElementById('price-range');
+      if (priceSlider) {
+        priceSlider.value = 1200;
+        document.getElementById('price-val').textContent = '₹1200';
+      }
+      const r4 = document.getElementById('rating-4');
+      const r48 = document.getElementById('rating-48');
+      if (r4) r4.checked = false;
+      if (r48) r48.checked = false;
+      filterAndSortProducts();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Check for URL category param
+      const urlParams = new URLSearchParams(window.location.search);
+      const catParam = urlParams.get('cat');
+      if (catParam) {
+        const targetRadio = document.querySelector(`input[name="shop_category"][value="${catParam}"]`);
+        if (targetRadio) targetRadio.checked = true;
+      }
+      filterAndSortProducts();
+    });
+  </script>
+</body>
+</html>

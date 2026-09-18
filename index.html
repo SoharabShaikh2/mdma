@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDMA Spices and Foods — Pure • Natural • Authentic Indian Spices</title>
+  <meta name="description" content="Discover pure, single-origin Indian spices, heritage masala blends, and natural foods from MDMA Spices and Foods. Shop premium turmeric, cardamom, pepper, and more.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Special Offer</span>
+        <span>Get 10% OFF on your first order with code: <strong>MDMA10</strong></span>
+      </div>
+      <div class="top-bar-center">
+        <span>Pure • Natural • Healthy</span>
+        <span>|</span>
+        <span>Authentic Indian Spices &amp; Gourmet Foods</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="order-tracking.html" class="top-bar-link"><i class="fa-solid fa-truck-fast"></i> Track Order</a>
+        <a href="contact.html" class="top-bar-link"><i class="fa-solid fa-headset"></i> Support</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="index.html" class="header-logo">
+        <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices and Foods Official Logo">
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <div class="nav-item-dropdown">
+          <a href="category.html" class="nav-link">Categories <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 2px;"></i></a>
+          <div class="nav-dropdown">
+            <a href="category.html?cat=ground-spices" class="dropdown-link">Ground Spices <i class="fa-solid fa-pepper-hot"></i></a>
+            <a href="category.html?cat=whole-spices" class="dropdown-link">Whole Spices <i class="fa-solid fa-seedling"></i></a>
+            <a href="category.html?cat=signature-blends" class="dropdown-link">Signature Blends <i class="fa-solid fa-mortar-pestle"></i></a>
+            <a href="category.html?cat=organic-herbs" class="dropdown-link">Organic Herbs <i class="fa-solid fa-leaf"></i></a>
+            <a href="category.html?cat=dry-fruits-nuts" class="dropdown-link">Dry Fruits &amp; Nuts <i class="fa-solid fa-bowl-rice"></i></a>
+            <a href="category.html?cat=traditional-foods" class="dropdown-link">Traditional Foods <i class="fa-solid fa-bottle-droplet"></i></a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="shop.html?featured=true" class="nav-link">Our Products</a>
+        <a href="about.html#why-mdma" class="nav-link">Why MDMA</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Icons & CTA -->
+      <div class="header-actions">
+        <!-- Search Trigger -->
+        <button class="header-action-btn open-search-modal" title="Search Spices">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Account -->
+        <a href="my-account.html" class="header-action-btn" title="My Account">
+          <i class="fa-regular fa-user"></i>
+        </a>
+
+        <!-- Wishlist -->
+        <a href="wishlist.html" class="header-action-btn" title="Saved Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge" id="header-wishlist-badge" style="display: none;">0</span>
+        </a>
+
+        <!-- Cart -->
+        <a href="cart.html" class="header-action-btn" title="Shopping Cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="action-badge" id="header-cart-badge" style="display: none;">0</span>
+        </a>
+
+        <!-- Shop Now Button -->
+        <a href="shop.html" class="header-cta-btn">
+          <i class="fa-solid fa-bag-shopping"></i> Shop Now
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Navigation -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices and Foods">
+      <button class="close-drawer-btn" id="close-mobile-drawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link active">Home <i class="fa-solid fa-angle-right"></i></a>
+      <a href="shop.html" class="mobile-nav-link">Shop All Spices <i class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html" class="mobile-nav-link">Categories <i class="fa-solid fa-angle-right"></i></a>
+      <a href="about.html" class="mobile-nav-link">About MDMA <i class="fa-solid fa-angle-right"></i></a>
+      <a href="wishlist.html" class="mobile-nav-link">My Wishlist <i class="fa-solid fa-angle-right"></i></a>
+      <a href="cart.html" class="mobile-nav-link">My Cart <i class="fa-solid fa-angle-right"></i></a>
+      <a href="my-account.html" class="mobile-nav-link">My Account <i class="fa-solid fa-angle-right"></i></a>
+      <a href="order-tracking.html" class="mobile-nav-link">Track Order <i class="fa-solid fa-angle-right"></i></a>
+      <a href="blog.html" class="mobile-nav-link">Spice Journal <i class="fa-solid fa-angle-right"></i></a>
+      <a href="contact.html" class="mobile-nav-link">Contact Support <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <div class="mobile-contact-info">
+        <p><i class="fa-solid fa-phone" style="color: var(--color-gold);"></i> +91 98765 43210 (Placeholder)</p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--color-gold);"></i> care@mdmaspices.com</p>
+      </div>
+      <a href="shop.html" class="btn btn-primary btn-block"><i class="fa-solid fa-store"></i> Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-box">
+      <div class="search-form-header">
+        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search MDMA Spices &amp; Foods</h3>
+        <button class="close-search-btn" id="close-search-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form action="search.html" method="GET">
+        <div class="search-input-group">
+          <input type="text" name="q" id="header-search-input" placeholder="Type turmeric, saffron, cardamom, masala..." autocomplete="off">
+          <button type="submit" class="search-submit-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </form>
+      <div class="search-quick-tags">
+        <span>Popular:</span>
+        <a href="search.html?q=Turmeric" class="tag-btn">Salem Turmeric</a>
+        <a href="search.html?q=Cardamom" class="tag-btn">Idukki Cardamom</a>
+        <a href="search.html?q=Garam+Masala" class="tag-btn">Heritage Garam Masala</a>
+        <a href="search.html?q=Pepper" class="tag-btn">Tellicherry Pepper</a>
+        <a href="search.html?q=Saffron" class="tag-btn">Kashmiri Saffron</a>
+      </div>
+      <div class="search-live-results" id="search-live-results"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 1 — HERO BANNER -->
+  <section class="hero-section section-dark" style="position: relative; min-height: 88vh; display: flex; align-items: center; overflow: hidden; background: radial-gradient(circle at 75% 50%, rgba(158, 42, 43, 0.25) 0%, rgba(30, 77, 43, 0.15) 35%, #050505 80%);">
+    <!-- Subtle Floating Spice Motifs / Particles -->
+    <div style="position: absolute; top: 12%; left: 8%; opacity: 0.15; pointer-events: none;" class="animate-float">
+      <i class="fa-solid fa-star-of-life" style="font-size: 3rem; color: var(--color-gold);"></i>
+    </div>
+    <div style="position: absolute; bottom: 18%; left: 45%; opacity: 0.15; pointer-events: none;" class="animate-float-delay">
+      <i class="fa-solid fa-seedling" style="font-size: 2.5rem; color: #40916C;"></i>
+    </div>
+    <div style="position: absolute; top: 25%; right: 48%; opacity: 0.2; pointer-events: none;" class="animate-float">
+      <i class="fa-solid fa-pepper-hot" style="font-size: 2.2rem; color: var(--color-red);"></i>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 2; padding-top: 40px; padding-bottom: 40px;">
+      <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; align-items: center;" class="hero-grid">
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="section-tag" style="margin-bottom: 18px;">
+            <i class="fa-solid fa-award"></i> The Royal Standard of Indian Spices
+          </div>
+          
+          <h1 style="font-size: clamp(2.4rem, 4.8vw, 4rem); line-height: 1.15; margin-bottom: 24px; color: #FFFFFF;">
+            Pure Taste. <br>
+            <span style="background: linear-gradient(135deg, #F5E08E 0%, #D4AF37 50%, #C0392B 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Natural Goodness.</span>
+          </h1>
+
+          <p style="font-size: 1.15rem; color: var(--text-light-muted); line-height: 1.7; margin-bottom: 36px; max-width: 540px;">
+            Discover premium-quality spices, slow-ground powders, and authentic pantry foods crafted with uncompromised purity, heritage tradition, and meticulous care.
+          </p>
+
+          <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px;">
+            <a href="shop.html" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-bag-shopping"></i> Shop Now
+            </a>
+            <a href="category.html" class="btn btn-outline-white btn-lg">
+              <i class="fa-solid fa-compass"></i> Explore Categories
+            </a>
+          </div>
+
+          <!-- Trust Badges Under Hero -->
+          <div style="display: flex; align-items: center; gap: 24px; padding-top: 24px; border-top: 1px solid var(--border-gold); flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-circle-check" style="color: var(--color-gold); font-size: 1.2rem;"></i>
+              <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-light);">100% Unadulterated</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-leaf" style="color: #40916C; font-size: 1.2rem;"></i>
+              <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-light);">Cold Ground Fresh</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-shield-heart" style="color: var(--color-red); font-size: 1.2rem;"></i>
+              <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-light);">Hygienically Packed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase -->
+        <div class="hero-visual" style="position: relative; text-align: center;">
+          <div style="position: relative; max-width: 520px; margin: 0 auto;">
+            <!-- Outer Gold Halo -->
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, rgba(158, 42, 43, 0.15) 50%, transparent 70%); filter: blur(25px); pointer-events: none;"></div>
+            
+            <!-- Hero Featured Composition Image -->
+            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1000&q=80" alt="MDMA Premium Spices &amp; Food Selection" style="width: 100%; border-radius: 20px; border: 2px solid var(--border-gold); box-shadow: 0 20px 50px rgba(0,0,0,0.7); object-fit: cover; aspect-ratio: 1/1;" class="animate-float">
+
+            <!-- Floating Product Quality Tag -->
+            <div style="position: absolute; bottom: -20px; left: -10px; background: rgba(18, 18, 16, 0.95); backdrop-filter: blur(10px); border: 1px solid var(--border-gold-strong); border-radius: 12px; padding: 14px 18px; display: flex; align-items: center; gap: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--color-gold); color: #070707; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+                <i class="fa-solid fa-crown"></i>
+              </div>
+              <div style="text-align: left;">
+                <div style="font-size: 0.78rem; font-weight: 700; color: var(--color-gold-light); text-transform: uppercase;">Heritage Purity</div>
+                <div style="font-size: 0.95rem; font-weight: 800; color: #FFFFFF;">Single-Origin Harvests</div>
+              </div>
+            </div>
+
+            <!-- Floating Top Rating Tag -->
+            <div style="position: absolute; top: 20px; right: -15px; background: rgba(18, 18, 16, 0.95); backdrop-filter: blur(10px); border: 1px solid var(--border-gold-strong); border-radius: 12px; padding: 12px 18px; display: flex; align-items: center; gap: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+              <div class="stars" style="color: #F5A623;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span style="font-weight: 800; color: #FFF; font-size: 0.92rem;">4.9 / 5.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 — TRUST / USP SECTION -->
+  <section class="section section-dark-secondary" style="border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);">
+    <div class="container">
+      <div class="usp-grid">
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-award"></i></div>
+          <h4>100% Quality Focused</h4>
+          <p>Every spice batch undergoes rigorous quality inspection for natural color, aroma, and essential oils.</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-leaf"></i></div>
+          <h4>Pure &amp; Natural</h4>
+          <p>Zero artificial food colorings, preservatives, fillers, or chemical enhancers in any blend.</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-pepper-hot"></i></div>
+          <h4>Authentic Taste</h4>
+          <p>Preserving authentic regional spice recipes and traditional culinary heritage in every pinch.</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h4>Carefully Selected</h4>
+          <p>Direct farm partnerships in Salem, Malabar, Idukki, Guntur, and Kashmir for authentic origin.</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-shield-virus"></i></div>
+          <h4>Hygienically Packed</h4>
+          <p>Multi-layered food-grade foil and vacuum packaging to seal in volatile aromas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — CATEGORY SECTION -->
+  <section class="section section-light" id="categories-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curated Collections</span>
+        <h2 class="section-title">Explore Our Categories</h2>
+        <p class="section-subtitle">From aromatic slow-ground powders to sun-dried whole spices and handcrafted masalas, experience the essence of genuine Indian gastronomy.</p>
+      </div>
+
+      <div class="category-grid">
+        <!-- Ground Spices -->
+        <a href="category.html?cat=ground-spices" class="category-card">
+          <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80" alt="Ground Spices" class="category-card-bg">
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <span class="category-card-count">4 Products Available</span>
+            <h3 class="category-card-title">Ground Spices</h3>
+            <p class="category-card-desc">High-curcumin turmeric, stemless chilli, roasted cumin &amp; coriander powders.</p>
+            <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Whole Spices -->
+        <a href="category.html?cat=whole-spices" class="category-card">
+          <img src="https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=800&q=80" alt="Whole Spices" class="category-card-bg">
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <span class="category-card-count">4 Products Available</span>
+            <h3 class="category-card-title">Whole Spices</h3>
+            <p class="category-card-desc">Malabar Tellicherry black pepper, 8mm+ Idukki green cardamom &amp; Ceylon quills.</p>
+            <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Signature Blends -->
+        <a href="category.html?cat=signature-blends" class="category-card">
+          <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" alt="Signature Blends" class="category-card-bg">
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <span class="category-card-count">4 Products Available</span>
+            <h3 class="category-card-title">Signature Blends</h3>
+            <p class="category-card-desc">Secret 18-spice Royal Garam Masala, Dum Biryani Masala &amp; Chai Spices.</p>
+            <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Organic Herbs & Saffron -->
+        <a href="category.html?cat=organic-herbs" class="category-card">
+          <img src="https://images.unsplash.com/photo-1608797178974-15b35a61deda?auto=format&fit=crop&w=800&q=80" alt="Organic Herbs" class="category-card-bg">
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <span class="category-card-count">2 Products Available</span>
+            <h3 class="category-card-title">Organic Herbs &amp; Saffron</h3>
+            <p class="category-card-desc">Grade A1 Pampore Kashmiri Saffron and fragrant sun-dried Kasuri Methi.</p>
+            <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 — FEATURED PRODUCTS -->
+  <section class="section section-cream" id="featured-products">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;">
+        <div>
+          <span class="section-tag" style="margin-bottom: 8px;">Top Rated Pantry Picks</span>
+          <h2 class="section-title" style="margin-bottom: 0;">Featured MDMA Products</h2>
+        </div>
+        <a href="shop.html" class="btn btn-outline-dark"><i class="fa-solid fa-grid-2"></i> View All Products</a>
+      </div>
+
+      <div class="products-grid" id="homepage-featured-grid">
+        <!-- Dynamically rendered via JS or static fallback -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 — PROMOTIONAL BANNER -->
+  <section class="section section-dark" style="position: relative; overflow: hidden; background: linear-gradient(135deg, #1C0A0A 0%, #070707 50%, #0D1F13 100%); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 50px; align-items: center;">
+        <div>
+          <span class="section-tag"><i class="fa-solid fa-fire-flame-curved"></i> Kitchen Essentials</span>
+          <h2 style="font-size: clamp(2rem, 3.8vw, 3rem); line-height: 1.2; margin-bottom: 20px; color: #FFFFFF;">
+            Bring Authentic Flavours <br>
+            <span style="color: var(--color-gold-light);">To Your Home Kitchen</span>
+          </h2>
+          <p style="color: var(--text-light-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 30px;">
+            The secret to memorable Indian culinary magic lies in freshly ground spices rich in natural essential oils. Experience single-origin perfection in every single meal.
+          </p>
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="shop.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-bag-shopping"></i> Shop Spices</a>
+            <a href="blog.html" class="btn btn-outline-white btn-lg"><i class="fa-solid fa-book-open"></i> Read Recipes</a>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" alt="MDMA Spice Panorama" style="border-radius: 16px; border: 2px solid var(--border-gold); box-shadow: var(--shadow-dark-card);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6 — ABOUT MDMA SECTION -->
+  <section class="section section-light" id="about-section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 50px; align-items: center;">
+        <div style="position: relative;">
+          <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80" alt="Traditional Indian Spices Art" style="border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-lg);">
+          <div style="position: absolute; bottom: -20px; right: -15px; background: #070707; color: #FFF; padding: 20px 24px; border-radius: 12px; border: 1px solid var(--border-gold); max-width: 240px; box-shadow: var(--shadow-md);">
+            <div style="font-size: 1.8rem; font-weight: 800; color: var(--color-gold);">100%</div>
+            <div style="font-size: 0.85rem; color: var(--text-light-muted);">Unadulterated Single Origin Sourcing</div>
+          </div>
+        </div>
+
+        <div>
+          <span class="section-tag">Our Heritage &amp; Promise</span>
+          <h2 class="section-title">Rooted in Purity. Crafted for Taste.</h2>
+          <p style="font-size: 1.02rem; color: var(--text-dark-muted); line-height: 1.8; margin-bottom: 20px;">
+            At <strong>MDMA Spices and Foods</strong>, we believe that pure spices are the sacred foundation of Indian cuisine. We partner directly with dedicated generational farmers to harvest spices at peak maturity.
+          </p>
+          <p style="font-size: 1.02rem; color: var(--text-dark-muted); line-height: 1.8; margin-bottom: 30px;">
+            By utilizing slow cold-grinding techniques instead of industrial high-heat pulverization, our spices maintain their natural vibrant colors, therapeutic curcumin and piperine compounds, and intoxicating natural aromas.
+          </p>
+          <div style="display: flex; gap: 20px; align-items: center;">
+            <a href="about.html" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i> Discover Our Story</a>
+            <a href="about.html#quality" class="btn btn-outline-dark">Our Quality Standards</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7 — WHY CHOOSE MDMA -->
+  <section class="section section-dark-secondary" id="why-choose-us" style="border-top: 1px solid var(--border-gold);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The MDMA Difference</span>
+        <h2 class="section-title">Why Choose MDMA Spices &amp; Foods?</h2>
+        <p class="section-subtitle">We bridge the wisdom of age-old culinary traditions with modern laboratory-grade hygiene and purity standards.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;" class="why-grid">
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-gem"></i></div>
+          <h4 style="color: var(--color-gold-light);">Premium Grade Selection</h4>
+          <p>Only the boldest Tellicherry peppercorns, 8mm+ cardamom pods, and Salem turmeric rhizomes are selected.</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-snowflake"></i></div>
+          <h4 style="color: var(--color-gold-light);">Cold-Grind Technology</h4>
+          <p>Preserves volatile essential oils and aroma compounds that are normally vaporized by high-speed industrial grinders.</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-seedling"></i></div>
+          <h4 style="color: var(--color-gold-light);">Zero Additives or Starches</h4>
+          <p>No synthetic food dyes, no cornstarch fillers, and no artificial MSG or flavor enhancers ever touch our spices.</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-box-check"></i></div>
+          <h4 style="color: var(--color-gold-light);">Aroma-Lock Packaging</h4>
+          <p>Multi-layered food-grade moisture barrier packaging guarantees kitchen-fresh potency for months.</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-flask"></i></div>
+          <h4 style="color: var(--color-gold-light);">Rigorous Quality Control</h4>
+          <p>Every single batch is tested for moisture levels, volatile oil percentages, and purity standards.</p>
+        </div>
+        <div class="usp-card">
+          <div class="usp-icon-wrap"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h4 style="color: var(--color-gold-light);">Customer First Service</h4>
+          <p>Prompt shipping, dedicated customer care, secure payment simulation, and a full satisfaction guarantee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8 — EDITORIAL PRODUCT SHOWCASE -->
+  <section class="section section-dark" style="border-top: 1px solid var(--border-gold);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Editorial Spotlight</span>
+        <h2 class="section-title">The Symphony of Authentic Indian Aromas</h2>
+        <p class="section-subtitle">Each spice in the MDMA collection plays a distinct, harmonious note in your culinary creations.</p>
+      </div>
+
+      <div class="showcase-wrapper">
+        <!-- Left Side Features -->
+        <div>
+          <div class="showcase-feature-item reverse">
+            <div class="showcase-feat-icon"><i class="fa-solid fa-sun" style="color: #F5A623;"></i></div>
+            <div class="showcase-feat-content">
+              <h4>Salem Turmeric (Curcumin 3.5%+)</h4>
+              <p>Radiant golden color and potent anti-inflammatory wellness for curries and golden lattes.</p>
+            </div>
+          </div>
+          <div class="showcase-feature-item reverse">
+            <div class="showcase-feat-icon"><i class="fa-solid fa-pepper-hot" style="color: var(--color-red);"></i></div>
+            <div class="showcase-feat-content">
+              <h4>Guntur Stemless Chilli</h4>
+              <p>Brilliant natural crimson shade with an intense, lingering pungent warmth.</p>
+            </div>
+          </div>
+          <div class="showcase-feature-item reverse">
+            <div class="showcase-feat-icon"><i class="fa-solid fa-seedling" style="color: #40916C;"></i></div>
+            <div class="showcase-feat-content">
+              <h4>Idukki Green Cardamom</h4>
+              <p>Exquisite eucalyptus and floral notes essential for biryanis, desserts, and royal tea.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Image -->
+        <div class="showcase-center-media">
+          <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" alt="MDMA Spice Showcase" class="showcase-center-img animate-float" style="border-radius: 50%; border: 3px solid var(--border-gold);">
+        </div>
+
+        <!-- Right Side Features -->
+        <div>
+          <div class="showcase-feature-item">
+            <div class="showcase-feat-icon"><i class="fa-solid fa-circle-dot" style="color: #888;"></i></div>
+            <div class="showcase-feat-content">
+              <h4>Malabar Tellicherry Pepper</h4>
+              <p>The undisputed 'King of Spices' delivering sharp piperine bite and woody warmth.</p>
+            </div>
+          </div>
+          <div class="showcase-feature-item">
+            <div class="showcase-feat-icon"><i class="fa-solid fa-wind" style="color: var(--color-gold);"></i></div>
+            <div class="showcase-feat-content">
+              <h4>Slow-Roasted Cumin</h4>
+              <p>Smoky, nutty aroma ground to perfection for raitas, gravies, and tempering.</p>
+            </div>
+          </div>
+          <div class="showcase-feature-item">
+            <div class="showcase-feat-icon"><i class="fa-solid fa-crown" style="color: var(--color-red-light);"></i></div>
+            <div class="showcase-feat-content">
+              <h4>Kashmiri Mongra Saffron</h4>
+              <p>Handpicked deep-red stigmas yielding unparalleled fragrance and regal color.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9 — DEAL / OFFER COUNTDOWN SECTION -->
+  <section class="section section-cream">
+    <div class="container">
+      <div style="background: linear-gradient(135deg, #181815 0%, #070707 100%); border: 1px solid var(--border-gold); border-radius: var(--border-radius-lg); padding: 50px; color: #FFF; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; box-shadow: var(--shadow-dark-card);" class="deal-box">
+        <div>
+          <span class="section-tag"><i class="fa-solid fa-tags"></i> Limited Time Offer</span>
+          <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.5rem); margin-bottom: 16px; color: #FFF;">
+            Spice Up Your Kitchen <br>
+            <span style="color: var(--color-gold-light);">Get Up To 25% OFF On Selected Blends</span>
+          </h2>
+          <p style="color: var(--text-light-muted); font-size: 0.98rem; line-height: 1.6; margin-bottom: 24px;">
+            Upgrade your daily cooking with our Master Spice Packs. Includes Salem Turmeric, Malabar Pepper, and Heritage Garam Masala.
+          </p>
+
+          <div style="display: flex; gap: 14px; margin-bottom: 30px;">
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-gold); border-radius: 8px; padding: 10px 16px; text-align: center; min-width: 65px;">
+              <div style="font-size: 1.4rem; font-weight: 800; color: var(--color-gold-light);">02</div>
+              <div style="font-size: 0.72rem; color: var(--text-light-muted); text-transform: uppercase;">Days</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-gold); border-radius: 8px; padding: 10px 16px; text-align: center; min-width: 65px;">
+              <div style="font-size: 1.4rem; font-weight: 800; color: var(--color-gold-light);">14</div>
+              <div style="font-size: 0.72rem; color: var(--text-light-muted); text-transform: uppercase;">Hours</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-gold); border-radius: 8px; padding: 10px 16px; text-align: center; min-width: 65px;">
+              <div style="font-size: 1.4rem; font-weight: 800; color: var(--color-gold-light);">45</div>
+              <div style="font-size: 0.72rem; color: var(--text-light-muted); text-transform: uppercase;">Mins</div>
+            </div>
+          </div>
+
+          <a href="shop.html?sale=true" class="btn btn-primary btn-lg"><i class="fa-solid fa-percent"></i> Claim Special Offer</a>
+        </div>
+
+        <div style="text-align: center;">
+          <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" alt="MDMA Special Offer" style="border-radius: 12px; border: 1px solid var(--border-gold);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10 — TESTIMONIALS -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Customer Love</span>
+        <h2 class="section-title">Words From Our Kitchen Family</h2>
+        <p class="section-subtitle">Real experiences from passionate home cooks, culinary enthusiasts, and authentic food lovers.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">"The aroma when opening MDMA's Garam Masala is truly extraordinary. You can immediately tell it's made with whole spices without cheap fillers. My biryani has reached restaurant quality!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Priya Sharma" class="author-avatar">
+            <div class="author-info">
+              <h5>Priya Sharma</h5>
+              <span>Home Chef &amp; Food Blogger</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">"Salem Turmeric has that deep golden hue and earthy sweetness that store-bought brands always lack. Knowing it is unadulterated gives me huge peace of mind for my family's daily cooking."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Rajesh K." class="author-avatar">
+            <div class="author-info">
+              <h5>Rajesh K.</h5>
+              <span>Verified Customer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">"The Malabar Tellicherry black peppercorns and Kashmiri saffron are in a league of their own. Ordering online was seamless, and the aroma-lock packaging kept everything delightfully fresh."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Ananya Roy" class="author-avatar">
+            <div class="author-info">
+              <h5>Ananya Roy</h5>
+              <span>Culinary Enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 11 — BLOG / KNOWLEDGE SECTION -->
+  <section class="section section-cream">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;">
+        <div>
+          <span class="section-tag" style="margin-bottom: 8px;">Culinary Journal</span>
+          <h2 class="section-title" style="margin-bottom: 0;">From Our Kitchen</h2>
+        </div>
+        <a href="blog.html" class="btn btn-outline-dark"><i class="fa-solid fa-book-open"></i> Read All Articles</a>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-card-media">
+            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80" alt="Turmeric Benefits" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> 15 Sep 2026</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-tag"></i> Wellness</span>
+            </div>
+            <h3 class="blog-card-title"><a href="blog-details.html">Health &amp; Culinary Uses of Salem Golden Turmeric</a></h3>
+            <p class="blog-card-desc">Uncovering the therapeutic power of active curcumin and traditional culinary pairing with black pepper.</p>
+            <a href="blog-details.html" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-media">
+            <img src="https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=800&q=80" alt="Whole vs Ground Spices" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> 10 Sep 2026</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-tag"></i> Spice Guide</span>
+            </div>
+            <h3 class="blog-card-title"><a href="blog-details.html">Whole Spices vs Ground Spices: When to Use Which?</a></h3>
+            <p class="blog-card-desc">Master the art of tempering (tadka), slow simmering with whole quills, and finishing dishes with fresh powders.</p>
+            <a href="blog-details.html" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-media">
+            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" alt="Spice Storage" class="blog-card-img">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span><i class="fa-regular fa-calendar"></i> 05 Sep 2026</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-tag"></i> Kitchen Tips</span>
+            </div>
+            <h3 class="blog-card-title"><a href="blog-details.html">How to Store Spices for Maximum Freshness &amp; Aroma</a></h3>
+            <p class="blog-card-desc">Essential storage rules to preserve volatile aromatic oils and shield natural spices from humidity and heat.</p>
+            <a href="blog-details.html" class="blog-read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 12 — NEWSLETTER -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="newsletter-box">
+        <span class="section-tag" style="color: var(--color-gold);"><i class="fa-solid fa-envelope-open-text"></i> Join The Inner Circle</span>
+        <h2 style="font-size: clamp(2rem, 3.5vw, 2.6rem); color: #FFF; margin-bottom: 14px;">Stay Connected With MDMA</h2>
+        <p style="color: var(--text-light-muted); max-width: 580px; margin: 0 auto; font-size: 1rem; line-height: 1.6;">
+          Receive exclusive product launches, authentic traditional recipes, chef blending tips, and private seasonal discounts directly to your inbox.
+        </p>
+
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-col footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices and Foods">
+          </a>
+          <p>MDMA Spices and Foods represents the gold standard of single-origin Indian spices, slow-ground masalas, and pristine pantry essentials crafted for taste and purity.</p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About MDMA</a></li>
+            <li><a href="shop.html"><i class="fa-solid fa-angle-right"></i> Shop Catalog</a></li>
+            <li><a href="category.html"><i class="fa-solid fa-angle-right"></i> Browse Categories</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Spice Journal</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Care -->
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="faq.html"><i class="fa-solid fa-angle-right"></i> FAQs &amp; Help</a></li>
+            <li><a href="order-tracking.html"><i class="fa-solid fa-angle-right"></i> Track My Order</a></li>
+            <li><a href="shipping-policy.html"><i class="fa-solid fa-angle-right"></i> Shipping Policy</a></li>
+            <li><a href="refund-policy.html"><i class="fa-solid fa-angle-right"></i> Returns &amp; Refunds</a></li>
+            <li><a href="terms-conditions.html"><i class="fa-solid fa-angle-right"></i> Terms &amp; Conditions</a></li>
+            <li><a href="privacy-policy.html"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="footer-col">
+          <h4>Contact MDMA</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Headquarters (Placeholder):</strong><br>
+              MDMA Spices &amp; Foods Estate,<br>
+              Connaught Place, New Delhi - 110001
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>+91 98765 43210 (Placeholder)</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>care@mdmaspices.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>© 2026 MDMA Spices and Foods. All Rights Reserved.</div>
+        <div class="footer-bottom-badges">
+          <div class="footer-badge-item"><i class="fa-solid fa-shield-check"></i> 100% Purity Guarantee</div>
+          <div class="footer-badge-item"><i class="fa-solid fa-truck"></i> Express Safe Shipping</div>
+          <div class="footer-badge-item"><i class="fa-solid fa-lock"></i> SSL Secured Payments</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    // Initialize Homepage Featured Products Grid
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('homepage-featured-grid');
+      if (grid && typeof getFeaturedProducts === 'function') {
+        const featured = getFeaturedProducts().slice(0, 8);
+        let html = '';
+        featured.forEach(product => {
+          html += renderProductCardHTML(product);
+        });
+        grid.innerHTML = html;
+      }
+    });
+  </script>
+</body>
+</html>

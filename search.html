@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Spices &amp; Foods — MDMA Spices and Foods</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left"><span class="top-bar-badge">Offer</span><span>Use code <strong>MDMA10</strong> for 10% OFF</span></div>
+      <div class="top-bar-center"><span>Pure • Natural • Healthy</span></div>
+      <div class="top-bar-right"><a href="order-tracking.html" class="top-bar-link"><i class="fa-solid fa-truck-fast"></i> Track Order</a></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="category.html" class="nav-link">Categories</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="header-action-btn open-search-modal"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="wishlist.html" class="header-action-btn"><i class="fa-regular fa-heart"></i><span class="action-badge" id="header-wishlist-badge" style="display:none;">0</span></a>
+        <a href="cart.html" class="header-action-btn"><i class="fa-solid fa-basket-shopping"></i><span class="action-badge" id="header-cart-badge" style="display:none;">0</span></a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices">
+      <button class="close-drawer-btn" id="close-mobile-drawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-angle-right"></i></a>
+      <a href="shop.html" class="mobile-nav-link">Shop All Spices <i class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html" class="mobile-nav-link">Categories <i class="fa-solid fa-angle-right"></i></a>
+      <a href="cart.html" class="mobile-nav-link">Cart <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-wrapper">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <span class="breadcrumb-item"><a href="index.html">Home</a></span>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem; color: #999;"></i>
+        <span class="breadcrumb-item active">Search Catalog</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Results Content -->
+  <section class="section section-light" style="padding-top: 40px;">
+    <div class="container">
+      <div style="max-width: 680px; margin: 0 auto 40px auto; text-align: center;">
+        <form action="search.html" method="GET" style="display: flex; gap: 10px; margin-bottom: 20px;">
+          <input type="text" name="q" id="search-page-input" placeholder="Search for turmeric, pepper, saffron, masalas..." class="form-control" style="padding: 14px 20px; font-size: 1.05rem; border-radius: 99px; border: 1.5px solid var(--border-gold);">
+          <button type="submit" class="btn btn-primary" style="padding: 14px 28px;"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        </form>
+        <h2 id="search-results-heading" style="font-size: 1.6rem; margin-bottom: 8px;">Search Results</h2>
+        <span id="search-results-count" style="font-size: 0.9rem; color: var(--text-dark-muted); font-weight: 600;">Loading...</span>
+      </div>
+
+      <div class="products-grid" id="search-results-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>© 2026 MDMA Spices and Foods. All Rights Reserved.</div>
+        <div class="footer-bottom-badges">
+          <a href="shop.html" style="color: var(--color-gold-light); font-size: 0.85rem;">Browse Shop</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

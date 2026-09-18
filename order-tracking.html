@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Order Status — MDMA Spices and Foods</title>
+  <meta name="description" content="Track your MDMA spice shipment in real-time. View live stages from quality packaging to your doorstep.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left"><span class="top-bar-badge">Live Tracking</span><span>Real-time courier updates</span></div>
+      <div class="top-bar-center"><span>Pure • Natural • Healthy</span></div>
+      <div class="top-bar-right"><a href="contact.html" class="top-bar-link"><i class="fa-solid fa-headset"></i> Support</a></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="category.html" class="nav-link">Categories</a>
+        <a href="about.html" class="nav-link">About Us</a>
+      </nav>
+      <div class="header-actions">
+        <a href="my-account.html" class="header-action-btn"><i class="fa-regular fa-user"></i></a>
+        <a href="cart.html" class="header-action-btn"><i class="fa-solid fa-basket-shopping"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-wrapper">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <span class="breadcrumb-item"><a href="index.html">Home</a></span>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem; color: #999;"></i>
+        <span class="breadcrumb-item active">Track Shipment</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tracking Content -->
+  <section class="section section-light" style="padding-top: 40px; min-height: 70vh;">
+    <div class="container">
+      <div style="max-width: 600px; margin: 0 auto 40px auto; text-align: center;">
+        <h1 style="font-size: 2.2rem; margin-bottom: 12px;">Track Your Shipment</h1>
+        <p style="color: var(--text-dark-muted); margin-bottom: 24px;">Enter your MDMA Order Reference ID (e.g. <strong>MDMA-947201</strong>) to check live status.</p>
+
+        <form action="order-tracking.html" method="GET" style="display: flex; gap: 10px;">
+          <input type="text" name="orderId" id="tracking-search-input" placeholder="e.g. MDMA-947201" class="form-control" style="padding: 14px 20px; font-size: 1.05rem; border-radius: 99px; text-transform: uppercase;">
+          <button type="submit" class="btn btn-primary" style="padding: 14px 28px;"><i class="fa-solid fa-location-crosshairs"></i> Track</button>
+        </form>
+      </div>
+
+      <!-- Tracking Timeline Card -->
+      <div style="background: var(--bg-dark-primary); color: #FFF; border: 1px solid var(--border-gold); border-radius: var(--border-radius-lg); padding: 40px; box-shadow: var(--shadow-dark-card); max-width: 900px; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-gold); padding-bottom: 20px; margin-bottom: 30px; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <span style="font-size: 0.8rem; color: var(--color-gold-light); text-transform: uppercase; letter-spacing: 0.08em;">Tracking Order</span>
+            <h2 style="font-size: 1.6rem; color: #FFF;" id="tracking-order-id">MDMA-947201</h2>
+          </div>
+          <div style="background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); padding: 6px 14px; border-radius: 99px; font-size: 0.85rem; color: var(--color-gold-light);">
+            <i class="fa-solid fa-truck-fast"></i> Express Safe Transit
+          </div>
+        </div>
+
+        <div id="tracking-order-details">
+          <!-- Rendered by js/account.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>© 2026 MDMA Spices and Foods. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

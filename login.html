@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Login — MDMA Spices and Foods</title>
+  <meta name="description" content="Log in to your MDMA Spices and Foods account to track orders and manage addresses.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body style="background: var(--bg-light-secondary);">
+
+  <!-- Minimal Header -->
+  <header style="background: #0A0A08; border-bottom: 1px solid var(--border-gold); padding: 18px 0; text-align: center;">
+    <a href="index.html"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices" style="height: 48px; margin: 0 auto;"></a>
+  </header>
+
+  <!-- Login Box -->
+  <section class="section" style="display: flex; align-items: center; justify-content: center; min-height: 80vh;">
+    <div class="container" style="max-width: 480px;">
+      <div style="background: var(--bg-light-card); border: 1px solid var(--border-gold); border-radius: var(--border-radius-lg); padding: 40px 36px; box-shadow: var(--shadow-md);">
+        <h2 style="font-size: 1.8rem; text-align: center; margin-bottom: 8px;">Welcome Back</h2>
+        <p style="text-align: center; color: var(--text-dark-muted); font-size: 0.92rem; margin-bottom: 28px;">Sign in to your MDMA customer account</p>
+
+        <form onsubmit="event.preventDefault(); showToast('success', 'Logged In', 'Welcome back to MDMA Spices!'); setTimeout(() => window.location.href='my-account.html', 1000);">
+          <div class="form-group">
+            <label class="form-label" for="login-email">Email Address</label>
+            <input type="email" id="login-email" class="form-control" placeholder="you@example.com" value="customer@mdmaspices.com" required>
+          </div>
+
+          <div class="form-group">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <label class="form-label" for="login-pass" style="margin-bottom: 0;">Password</label>
+              <a href="forgot-password.html" style="font-size: 0.8rem; color: var(--color-gold-dark); font-weight: 700;">Forgot Password?</a>
+            </div>
+            <input type="password" id="login-pass" class="form-control" placeholder="••••••••" value="password123" required>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px;">
+            <input type="checkbox" id="remember-me" checked>
+            <label for="remember-me" style="font-size: 0.85rem; color: var(--text-dark-muted); cursor: pointer;">Remember me for 30 days</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" style="font-size: 1rem;">
+            <i class="fa-solid fa-right-to-bracket"></i> Sign In
+          </button>
+        </form>
+
+        <!-- Social Login Placeholders -->
+        <div style="text-align: center; margin: 24px 0 16px 0; position: relative;">
+          <span style="background: var(--bg-light-card); padding: 0 12px; color: var(--text-dark-muted); font-size: 0.8rem; position: relative; z-index: 1;">OR SIGN IN WITH</span>
+          <div style="position: absolute; top: 50%; left: 0; width: 100%; height: 1px; background: var(--border-light); z-index: 0;"></div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px;">
+          <button class="btn btn-outline-dark btn-sm" onclick="showToast('info', 'Google Login', 'Simulated Google sign-in.')" style="border-radius: 8px;">
+            <i class="fa-brands fa-google" style="color: #EA4335;"></i> Google
+          </button>
+          <button class="btn btn-outline-dark btn-sm" onclick="showToast('info', 'Apple Login', 'Simulated Apple sign-in.')" style="border-radius: 8px;">
+            <i class="fa-brands fa-apple"></i> Apple
+          </button>
+        </div>
+
+        <div style="text-align: center; font-size: 0.9rem; color: var(--text-dark-muted);">
+          Don't have an account? <a href="register.html" style="color: var(--color-gold-dark); font-weight: 700;">Create Account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

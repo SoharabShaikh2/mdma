@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice &amp; Food Categories — MDMA Spices and Foods</title>
+  <meta name="description" content="Explore MDMA Spices &amp; Foods categorized collections: Ground Spices, Whole Spices, Blends, Organic Herbs, Dry Fruits, and Pantry Staples.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Special Offer</span>
+        <span>Use code <strong>MDMA10</strong> for 10% OFF</span>
+      </div>
+      <div class="top-bar-center">
+        <span>Pure • Natural • Healthy</span>
+        <span>|</span>
+        <span>Authentic Indian Spices</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="order-tracking.html" class="top-bar-link"><i class="fa-solid fa-truck-fast"></i> Track Order</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="category.html" class="nav-link active">Categories</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="header-action-btn open-search-modal"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="wishlist.html" class="header-action-btn"><i class="fa-regular fa-heart"></i><span class="action-badge" id="header-wishlist-badge" style="display:none;">0</span></a>
+        <a href="cart.html" class="header-action-btn"><i class="fa-solid fa-basket-shopping"></i><span class="action-badge" id="header-cart-badge" style="display:none;">0</span></a>
+        <a href="shop.html" class="header-cta-btn"><i class="fa-solid fa-bag-shopping"></i> Shop Now</a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices">
+      <button class="close-drawer-btn" id="close-mobile-drawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-angle-right"></i></a>
+      <a href="shop.html" class="mobile-nav-link">Shop All Spices <i class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html" class="mobile-nav-link active">Categories <i class="fa-solid fa-angle-right"></i></a>
+      <a href="cart.html" class="mobile-nav-link">My Cart <i class="fa-solid fa-angle-right"></i></a>
+      <a href="wishlist.html" class="mobile-nav-link">My Wishlist <i class="fa-solid fa-angle-right"></i></a>
+      <a href="my-account.html" class="mobile-nav-link">My Account <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-box">
+      <div class="search-form-header">
+        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search Products</h3>
+        <button class="close-search-btn" id="close-search-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form action="search.html" method="GET">
+        <div class="search-input-group">
+          <input type="text" name="q" id="header-search-input" placeholder="Search spices, herbs, oils...">
+          <button type="submit" class="search-submit-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </form>
+      <div class="search-live-results" id="search-live-results"></div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-wrapper">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <span class="breadcrumb-item"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></span>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem; color: #999;"></i>
+        <span class="breadcrumb-item active" id="category-breadcrumb-name">Categories</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Hero & Selector Tabs -->
+  <section class="section section-dark" style="padding: 50px 0; background: linear-gradient(180deg, #141412 0%, #070707 100%); border-bottom: 1px solid var(--border-gold);">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 30px;">
+        <span class="section-tag">Authentic Collections</span>
+        <h1 class="section-title" id="active-category-title">All Categories</h1>
+        <p class="section-subtitle" id="active-category-desc">Explore single-origin whole spices, aromatic ground powders, gourmet masalas, and pristine kitchen foods.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;" id="category-pills">
+        <button class="btn btn-sm btn-primary cat-pill" onclick="switchCategory('all', this)">All Categories</button>
+        <button class="btn btn-sm btn-outline-white cat-pill" onclick="switchCategory('ground-spices', this)">Ground Spices</button>
+        <button class="btn btn-sm btn-outline-white cat-pill" onclick="switchCategory('whole-spices', this)">Whole Spices</button>
+        <button class="btn btn-sm btn-outline-white cat-pill" onclick="switchCategory('signature-blends', this)">Signature Blends</button>
+        <button class="btn btn-sm btn-outline-white cat-pill" onclick="switchCategory('organic-herbs', this)">Organic Herbs</button>
+        <button class="btn btn-sm btn-outline-white cat-pill" onclick="switchCategory('dry-fruits-nuts', this)">Dry Fruits &amp; Nuts</button>
+        <button class="btn btn-sm btn-outline-white cat-pill" onclick="switchCategory('traditional-foods', this)">Traditional Foods</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Products Grid -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="products-grid" id="category-products-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="footer-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+          <p>MDMA Spices and Foods represents the royal Indian culinary heritage with uncompromised quality.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="about.html">About MDMA</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="order-tracking.html">Track Order</a></li>
+            <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            <li><a href="refund-policy.html">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact MDMA</h4>
+          <p style="color: var(--text-light-muted); font-size: 0.9rem;">Connaught Place, New Delhi (Placeholder)<br>care@mdmaspices.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>© 2026 MDMA Spices and Foods. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    function switchCategory(catSlug, buttonElement) {
+      if (buttonElement) {
+        document.querySelectorAll('.cat-pill').forEach(btn => {
+          btn.className = 'btn btn-sm btn-outline-white cat-pill';
+        });
+        buttonElement.className = 'btn btn-sm btn-primary cat-pill';
+      }
+
+      const titleEl = document.getElementById('active-category-title');
+      const descEl = document.getElementById('active-category-desc');
+      const breadcrumbName = document.getElementById('category-breadcrumb-name');
+      const grid = document.getElementById('category-products-grid');
+
+      const categoryObj = MDMA_CATEGORIES.find(c => c.slug === catSlug);
+
+      if (catSlug === 'all' || !categoryObj) {
+        titleEl.textContent = 'All Categories';
+        descEl.textContent = 'Explore single-origin whole spices, aromatic ground powders, gourmet masalas, and pristine kitchen foods.';
+        breadcrumbName.textContent = 'All Categories';
+      } else {
+        titleEl.textContent = categoryObj.name;
+        descEl.textContent = categoryObj.description;
+        breadcrumbName.textContent = categoryObj.name;
+      }
+
+      const products = getProductsByCategory(catSlug);
+      let html = '';
+      products.forEach(p => {
+        html += renderProductCardHTML(p);
+      });
+      grid.innerHTML = html;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const catParam = urlParams.get('cat') || 'all';
+      const targetBtn = Array.from(document.querySelectorAll('.cat-pill')).find(btn => 
+        btn.getAttribute('onclick')?.includes(`'${catParam}'`)
+      );
+      switchCategory(catParam, targetBtn);
+    });
+  </script>
+</body>
+</html>

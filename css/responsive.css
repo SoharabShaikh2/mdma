@@ -1,0 +1,313 @@
+/* ==========================================================================
+   MDMA SPICES AND FOODS — Responsive Breakpoints & Mobile Drawer
+   ========================================================================== */
+
+/* Mobile Navigation Drawer */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  max-width: 85vw;
+  height: 100vh;
+  background: #0D0D0B;
+  border-right: 1px solid var(--border-gold);
+  z-index: 2000;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform var(--transition-smooth);
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+}
+
+.mobile-nav-drawer.active {
+  transform: translateX(0);
+}
+
+.mobile-drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 1999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-smooth);
+}
+
+.mobile-drawer-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.mobile-drawer-header img {
+  height: 44px;
+}
+
+.close-drawer-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-gold);
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.mobile-nav-link {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: var(--color-gold-light);
+  padding-left: 6px;
+}
+
+.mobile-drawer-footer {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.mobile-contact-info {
+  font-size: 0.82rem;
+  color: var(--text-light-muted);
+  margin-bottom: 16px;
+}
+
+.mobile-contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .usp-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 30px;
+  }
+  
+  .showcase-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .showcase-center-media {
+    grid-column: span 2;
+    order: -1;
+  }
+  
+  .showcase-feature-item.reverse {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* 992px and below (Tablets) */
+@media (max-width: 992px) {
+  .nav-menu,
+  .header-cta-btn {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .top-bar-left {
+    display: none;
+  }
+  
+  .top-bar-content {
+    justify-content: center;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .blog-grid,
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .section-lg {
+    padding: 80px 0;
+  }
+  
+  .newsletter-box {
+    padding: 40px 24px;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+/* 768px and below (Large Mobile / Small Tablet) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+  
+  .header-logo img {
+    height: 42px;
+  }
+  
+  .usp-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .blog-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tracking-timeline {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .tracking-timeline::before {
+    top: 0;
+    left: 24px;
+    width: 4px;
+    height: 100%;
+  }
+  
+  .tracking-progress-bar {
+    top: 0;
+    left: 24px;
+    width: 4px;
+    height: 60%;
+  }
+  
+  .timeline-step {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 18px;
+  }
+  
+  .step-circle {
+    margin: 0;
+    flex-shrink: 0;
+  }
+  
+  /* Responsive Tables */
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .modal-card {
+    padding: 24px 18px;
+  }
+  
+  .showcase-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .showcase-center-media {
+    grid-column: span 1;
+  }
+}
+
+/* 480px and below (Small Mobile) */
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .usp-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 1.85rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.88rem;
+  }
+  
+  .top-bar {
+    display: none;
+  }
+}

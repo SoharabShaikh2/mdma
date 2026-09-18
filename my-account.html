@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard — MDMA Spices and Foods</title>
+  <meta name="description" content="Manage your MDMA Spices and Foods account, recent orders, and addresses.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left"><span class="top-bar-badge">Account</span><span>Welcome, Sakhil Mondal</span></div>
+      <div class="top-bar-center"><span>Pure • Natural • Healthy</span></div>
+      <div class="top-bar-right"><a href="order-tracking.html" class="top-bar-link"><i class="fa-solid fa-truck-fast"></i> Track Order</a></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="category.html" class="nav-link">Categories</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="wishlist.html" class="header-action-btn"><i class="fa-regular fa-heart"></i><span class="action-badge" id="header-wishlist-badge" style="display:none;">0</span></a>
+        <a href="cart.html" class="header-action-btn"><i class="fa-solid fa-basket-shopping"></i><span class="action-badge" id="header-cart-badge" style="display:none;">0</span></a>
+        <a href="my-account.html" class="header-action-btn" style="border-color: var(--color-gold);"><i class="fa-solid fa-user" style="color: var(--color-gold);"></i></a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices">
+      <button class="close-drawer-btn" id="close-mobile-drawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-angle-right"></i></a>
+      <a href="shop.html" class="mobile-nav-link">Shop Spices <i class="fa-solid fa-angle-right"></i></a>
+      <a href="my-account.html" class="mobile-nav-link active">My Account <i class="fa-solid fa-angle-right"></i></a>
+      <a href="orders.html" class="mobile-nav-link">My Orders <i class="fa-solid fa-angle-right"></i></a>
+      <a href="wishlist.html" class="mobile-nav-link">Wishlist <i class="fa-solid fa-angle-right"></i></a>
+      <a href="cart.html" class="mobile-nav-link">Cart <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-wrapper">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <span class="breadcrumb-item"><a href="index.html">Home</a></span>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem; color: #999;"></i>
+        <span class="breadcrumb-item active">My Account Dashboard</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Account Dashboard Section -->
+  <section class="section section-light" style="padding-top: 40px; min-height: 70vh;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 280px 1fr; gap: 36px;" class="account-layout">
+        <!-- Sidebar Navigation -->
+        <aside style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 24px; height: fit-content;">
+          <div style="text-align: center; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid var(--border-light);">
+            <div style="width: 70px; height: 70px; border-radius: 50%; background: var(--bg-dark-primary); color: var(--color-gold); border: 2px solid var(--border-gold); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 12px auto;">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 4px;">Sakhil Mondal</h3>
+            <span style="font-size: 0.82rem; color: var(--text-dark-muted);">customer@mdmaspices.com</span>
+          </div>
+
+          <ul style="display: flex; flex-direction: column; gap: 6px;">
+            <li>
+              <a href="my-account.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 8px; background: rgba(212,175,55,0.12); color: var(--color-gold-dark); font-weight: 700;">
+                <i class="fa-solid fa-gauge-high"></i> Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="orders.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 8px; color: var(--text-dark); transition: all 0.2s;">
+                <i class="fa-solid fa-boxes-stacked"></i> My Orders
+              </a>
+            </li>
+            <li>
+              <a href="wishlist.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 8px; color: var(--text-dark); transition: all 0.2s;">
+                <i class="fa-solid fa-heart"></i> Wishlist
+              </a>
+            </li>
+            <li>
+              <a href="order-tracking.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 8px; color: var(--text-dark); transition: all 0.2s;">
+                <i class="fa-solid fa-truck-fast"></i> Track Order
+              </a>
+            </li>
+            <li>
+              <a href="login.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 8px; color: #C0392B; transition: all 0.2s;" onclick="showToast('info', 'Logged Out', 'You have been logged out.');">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Dashboard Content -->
+        <div>
+          <h2 style="font-size: 1.8rem; margin-bottom: 24px;">Account Overview</h2>
+
+          <!-- Stats Cards -->
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 36px;" class="stats-grid">
+            <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 20px; text-align: center; box-shadow: var(--shadow-sm);">
+              <div style="font-size: 2rem; font-weight: 800; color: var(--color-gold-dark);" id="dash-total-orders">2</div>
+              <div style="font-size: 0.85rem; color: var(--text-dark-muted);">Total Orders</div>
+            </div>
+            <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 20px; text-align: center; box-shadow: var(--shadow-sm);">
+              <div style="font-size: 2rem; font-weight: 800; color: #E65100;" id="dash-pending-orders">1</div>
+              <div style="font-size: 0.85rem; color: var(--text-dark-muted);">In Transit</div>
+            </div>
+            <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 20px; text-align: center; box-shadow: var(--shadow-sm);">
+              <div style="font-size: 2rem; font-weight: 800; color: #2D6A4F;" id="dash-completed-orders">1</div>
+              <div style="font-size: 0.85rem; color: var(--text-dark-muted);">Delivered</div>
+            </div>
+            <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 20px; text-align: center; box-shadow: var(--shadow-sm);">
+              <div style="font-size: 2rem; font-weight: 800; color: var(--color-red);" id="dash-wishlist-count">0</div>
+              <div style="font-size: 0.85rem; color: var(--text-dark-muted);">Wishlist Items</div>
+            </div>
+          </div>
+
+          <!-- Recent Orders Recap -->
+          <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 28px; margin-bottom: 30px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+              <h3 style="font-size: 1.25rem;">Recent Orders</h3>
+              <a href="orders.html" style="font-size: 0.88rem; color: var(--color-gold-dark); font-weight: 700;">View All Orders <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="table-responsive">
+              <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.92rem;">
+                <thead>
+                  <tr style="border-bottom: 2px solid var(--border-light); font-size: 0.82rem; color: var(--text-dark-muted); text-transform: uppercase;">
+                    <th style="padding: 10px;">Order ID</th>
+                    <th style="padding: 10px;">Date</th>
+                    <th style="padding: 10px;">Items</th>
+                    <th style="padding: 10px;">Total</th>
+                    <th style="padding: 10px;">Status</th>
+                    <th style="padding: 10px; text-align: right;">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="dash-recent-orders-table">
+                  <!-- Rendered by js/account.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Saved Address Preview -->
+          <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 28px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 16px;">Primary Delivery Address</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-dark-muted); margin-bottom: 16px;">
+              <strong>Sakhil Mondal</strong><br>
+              14B Royal Palms, Connaught Place<br>
+              New Delhi, Delhi - 110001<br>
+              Phone: +91 98765 43210
+            </p>
+            <button class="btn btn-outline-dark btn-sm" onclick="showToast('info', 'Address Management', 'Editable address form placeholder.')"><i class="fa-solid fa-pen"></i> Edit Address</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>© 2026 MDMA Spices and Foods. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
