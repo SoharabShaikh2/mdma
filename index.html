@@ -406,7 +406,341 @@
         </div>
 
         <div class="products-grid" id="homepage-dehydrated-foods-grid">
-          <!-- Dynamically rendered via JS with client assets -->
+          <!-- 1. Apple -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="240" data-rating="4.9">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-apple.jpeg" alt="Crispy Dehydrated Apple Rings"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-organic">100% Natural</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="101" onclick="toggleWishlist(101)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(101)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(101)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=101" class="product-title">Crispy Dehydrated Apple Rings</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(82)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹240</span>
+                <span class="old-price">₹290</span>
+                <span class="discount-badge">17% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(101, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Dragon Fruit -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="320" data-rating="5.0">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-dragon-fruit.jpeg" alt="Exotic Dehydrated Dragon Fruit Slices"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">Bestseller</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="102" onclick="toggleWishlist(102)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(102)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(102)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=102" class="product-title">Exotic Dehydrated Dragon Fruit Slices</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(114)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹320</span>
+                <span class="old-price">₹380</span>
+                <span class="discount-badge">16% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(102, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Lime -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="190" data-rating="4.8">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-lime.jpeg" alt="Sun-Cured Dehydrated Lime Wheels"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-sale">Zesty Pick</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="103" onclick="toggleWishlist(103)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(103)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(103)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=103" class="product-title">Sun-Cured Dehydrated Lime Wheels</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-count">(56)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹190</span>
+                <span class="old-price">₹230</span>
+                <span class="discount-badge">17% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(103, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Mango -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="280" data-rating="4.9">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-mango.jpeg" alt="Royal Dehydrated Alphonso Mango Slices"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">Chef's Choice</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="104" onclick="toggleWishlist(104)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(104)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(104)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=104" class="product-title">Royal Dehydrated Alphonso Mango Slices</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(160)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹280</span>
+                <span class="old-price">₹340</span>
+                <span class="discount-badge">18% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(104, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Orange -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="220" data-rating="4.8">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-orange.jpeg" alt="Sweet Dehydrated Orange Slices"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-organic">Vitamin C Rich</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="105" onclick="toggleWishlist(105)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(105)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(105)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=105" class="product-title">Sweet Dehydrated Orange Slices</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-count">(74)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹220</span>
+                <span class="old-price">₹260</span>
+                <span class="discount-badge">15% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(105, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Papaya -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="210" data-rating="4.7">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-papaya.jpeg" alt="Sun-Dried Dehydrated Papaya Chunks"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-organic">Digestive Care</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="106" onclick="toggleWishlist(106)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(106)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(106)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=106" class="product-title">Sun-Dried Dehydrated Papaya Chunks</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-count">(49)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹210</span>
+                <span class="old-price">₹250</span>
+                <span class="discount-badge">16% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(106, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Pear -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="230" data-rating="4.8">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-pear.jpeg" alt="Crisp Dehydrated Pear Slices" class="product-img"
+                loading="lazy">
+              <span class="product-badge badge-organic">Natural Snack</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="107" onclick="toggleWishlist(107)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(107)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(107)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=107" class="product-title">Crisp Dehydrated Pear Slices</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-count">(63)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹230</span>
+                <span class="old-price">₹270</span>
+                <span class="discount-badge">15% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(107, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Pineapple -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="260" data-rating="4.9">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-pineapple.jpeg" alt="Tropical Dehydrated Pineapple Rings"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">Tropical Pick</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="108" onclick="toggleWishlist(108)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(108)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(108)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=108" class="product-title">Tropical Dehydrated Pineapple Rings</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(128)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹260</span>
+                <span class="old-price">₹310</span>
+                <span class="discount-badge">16% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(108, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -429,7 +763,257 @@
         </div>
 
         <div class="products-grid" id="homepage-dehydrated-masalas-grid">
-          <!-- Dynamically rendered via JS -->
+          <!-- 1. Garam Masala -->
+          <div class="product-card" data-category="dehydrated-masala" data-price="240" data-rating="4.9">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
+                alt="Dehydrated Royal Heritage Garam Masala" class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">Bestseller</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="201" onclick="toggleWishlist(201)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(201)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(201)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Masalas</div>
+              <a href="product.html?id=201" class="product-title">Dehydrated Royal Heritage Garam Masala</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(188)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹240</span>
+                <span class="old-price">₹290</span>
+                <span class="discount-badge">17% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(201, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Biryani Masala -->
+          <div class="product-card" data-category="dehydrated-masala" data-price="260" data-rating="5.0">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+                alt="Dehydrated Shahi Dum Biryani Masala" class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">Royal Blend</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="202" onclick="toggleWishlist(202)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(202)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(202)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Masalas</div>
+              <a href="product.html?id=202" class="product-title">Dehydrated Shahi Dum Biryani Masala</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(145)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹260</span>
+                <span class="old-price">₹310</span>
+                <span class="discount-badge">16% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(202, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Chai Masala -->
+          <div class="product-card" data-category="dehydrated-masala" data-price="195" data-rating="4.9">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80"
+                alt="Dehydrated Royal Chai Spice Masala" class="product-img" loading="lazy">
+              <span class="product-badge badge-organic">Immunity</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="203" onclick="toggleWishlist(203)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(203)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(203)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Masalas</div>
+              <a href="product.html?id=203" class="product-title">Dehydrated Royal Chai Spice Masala</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(110)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹195</span>
+                <span class="old-price">₹230</span>
+                <span class="discount-badge">15% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(203, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Kasuri Methi -->
+          <div class="product-card" data-category="dehydrated-masala" data-price="180" data-rating="4.8">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80"
+                alt="Dehydrated Kasuri Methi &amp; Herb Masala" class="product-img" loading="lazy">
+              <span class="product-badge badge-organic">Farm Fresh</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="204" onclick="toggleWishlist(204)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(204)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(204)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Masalas</div>
+              <a href="product.html?id=204" class="product-title">Dehydrated Kasuri Methi &amp; Herb Masala</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-count">(75)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹180</span>
+                <span class="old-price">₹220</span>
+                <span class="discount-badge">18% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(204, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Sambhar Masala -->
+          <div class="product-card" data-category="dehydrated-masala" data-price="190" data-rating="4.8">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
+                alt="Dehydrated Sambhar &amp; Rasam Masala" class="product-img" loading="lazy">
+              <span class="product-badge badge-sale">Traditional</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="205" onclick="toggleWishlist(205)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(205)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(205)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Masalas</div>
+              <a href="product.html?id=205" class="product-title">Dehydrated Sambhar &amp; Rasam Masala</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-count">(64)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹190</span>
+                <span class="old-price">₹230</span>
+                <span class="discount-badge">17% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(205, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Kitchen King -->
+          <div class="product-card" data-category="dehydrated-masala" data-price="210" data-rating="4.9">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80"
+                alt="Dehydrated Kitchen King Gourmet Masala" class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">All-in-One</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="206" onclick="toggleWishlist(206)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(206)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(206)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Masalas</div>
+              <a href="product.html?id=206" class="product-title">Dehydrated Kitchen King Gourmet Masala</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(92)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹210</span>
+                <span class="old-price">₹250</span>
+                <span class="discount-badge">16% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(206, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -450,7 +1034,299 @@
         </div>
 
         <div class="products-grid" id="homepage-oils-spices-grid">
-          <!-- Dynamically rendered via JS -->
+          <!-- 1. Mustard Oil -->
+          <div class="product-card" data-category="pure-oil" data-price="240" data-rating="4.9">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
+                alt="Cold-Pressed Kachi Ghani Mustard Oil" class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">Wood Pressed</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="301" onclick="toggleWishlist(301)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(301)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(301)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Pure Cold-Pressed Oils</div>
+              <a href="product.html?id=301" class="product-title">Cold-Pressed Kachi Ghani Mustard Oil</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(184)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹240</span>
+                <span class="old-price">₹290</span>
+                <span class="discount-badge">17% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(301, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Sesame Oil -->
+          <div class="product-card" data-category="pure-oil" data-price="340" data-rating="4.9">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                alt="Traditional Wood-Pressed Sesame (Til) Oil" class="product-img" loading="lazy">
+              <span class="product-badge badge-organic">Kolhu Extracted</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="302" onclick="toggleWishlist(302)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(302)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(302)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Pure Cold-Pressed Oils</div>
+              <a href="product.html?id=302" class="product-title">Traditional Wood-Pressed Sesame (Til) Oil</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(96)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹340</span>
+                <span class="old-price">₹400</span>
+                <span class="discount-badge">15% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(302, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Coconut Oil -->
+          <div class="product-card" data-category="pure-oil" data-price="360" data-rating="4.8">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=800&q=80"
+                alt="Pure Cold-Pressed Extra Virgin Coconut Oil" class="product-img" loading="lazy">
+              <span class="product-badge badge-organic">Raw Virgin</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="303" onclick="toggleWishlist(303)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(303)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(303)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Pure Cold-Pressed Oils</div>
+              <a href="product.html?id=303" class="product-title">Pure Cold-Pressed Extra Virgin Coconut Oil</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-count">(88)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹360</span>
+                <span class="old-price">₹420</span>
+                <span class="discount-badge">14% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(303, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Groundnut Oil -->
+          <div class="product-card" data-category="pure-oil" data-price="280" data-rating="4.8">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
+                alt="Wood-Pressed Golden Groundnut Oil" class="product-img" loading="lazy">
+              <span class="product-badge badge-sale">Unrefined</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="304" onclick="toggleWishlist(304)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(304)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(304)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Pure Cold-Pressed Oils</div>
+              <a href="product.html?id=304" class="product-title">Wood-Pressed Golden Groundnut Oil</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-count">(72)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹280</span>
+                <span class="old-price">₹330</span>
+                <span class="discount-badge">15% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(304, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Salem Turmeric -->
+          <div class="product-card" data-category="heritage-spices" data-price="180" data-rating="4.9">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80"
+                alt="Pure Salem Turmeric Powder" class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">High Curcumin</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="401" onclick="toggleWishlist(401)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(401)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(401)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Heritage Spices</div>
+              <a href="product.html?id=401" class="product-title">Pure Salem Turmeric Powder</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(142)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹180</span>
+                <span class="old-price">₹220</span>
+                <span class="discount-badge">18% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(401, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Malabar Pepper -->
+          <div class="product-card" data-category="heritage-spices" data-price="380" data-rating="5.0">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=800&q=80"
+                alt="Malabar Bold Black Pepper" class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">Tellicherry</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="402" onclick="toggleWishlist(402)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(402)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(402)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Heritage Spices</div>
+              <a href="product.html?id=402" class="product-title">Malabar Bold Black Pepper</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(210)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹380</span>
+                <span class="old-price">₹450</span>
+                <span class="discount-badge">16% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(402, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Green Cardamom -->
+          <div class="product-card" data-category="heritage-spices" data-price="650" data-rating="4.9">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
+                alt="Royal Idukki Green Cardamom (8mm+)" class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">8mm+ Giant</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="403" onclick="toggleWishlist(403)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(403)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(403)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Heritage Spices</div>
+              <a href="product.html?id=403" class="product-title">Royal Idukki Green Cardamom (8mm+)</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(175)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹650</span>
+                <span class="old-price">₹780</span>
+                <span class="discount-badge">17% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(403, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -946,45 +1822,6 @@
   <script src="js/checkout.js"></script>
   <script src="js/account.js"></script>
   <script src="js/main.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // 1. Render Dehydrated Foods (all 8 products with authentic client assets)
-      const dehydratedFoodsGrid = document.getElementById('homepage-dehydrated-foods-grid');
-      if (dehydratedFoodsGrid && typeof getProductsByCategory === 'function' && typeof renderProductCardHTML === 'function') {
-        const dehydratedFoods = getProductsByCategory('dehydrated-foods');
-        let html = '';
-        dehydratedFoods.forEach(product => {
-          html += renderProductCardHTML(product);
-        });
-        dehydratedFoodsGrid.innerHTML = html;
-      }
-
-      // 2. Render Dehydrated Masalas
-      const dehydratedMasalasGrid = document.getElementById('homepage-dehydrated-masalas-grid');
-      if (dehydratedMasalasGrid && typeof getProductsByCategory === 'function' && typeof renderProductCardHTML === 'function') {
-        const masalas = getProductsByCategory('dehydrated-masala');
-        let html = '';
-        masalas.forEach(product => {
-          html += renderProductCardHTML(product);
-        });
-        dehydratedMasalasGrid.innerHTML = html;
-      }
-
-      // 3. Render Pure Cold-Pressed Oils & Heritage Spices
-      const oilsSpicesGrid = document.getElementById('homepage-oils-spices-grid');
-      if (oilsSpicesGrid && typeof getProductsByCategory === 'function' && typeof renderProductCardHTML === 'function') {
-        const oils = getProductsByCategory('pure-oil');
-        const spices = getProductsByCategory('heritage-spices');
-        const combined = [...oils, ...spices].slice(0, 8);
-        let html = '';
-        combined.forEach(product => {
-          html += renderProductCardHTML(product);
-        });
-        oilsSpicesGrid.innerHTML = html;
-      }
-    });
-  </script>
 </body>
 
 </html>

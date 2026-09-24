@@ -1236,3 +1236,7 @@
   color: #070707;
   border-color: var(--color-gold);
 }
+
+.usp-card h4 {
+  color: #d4af37;
+}

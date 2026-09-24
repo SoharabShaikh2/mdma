@@ -11,57 +11,57 @@
   --color-gold-light: #F4E29C;
   --color-gold-dark: #A67C1E;
   --color-gold-glow: rgba(212, 175, 55, 0.25);
-  
+
   --color-red: #9E2A2B;
   --color-red-light: #C0392B;
   --color-red-dark: #660708;
-  
+
   --color-green: #1E4D2B;
   --color-green-light: #2D6A4F;
   --color-green-dark: #0D2818;
   --color-green-badge: #E8F5E9;
-  
+
   /* Dark Luxe Backgrounds */
   --bg-dark-primary: #070707;
   --bg-dark-secondary: #121210;
   --bg-dark-card: #181815;
   --bg-dark-elevated: #22221E;
-  
+
   /* Light Warm Cream Backgrounds */
   --bg-light-primary: #FAF7F2;
   --bg-light-secondary: #F3ECE2;
   --bg-light-card: #FFFFFF;
   --bg-light-cream: #FFFDF9;
-  
+
   /* Text Colors */
   --text-light: #F9F7F2;
   --text-light-muted: #B8B3A8;
   --text-dark: #1A1815;
   --text-dark-muted: #6B655D;
   --text-gold: #D4AF37;
-  
+
   /* Borders */
   --border-gold: rgba(212, 175, 55, 0.28);
   --border-gold-strong: rgba(212, 175, 55, 0.6);
   --border-dark: rgba(255, 255, 255, 0.08);
   --border-light: rgba(0, 0, 0, 0.08);
-  
+
   /* Typography */
   --font-serif: 'Playfair Display', 'Cinzel', Georgia, serif;
   --font-display: 'Cinzel', 'Playfair Display', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  
+
   /* Transitions & Shadows */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  
+
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 14px 36px rgba(0, 0, 0, 0.15);
   --shadow-gold: 0 8px 30px rgba(212, 175, 55, 0.2);
   --shadow-dark-card: 0 10px 30px rgba(0, 0, 0, 0.45);
-  
+
   /* Global Layout Variables */
   --container-max: 1360px;
   --container-pad: 24px;
@@ -77,7 +77,9 @@
    Base Reset & Normalization (Zero Horizontal Scroll Guarantee)
    ========================================================================== */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -106,14 +108,18 @@ body {
   flex-direction: column;
 }
 
-main, .main-content {
+main,
+.main-content {
   flex-grow: 1;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
 
-img, svg, picture, video {
+img,
+svg,
+picture,
+video {
   display: block;
   max-width: 100%;
   height: auto;
@@ -125,7 +131,10 @@ a {
   transition: color var(--transition-fast);
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: inherit;
   border: none;
@@ -139,12 +148,18 @@ button {
   cursor: pointer;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
 /* Typography Utilities */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   font-weight: 700;
   line-height: 1.25;
@@ -153,14 +168,37 @@ h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-.font-display { font-family: var(--font-display); }
-.text-gold { color: var(--color-gold) !important; }
-.text-gold-light { color: var(--color-gold-light) !important; }
-.text-red { color: var(--color-red) !important; }
-.text-green { color: var(--color-green) !important; }
-.text-muted { color: var(--text-dark-muted) !important; }
-.text-light-muted { color: var(--text-light-muted) !important; }
-.text-white { color: #FFFFFF !important; }
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-gold {
+  color: var(--color-gold) !important;
+}
+
+.text-gold-light {
+  color: var(--color-gold-light) !important;
+}
+
+.text-red {
+  color: var(--color-red) !important;
+}
+
+.text-green {
+  color: var(--color-green) !important;
+}
+
+.text-muted {
+  color: var(--text-dark-muted) !important;
+}
+
+.text-light-muted {
+  color: var(--text-light-muted) !important;
+}
+
+.text-white {
+  color: #FFFFFF !important;
+}
 
 /* Responsive Container System */
 .container {
@@ -261,7 +299,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 14px;
 }
 
-.section-dark .section-title {
+.section-dark .section-title,
+.section-dark-secondary .section-title {
   color: var(--text-light);
 }
 
@@ -271,7 +310,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.65;
 }
 
-.section-dark .section-subtitle {
+.section-dark .section-subtitle,
+.section-dark-secondary .section-subtitle {
   color: var(--text-light-muted);
 }
 
@@ -952,6 +992,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transform: translateX(100px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -963,9 +1004,12 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 @keyframes floatSpice {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     transform: translateY(-10px) rotate(3deg);
   }
@@ -991,7 +1035,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
