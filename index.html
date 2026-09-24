@@ -55,18 +55,14 @@
           <a href="category.html" class="nav-link">Categories <i class="fa-solid fa-chevron-down"
               style="font-size: 0.72rem; margin-left: 2px;"></i></a>
           <div class="nav-dropdown">
-            <a href="category.html?cat=ground-spices" class="dropdown-link">Ground Spices <i
-                class="fa-solid fa-pepper-hot"></i></a>
-            <a href="category.html?cat=whole-spices" class="dropdown-link">Whole Spices <i
-                class="fa-solid fa-seedling"></i></a>
-            <a href="category.html?cat=signature-blends" class="dropdown-link">Signature Blends <i
+            <a href="category.html?cat=dehydrated-foods" class="dropdown-link">Dehydrated Foods <i
+                class="fa-solid fa-apple-whole"></i></a>
+            <a href="category.html?cat=dehydrated-masala" class="dropdown-link">Dehydrated Masalas <i
                 class="fa-solid fa-mortar-pestle"></i></a>
-            <a href="category.html?cat=organic-herbs" class="dropdown-link">Organic Herbs <i
-                class="fa-solid fa-leaf"></i></a>
-            <a href="category.html?cat=dry-fruits-nuts" class="dropdown-link">Dry Fruits &amp; Nuts <i
-                class="fa-solid fa-bowl-rice"></i></a>
-            <a href="category.html?cat=traditional-foods" class="dropdown-link">Traditional Foods <i
+            <a href="category.html?cat=pure-oil" class="dropdown-link">Pure Cold-Pressed Oils <i
                 class="fa-solid fa-bottle-droplet"></i></a>
+            <a href="category.html?cat=heritage-spices" class="dropdown-link">Heritage Spices &amp; Seasonings <i
+                class="fa-solid fa-pepper-hot"></i></a>
           </div>
         </div>
         <a href="about.html" class="nav-link">About Us</a>
@@ -121,22 +117,29 @@
     </div>
     <div class="mobile-nav-list">
       <a href="index.html" class="mobile-nav-link active">Home <i class="fa-solid fa-angle-right"></i></a>
-      <a href="shop.html" class="mobile-nav-link">Shop All Spices <i class="fa-solid fa-angle-right"></i></a>
-      <a href="category.html" class="mobile-nav-link">Categories <i class="fa-solid fa-angle-right"></i></a>
+      <a href="shop.html" class="mobile-nav-link">Shop All Catalog <i class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html?cat=dehydrated-foods" class="mobile-nav-link">Dehydrated Foods <i
+          class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html?cat=dehydrated-masala" class="mobile-nav-link">Dehydrated Masalas <i
+          class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html?cat=pure-oil" class="mobile-nav-link">Pure Cold-Pressed Oils <i
+          class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html?cat=heritage-spices" class="mobile-nav-link">Heritage Spices &amp; Seasonings <i
+          class="fa-solid fa-angle-right"></i></a>
       <a href="about.html" class="mobile-nav-link">About MDMA <i class="fa-solid fa-angle-right"></i></a>
+      <a href="blog.html" class="mobile-nav-link">Spice Journal <i class="fa-solid fa-angle-right"></i></a>
       <a href="wishlist.html" class="mobile-nav-link">My Wishlist <i class="fa-solid fa-angle-right"></i></a>
       <a href="cart.html" class="mobile-nav-link">My Cart <i class="fa-solid fa-angle-right"></i></a>
       <a href="my-account.html" class="mobile-nav-link">My Account <i class="fa-solid fa-angle-right"></i></a>
       <a href="order-tracking.html" class="mobile-nav-link">Track Order <i class="fa-solid fa-angle-right"></i></a>
-      <a href="blog.html" class="mobile-nav-link">Spice Journal <i class="fa-solid fa-angle-right"></i></a>
       <a href="contact.html" class="mobile-nav-link">Contact Support <i class="fa-solid fa-angle-right"></i></a>
     </div>
     <div class="mobile-drawer-footer">
       <div class="mobile-contact-info">
-        <p><i class="fa-solid fa-phone" style="color: var(--color-gold);"></i> +91 98765 43210 (Placeholder)</p>
+        <p><i class="fa-solid fa-phone" style="color: var(--color-gold);"></i> +91 98765 43210 (Support)</p>
         <p><i class="fa-solid fa-envelope" style="color: var(--color-gold);"></i> care@mdmaspices.com</p>
       </div>
-      <a href="shop.html" class="btn btn-primary btn-block"><i class="fa-solid fa-store"></i> Shop Now</a>
+      <a href="shop.html" class="btn btn-primary btn-block"><i class="fa-solid fa-bag-shopping"></i> Shop Now</a>
     </div>
   </div>
 
@@ -159,11 +162,11 @@
       </form>
       <div class="search-quick-tags">
         <span>Popular:</span>
+        <a href="search.html?q=Dragon+Fruit" class="tag-btn">Dragon Fruit</a>
+        <a href="search.html?q=Mango" class="tag-btn">Dehydrated Mango</a>
+        <a href="search.html?q=Garam+Masala" class="tag-btn">Dehydrated Garam Masala</a>
+        <a href="search.html?q=Mustard+Oil" class="tag-btn">Cold-Pressed Mustard Oil</a>
         <a href="search.html?q=Turmeric" class="tag-btn">Salem Turmeric</a>
-        <a href="search.html?q=Cardamom" class="tag-btn">Idukki Cardamom</a>
-        <a href="search.html?q=Garam+Masala" class="tag-btn">Heritage Garam Masala</a>
-        <a href="search.html?q=Pepper" class="tag-btn">Tellicherry Pepper</a>
-        <a href="search.html?q=Saffron" class="tag-btn">Kashmiri Saffron</a>
       </div>
       <div class="search-live-results" id="search-live-results"></div>
     </div>
@@ -316,68 +319,69 @@
       </div>
     </section>
 
-    <!-- SECTION 3 — CATEGORY SECTION -->
+    <!-- SECTION 3 — CURATED COLLECTIONS / CATEGORIES -->
     <section class="section section-light" id="categories-section">
       <div class="container">
         <div class="section-header">
           <span class="section-tag">Curated Collections</span>
-          <h2 class="section-title">Explore Our Categories</h2>
-          <p class="section-subtitle">From aromatic slow-ground powders to sun-dried whole spices and handcrafted
-            masalas, experience the essence of genuine Indian gastronomy.</p>
+          <h2 class="section-title">Explore Our 4 Signature Categories</h2>
+          <p class="section-subtitle">Discover nutrient-dense dehydrated foods, sun-crafted dehydrated masalas, virgin
+            cold-pressed oils, and single-origin heritage spices.</p>
         </div>
 
         <div class="category-grid">
-          <!-- Ground Spices -->
-          <a href="category.html?cat=ground-spices" class="category-card">
-            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80"
-              alt="Ground Spices" class="category-card-bg">
+          <!-- Category 1: Dehydrated Foods (Client Images) -->
+          <a href="category.html?cat=dehydrated-foods" class="category-card">
+            <img src="assets/clientassets/dehydrated-dragon-fruit.jpeg"
+              alt="Dehydrated Foods &amp; Gourmet Fruit Crisps" class="category-card-bg">
             <div class="category-card-overlay"></div>
             <div class="category-card-content">
-              <span class="category-card-count">4 Products Available</span>
-              <h3 class="category-card-title">Ground Spices</h3>
-              <p class="category-card-desc">High-curcumin turmeric, stemless chilli, roasted cumin &amp; coriander
-                powders.</p>
+              <span class="category-card-count">8 Products Available</span>
+              <h3 class="category-card-title">Dehydrated Foods</h3>
+              <p class="category-card-desc">100% natural fruit crisps: dragon fruit, mango, apple, pineapple, orange,
+                lime, pear &amp; papaya.</p>
               <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </a>
 
-          <!-- Whole Spices -->
-          <a href="category.html?cat=whole-spices" class="category-card">
-            <img src="https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=800&q=80"
-              alt="Whole Spices" class="category-card-bg">
-            <div class="category-card-overlay"></div>
-            <div class="category-card-content">
-              <span class="category-card-count">4 Products Available</span>
-              <h3 class="category-card-title">Whole Spices</h3>
-              <p class="category-card-desc">Malabar Tellicherry black pepper, 8mm+ Idukki green cardamom &amp; Ceylon
-                quills.</p>
-              <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
-            </div>
-          </a>
-
-          <!-- Signature Blends -->
-          <a href="category.html?cat=signature-blends" class="category-card">
+          <!-- Category 2: Dehydrated Masalas -->
+          <a href="category.html?cat=dehydrated-masala" class="category-card">
             <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
-              alt="Signature Blends" class="category-card-bg">
+              alt="Dehydrated Masalas" class="category-card-bg">
             <div class="category-card-overlay"></div>
             <div class="category-card-content">
-              <span class="category-card-count">4 Products Available</span>
-              <h3 class="category-card-title">Signature Blends</h3>
-              <p class="category-card-desc">Secret 18-spice Royal Garam Masala, Dum Biryani Masala &amp; Chai Spices.
-              </p>
+              <span class="category-card-count">6 Products Available</span>
+              <h3 class="category-card-title">Dehydrated Masalas</h3>
+              <p class="category-card-desc">Heritage Garam Masala, Shahi Biryani, Royal Chai Spice &amp; Kasuri Methi
+                herb blends.</p>
               <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </a>
 
-          <!-- Organic Herbs & Saffron -->
-          <a href="category.html?cat=organic-herbs" class="category-card">
-            <img src="https://images.unsplash.com/photo-1608797178974-15b35a61deda?auto=format&fit=crop&w=800&q=80"
-              alt="Organic Herbs" class="category-card-bg">
+          <!-- Category 3: Pure Cold-Pressed Oils -->
+          <a href="category.html?cat=pure-oil" class="category-card">
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
+              alt="Pure Cold-Pressed Oils" class="category-card-bg">
             <div class="category-card-overlay"></div>
             <div class="category-card-content">
-              <span class="category-card-count">2 Products Available</span>
-              <h3 class="category-card-title">Organic Herbs &amp; Saffron</h3>
-              <p class="category-card-desc">Grade A1 Pampore Kashmiri Saffron and fragrant sun-dried Kasuri Methi.</p>
+              <span class="category-card-count">4 Products Available</span>
+              <h3 class="category-card-title">Pure Cold-Pressed Oils</h3>
+              <p class="category-card-desc">Kolhu wood-pressed virgin mustard, raw sesame (til), virgin coconut &amp;
+                groundnut oils.</p>
+              <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <!-- Category 4: Heritage Spices & Seasonings -->
+          <a href="category.html?cat=heritage-spices" class="category-card">
+            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80"
+              alt="Heritage Spices &amp; Seasonings" class="category-card-bg">
+            <div class="category-card-overlay"></div>
+            <div class="category-card-content">
+              <span class="category-card-count">6 Products Available</span>
+              <h3 class="category-card-title">Heritage Spices</h3>
+              <p class="category-card-desc">Salem Turmeric, Tellicherry Pepper, 8mm+ Idukki Cardamom &amp; Himalayan
+                Rock Salt.</p>
               <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </a>
@@ -385,19 +389,67 @@
       </div>
     </section>
 
-    <!-- SECTION 4 — FEATURED PRODUCTS -->
-    <section class="section section-cream" id="featured-products">
+    <!-- SECTION 4A — DEHYDRATED FOODS SHOWCASE (CLIENT ASSETS) -->
+    <section class="section section-cream" id="dehydrated-foods-showcase">
       <div class="container">
         <div
           style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
           <div>
-            <span class="section-tag" style="margin-bottom: 8px;">Top Rated Pantry Picks</span>
-            <h2 class="section-title" style="margin-bottom: 0;">Featured MDMA Products</h2>
+            <span class="section-tag" style="margin-bottom: 8px;"><i class="fa-solid fa-leaf"
+                style="color: #2D6A4F;"></i> 100% Pure &amp; Natural • Top Rated Pantry Picks</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Dehydrated Fruit Crisps</h2>
+            <p class="section-subtitle" style="margin-top: 6px; margin-bottom: 0;">Authentic sun-cured and gently
+              dehydrated fruit snacks packed with natural flavor, and zero preservatives.</p>
           </div>
-          <a href="shop.html" class="btn btn-outline-dark"><i class="fa-solid fa-store"></i> View All Products</a>
+          <a href="category.html?cat=dehydrated-foods" class="btn btn-primary"><i class="fa-solid fa-apple-whole"></i>
+            View All Dehydrated Foods</a>
         </div>
 
-        <div class="products-grid" id="homepage-featured-grid">
+        <div class="products-grid" id="homepage-dehydrated-foods-grid">
+          <!-- Dynamically rendered via JS with client assets -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4B — DEHYDRATED MASALAS SHOWCASE -->
+    <section class="section section-light" id="dehydrated-masala-showcase"
+      style="border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div
+          style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-tag" style="margin-bottom: 8px;"><i class="fa-solid fa-mortar-pestle"
+                style="color: var(--color-gold);"></i> Heritage Secret Formulations</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Dehydrated Masalas &amp; Signature Blends</h2>
+            <p class="section-subtitle" style="margin-top: 6px; margin-bottom: 0;">Artisanal spice formulations
+              slow-ground from sun-cured dehydrated whole aromatics for royal gravies and teas.</p>
+          </div>
+          <a href="category.html?cat=dehydrated-masala" class="btn btn-outline-dark"><i
+              class="fa-solid fa-pepper-hot"></i> View All Masalas</a>
+        </div>
+
+        <div class="products-grid" id="homepage-dehydrated-masalas-grid">
+          <!-- Dynamically rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4C — PURE OILS & HERITAGE SPICES SHOWCASE -->
+    <section class="section section-cream" id="oils-spices-showcase">
+      <div class="container">
+        <div
+          style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-tag" style="margin-bottom: 8px;"><i class="fa-solid fa-bottle-droplet"
+                style="color: var(--color-gold);"></i> Kolhu Pressed &amp; Single Origin</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Pure Cold-Pressed Oils &amp; Heritage Spices</h2>
+            <p class="section-subtitle" style="margin-top: 6px; margin-bottom: 0;">Virgin wood-pressed unrefined oils
+              alongside high-potency Salem turmeric, Tellicherry black pepper, and Idukki cardamom.</p>
+          </div>
+          <a href="shop.html" class="btn btn-outline-dark"><i class="fa-solid fa-store"></i> Browse Full Catalog</a>
+        </div>
+
+        <div class="products-grid" id="homepage-oils-spices-grid">
           <!-- Dynamically rendered via JS -->
         </div>
       </div>
@@ -897,14 +949,39 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const grid = document.getElementById('homepage-featured-grid');
-      if (grid && typeof getFeaturedProducts === 'function') {
-        const featured = getFeaturedProducts().slice(0, 8);
+      // 1. Render Dehydrated Foods (all 8 products with authentic client assets)
+      const dehydratedFoodsGrid = document.getElementById('homepage-dehydrated-foods-grid');
+      if (dehydratedFoodsGrid && typeof getProductsByCategory === 'function' && typeof renderProductCardHTML === 'function') {
+        const dehydratedFoods = getProductsByCategory('dehydrated-foods');
         let html = '';
-        featured.forEach(product => {
+        dehydratedFoods.forEach(product => {
           html += renderProductCardHTML(product);
         });
-        grid.innerHTML = html;
+        dehydratedFoodsGrid.innerHTML = html;
+      }
+
+      // 2. Render Dehydrated Masalas
+      const dehydratedMasalasGrid = document.getElementById('homepage-dehydrated-masalas-grid');
+      if (dehydratedMasalasGrid && typeof getProductsByCategory === 'function' && typeof renderProductCardHTML === 'function') {
+        const masalas = getProductsByCategory('dehydrated-masala');
+        let html = '';
+        masalas.forEach(product => {
+          html += renderProductCardHTML(product);
+        });
+        dehydratedMasalasGrid.innerHTML = html;
+      }
+
+      // 3. Render Pure Cold-Pressed Oils & Heritage Spices
+      const oilsSpicesGrid = document.getElementById('homepage-oils-spices-grid');
+      if (oilsSpicesGrid && typeof getProductsByCategory === 'function' && typeof renderProductCardHTML === 'function') {
+        const oils = getProductsByCategory('pure-oil');
+        const spices = getProductsByCategory('heritage-spices');
+        const combined = [...oils, ...spices].slice(0, 8);
+        let html = '';
+        combined.forEach(product => {
+          html += renderProductCardHTML(product);
+        });
+        oilsSpicesGrid.innerHTML = html;
       }
     });
   </script>
