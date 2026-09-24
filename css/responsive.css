@@ -287,7 +287,7 @@
   }
 
   .header-logo img {
-    height: 38px;
+    height: 57px !important;
   }
 
   .top-bar-center {
@@ -403,6 +403,15 @@
   .pdp-tab-pane {
     font-size: 0.95rem !important;
   }
+
+  section.hero-section.section-dark {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: radial-gradient(circle at 51% 66%, rgba(158, 42, 43, 0.25) 0%, rgba(30, 77, 43, 0.15) 18%, #050505 80%);
+  }
 }
 
 /* 576px and below (Mobile Phones) */
@@ -465,16 +474,16 @@
 
 /* 400px and below (Extra Small Screens - 320px/360px/375px/390px) */
 @media (max-width: 400px) {
-  .products-grid {
+  /* .products-grid {
     grid-template-columns: 1fr;
-  }
+  } */
 
   .top-bar {
     font-size: 0.72rem;
   }
 
   .header-logo img {
-    height: 32px;
+    height: 55px !important;
     max-width: 160px;
   }
 
