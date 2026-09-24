@@ -17,30 +17,127 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content">
-      <div class="top-bar-left"><span class="top-bar-badge">Article</span><span>Spice Knowledge &amp; Culinary Science</span></div>
-      <div class="top-bar-center"><span>Pure • Natural • Healthy</span></div>
-      <div class="top-bar-right"><a href="shop.html" class="top-bar-link"><i class="fa-solid fa-store"></i> Shop Spices</a></div>
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Special Offer</span>
+        <span>Get 10% OFF on your first order with code: <strong>MDMA10</strong></span>
+      </div>
+      <div class="top-bar-center">
+        <span>Pure • Natural • Healthy</span>
+        <span>|</span>
+        <span>Authentic Indian Spices &amp; Gourmet Foods</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="order-tracking.html" class="top-bar-link"><i class="fa-solid fa-truck-fast"></i> Track Order</a>
+        <a href="contact.html" class="top-bar-link"><i class="fa-solid fa-headset"></i> Support</a>
+      </div>
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Main Header -->
   <header class="main-header">
     <div class="container header-inner">
-      <a href="index.html" class="header-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+      <a href="index.html" class="header-logo">
+        <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices and Foods Official Logo">
+      </a>
+
       <nav class="nav-menu">
         <a href="index.html" class="nav-link">Home</a>
         <a href="shop.html" class="nav-link">Shop</a>
-        <a href="category.html" class="nav-link">Categories</a>
+        <div class="nav-item-dropdown">
+          <a href="category.html" class="nav-link">Categories <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 2px;"></i></a>
+          <div class="nav-dropdown">
+            <a href="category.html?cat=ground-spices" class="dropdown-link">Ground Spices <i class="fa-solid fa-pepper-hot"></i></a>
+            <a href="category.html?cat=whole-spices" class="dropdown-link">Whole Spices <i class="fa-solid fa-seedling"></i></a>
+            <a href="category.html?cat=signature-blends" class="dropdown-link">Signature Blends <i class="fa-solid fa-mortar-pestle"></i></a>
+            <a href="category.html?cat=organic-herbs" class="dropdown-link">Organic Herbs <i class="fa-solid fa-leaf"></i></a>
+            <a href="category.html?cat=dry-fruits-nuts" class="dropdown-link">Dry Fruits &amp; Nuts <i class="fa-solid fa-bowl-rice"></i></a>
+            <a href="category.html?cat=traditional-foods" class="dropdown-link">Traditional Foods <i class="fa-solid fa-bottle-droplet"></i></a>
+          </div>
+        </div>
         <a href="about.html" class="nav-link">About Us</a>
+        <a href="shop.html?featured=true" class="nav-link">Our Products</a>
+        <a href="about.html#why-mdma" class="nav-link">Why MDMA</a>
         <a href="blog.html" class="nav-link active">Blog</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
+
       <div class="header-actions">
-        <a href="cart.html" class="header-action-btn"><i class="fa-solid fa-basket-shopping"></i></a>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <button class="header-action-btn open-search-modal" title="Search Spices" aria-label="Search Spices">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="my-account.html" class="header-action-btn" title="My Account" aria-label="My Account">
+          <i class="fa-regular fa-user"></i>
+        </a>
+        <a href="wishlist.html" class="header-action-btn" title="Saved Wishlist" aria-label="Saved Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge header-wishlist-badge" id="header-wishlist-badge" style="display: none;">0</span>
+        </a>
+        <a href="cart.html" class="header-action-btn" title="Shopping Cart" aria-label="Shopping Cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="action-badge header-cart-badge" id="header-cart-badge" style="display: none;">0</span>
+        </a>
+        <a href="shop.html" class="header-cta-btn">
+          <i class="fa-solid fa-bag-shopping"></i> Shop Now
+        </a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices and Foods">
+      <button class="close-drawer-btn" id="close-mobile-drawer" aria-label="Close Navigation Drawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-angle-right"></i></a>
+      <a href="shop.html" class="mobile-nav-link">Shop All Spices <i class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html" class="mobile-nav-link">Categories <i class="fa-solid fa-angle-right"></i></a>
+      <a href="about.html" class="mobile-nav-link">About MDMA <i class="fa-solid fa-angle-right"></i></a>
+      <a href="wishlist.html" class="mobile-nav-link">My Wishlist <i class="fa-solid fa-angle-right"></i></a>
+      <a href="cart.html" class="mobile-nav-link">My Cart <i class="fa-solid fa-angle-right"></i></a>
+      <a href="my-account.html" class="mobile-nav-link">My Account <i class="fa-solid fa-angle-right"></i></a>
+      <a href="order-tracking.html" class="mobile-nav-link">Track Order <i class="fa-solid fa-angle-right"></i></a>
+      <a href="blog.html" class="mobile-nav-link active">Spice Journal <i class="fa-solid fa-angle-right"></i></a>
+      <a href="contact.html" class="mobile-nav-link">Contact Support <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <div class="mobile-contact-info">
+        <p><i class="fa-solid fa-phone" style="color: var(--color-gold);"></i> +91 98765 43210 (Placeholder)</p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--color-gold);"></i> care@mdmaspices.com</p>
+      </div>
+      <a href="shop.html" class="btn btn-primary btn-block"><i class="fa-solid fa-store"></i> Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-box">
+      <div class="search-form-header">
+        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search MDMA Spices &amp; Foods</h3>
+        <button class="close-search-btn" id="close-search-modal" aria-label="Close Search Modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form action="search.html" method="GET">
+        <div class="search-input-group">
+          <input type="text" name="q" id="header-search-input" placeholder="Type turmeric, saffron, cardamom, masala..." autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit Search"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </form>
+      <div class="search-quick-tags">
+        <span>Popular:</span>
+        <a href="search.html?q=Turmeric" class="tag-btn">Salem Turmeric</a>
+        <a href="search.html?q=Cardamom" class="tag-btn">Idukki Cardamom</a>
+        <a href="search.html?q=Garam+Masala" class="tag-btn">Heritage Garam Masala</a>
+        <a href="search.html?q=Pepper" class="tag-btn">Tellicherry Pepper</a>
+        <a href="search.html?q=Saffron" class="tag-btn">Kashmiri Saffron</a>
+      </div>
+      <div class="search-live-results" id="search-live-results"></div>
+    </div>
+  </div>
 
   <!-- Breadcrumb -->
   <div class="breadcrumb-wrapper">
@@ -56,99 +153,166 @@
   </div>
 
   <!-- Article Header & Body -->
-  <article class="section section-light" style="padding-top: 40px;">
-    <div class="container" style="max-width: 860px;">
-      <div style="margin-bottom: 24px;">
-        <span class="section-tag" style="margin-bottom: 10px;">Culinary Wellness Guide</span>
-        <h1 style="font-size: clamp(2.2rem, 3.5vw, 2.8rem); line-height: 1.2; margin-bottom: 16px;">
-          Health &amp; Culinary Uses of Salem Golden Turmeric: The Golden Healer
-        </h1>
-        
-        <div style="display: flex; align-items: center; gap: 18px; font-size: 0.9rem; color: var(--text-dark-muted); border-bottom: 1px solid var(--border-light); padding-bottom: 20px;">
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Author" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover;">
-            <span>By <strong>MDMA Culinary Kitchen</strong></span>
+  <main class="main-content">
+    <article class="section section-light" style="padding-top: 40px;">
+      <div class="container" style="max-width: 860px;">
+        <div style="margin-bottom: 24px;">
+          <span class="section-tag" style="margin-bottom: 10px;">Culinary Wellness Guide</span>
+          <h1 style="font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.2; margin-bottom: 16px;">
+            Health &amp; Culinary Uses of Salem Golden Turmeric: The Golden Healer
+          </h1>
+          
+          <div style="display: flex; align-items: center; gap: 18px; font-size: 0.9rem; color: var(--text-dark-muted); border-bottom: 1px solid var(--border-light); padding-bottom: 20px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Author" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover;">
+              <span>By <strong>MDMA Culinary Kitchen</strong></span>
+            </div>
+            <span>•</span>
+            <span>15 Sep 2026</span>
+            <span>•</span>
+            <span><i class="fa-regular fa-clock"></i> 6 Min Read</span>
           </div>
-          <span>•</span>
-          <span>15 Sep 2026</span>
-          <span>•</span>
-          <span><i class="fa-regular fa-clock"></i> 6 Min Read</span>
         </div>
-      </div>
 
-      <!-- Featured Image -->
-      <div style="border-radius: 16px; overflow: hidden; margin-bottom: 36px; border: 1px solid var(--border-light); box-shadow: var(--shadow-md);">
-        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1000&q=80" alt="Salem Golden Turmeric" style="width: 100%; max-height: 480px; object-fit: cover;">
-      </div>
+        <!-- Featured Image -->
+        <div style="border-radius: 16px; overflow: hidden; margin-bottom: 36px; border: 1px solid var(--border-light); box-shadow: var(--shadow-md);">
+          <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1000&q=80" alt="Salem Golden Turmeric" style="width: 100%; max-height: 480px; object-fit: cover; height: auto;">
+        </div>
 
-      <!-- Article Content -->
-      <div style="font-size: 1.05rem; line-height: 1.85; color: #2B2824;" class="article-content">
-        <p style="font-size: 1.2rem; font-weight: 500; color: #111; margin-bottom: 24px; line-height: 1.7;">
-          Turmeric (Curcuma longa) has stood as the sacred golden cornerstone of Indian culture, culinary excellence, and Ayurvedic medicine for over four millennia. Yet, in modern commercial markets, not all turmeric is created equal.
-        </p>
-
-        <h2 style="font-size: 1.6rem; margin: 32px 0 16px 0; color: #070707;">Why Salem Turmeric is the Gold Standard</h2>
-        <p style="margin-bottom: 20px;">
-          Grown in the mineral-dense, sun-drenched soils of Salem in Tamil Nadu, this specific cultivar is revered for having one of the highest natural concentrations of active <strong>curcumin (3.5% to 4.5%+)</strong>. Curcumin is the potent polyphenol responsible for turmeric’s radiant golden-orange hue and its celebrated anti-inflammatory, antioxidant properties.
-        </p>
-
-        <div style="background: rgba(212, 175, 55, 0.1); border-left: 4px solid var(--color-gold); padding: 24px; border-radius: 0 12px 12px 0; margin: 30px 0;">
-          <p style="font-style: italic; font-size: 1.1rem; color: #070707; margin-bottom: 0;">
-            "The magic of authentic Salem turmeric lies in its essential oils. Slow cold-grinding keeps these volatile aromatics locked inside, whereas high-speed industrial pulverization strips them away."
+        <!-- Article Content -->
+        <div class="article-content" style="font-size: 1.05rem; line-height: 1.85; color: #2B2824;">
+          <p style="font-size: 1.2rem; font-weight: 500; color: #111; margin-bottom: 24px; line-height: 1.7;">
+            Turmeric (Curcuma longa) has stood as the sacred golden cornerstone of Indian culture, culinary excellence, and Ayurvedic medicine for over four millennia. Yet, in modern commercial markets, not all turmeric is created equal.
           </p>
+
+          <h2 style="font-size: 1.6rem; margin: 32px 0 16px 0; color: #070707;">Why Salem Turmeric is the Gold Standard</h2>
+          <p style="margin-bottom: 20px;">
+            Grown in the mineral-dense, sun-drenched soils of Salem in Tamil Nadu, this specific cultivar is revered for having one of the highest natural concentrations of active <strong>curcumin (3.5% to 4.5%+)</strong>. Curcumin is the potent polyphenol responsible for turmeric’s radiant golden-orange hue and its celebrated anti-inflammatory, antioxidant properties.
+          </p>
+
+          <div style="background: rgba(212, 175, 55, 0.1); border-left: 4px solid var(--color-gold); padding: 24px; border-radius: 0 12px 12px 0; margin: 30px 0;">
+            <p style="font-style: italic; font-size: 1.1rem; color: #070707; margin-bottom: 0;">
+              "The magic of authentic Salem turmeric lies in its essential oils. Slow cold-grinding keeps these volatile aromatics locked inside, whereas high-speed industrial pulverization strips them away."
+            </p>
+          </div>
+
+          <h2 style="font-size: 1.6rem; margin: 32px 0 16px 0; color: #070707;">The Sacred Golden Trio: Turmeric, Black Pepper &amp; Healthy Fats</h2>
+          <p style="margin-bottom: 20px;">
+            While curcumin possesses immense therapeutic potential, the human body struggles to absorb it efficiently on its own. The solution was discovered by ancient Indian culinary sages centuries ago:
+          </p>
+          <ul style="list-style: disc; padding-left: 24px; margin-bottom: 24px; color: var(--text-dark-muted);">
+            <li style="margin-bottom: 10px;"><strong>Piperine Synergy:</strong> Pairing turmeric with freshly ground Tellicherry black pepper enhances curcumin bioavailability by up to 2000%.</li>
+            <li style="margin-bottom: 10px;"><strong>Fat Soluble Absorption:</strong> Curcumin dissolves in fats. Sautéing turmeric gently in pure cold-pressed mustard oil, coconut oil, or ghee allows optimal absorption.</li>
+            <li style="margin-bottom: 10px;"><strong>Gentle Heat Activation:</strong> Never scorch your turmeric in overheated oil. Add it right as spices sizzle to gently release its floral warmth without burning.</li>
+          </ul>
+
+          <h2 style="font-size: 1.6rem; margin: 32px 0 16px 0; color: #070707;">Traditional Golden Milk (Haldi Doodh) Recipe</h2>
+          <div style="background: var(--bg-light-secondary); padding: 28px; border-radius: 12px; border: 1px solid var(--border-light); margin-bottom: 30px;">
+            <h4 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--color-gold-dark);"><i class="fa-solid fa-mug-hot"></i> Artisanal MDMA Golden Elixir</h4>
+            <ol style="padding-left: 20px; line-height: 1.8;">
+              <li>Simmer 1 cup of whole milk (or almond/oat milk) in a saucepan.</li>
+              <li>Whisk in 1/2 tsp of <strong>MDMA Pure Salem Turmeric Powder</strong>.</li>
+              <li>Add a pinch of freshly ground <strong>MDMA Tellicherry Black Pepper</strong> and 1 crushed <strong>MDMA Green Cardamom Pod</strong>.</li>
+              <li>Simmer on low for 3 minutes, strain into a ceramic cup, and sweeten with raw honey or jaggery.</li>
+            </ol>
+          </div>
+
+          <!-- Social Share Strip -->
+          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); padding: 20px 0; margin: 40px 0; flex-wrap: wrap; gap: 14px;">
+            <strong style="font-size: 0.95rem;">Share this spice guide:</strong>
+            <div style="display: flex; gap: 10px;">
+              <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" style="background:#FFF; color:#1877F2;"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" style="background:#FFF; color:#1DA1F2;"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-icon-btn" style="background:#FFF; color:#25D366;"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- Featured Product CTA Box -->
+          <div style="background: #0A0A08; color: #FFF; border: 1px solid var(--border-gold); border-radius: 12px; padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+            <div>
+              <span style="font-size: 0.8rem; color: var(--color-gold-light); text-transform: uppercase;">Featured In This Story</span>
+              <h3 style="font-size: 1.3rem; color: #FFF; margin: 4px 0 6px 0;">MDMA Pure Salem Turmeric Powder</h3>
+              <span style="color: var(--color-gold); font-weight: 800; font-size: 1.2rem;">₹180</span>
+            </div>
+            <a href="product.html?id=1" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Order Salem Turmeric</a>
+          </div>
         </div>
+      </div>
+    </article>
+  </main>
 
-        <h2 style="font-size: 1.6rem; margin: 32px 0 16px 0; color: #070707;">The Sacred Golden Trio: Turmeric, Black Pepper &amp; Healthy Fats</h2>
-        <p style="margin-bottom: 20px;">
-          While curcumin possesses immense therapeutic potential, the human body struggles to absorb it efficiently on its own. The solution was discovered by ancient Indian culinary sages centuries ago:
-        </p>
-        <ul style="list-style: disc; padding-left: 24px; margin-bottom: 24px; color: var(--text-dark-muted);">
-          <li style="margin-bottom: 10px;"><strong>Piperine Synergy:</strong> Pairing turmeric with freshly ground Tellicherry black pepper enhances curcumin bioavailability by up to 2000%.</li>
-          <li style="margin-bottom: 10px;"><strong>Fat Soluble Absorption:</strong> Curcumin dissolves in fats. Sautéing turmeric gently in pure cold-pressed mustard oil, coconut oil, or ghee allows optimal absorption.</li>
-          <li style="margin-bottom: 10px;"><strong>Gentle Heat Activation:</strong> Never scorch your turmeric in overheated oil. Add it right as spices sizzle to gently release its floral warmth without burning.</li>
-        </ul>
-
-        <h2 style="font-size: 1.6rem; margin: 32px 0 16px 0; color: #070707;">Traditional Golden Milk (Haldi Doodh) Recipe</h2>
-        <div style="background: var(--bg-light-secondary); padding: 28px; border-radius: 12px; border: 1px solid var(--border-light); margin-bottom: 30px;">
-          <h4 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--color-gold-dark);"><i class="fa-solid fa-mug-hot"></i> Artisanal MDMA Golden Elixir</h4>
-          <ol style="padding-left: 20px; line-height: 1.8;">
-            <li>Simmer 1 cup of whole milk (or almond/oat milk) in a saucepan.</li>
-            <li>Whisk in 1/2 tsp of <strong>MDMA Pure Salem Turmeric Powder</strong>.</li>
-            <li>Add a pinch of freshly ground <strong>MDMA Tellicherry Black Pepper</strong> and 1 crushed <strong>MDMA Green Cardamom Pod</strong>.</li>
-            <li>Simmer on low for 3 minutes, strain into a ceramic cup, and sweeten with raw honey or jaggery.</li>
-          </ol>
-        </div>
-
-        <!-- Social Share Strip -->
-        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); padding: 20px 0; margin: 40px 0; flex-wrap: wrap; gap: 14px;">
-          <strong style="font-size: 0.95rem;">Share this spice guide:</strong>
-          <div style="display: flex; gap: 10px;">
-            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" style="background:#FFF; color:#1877F2;"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" style="background:#FFF; color:#1DA1F2;"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-icon-btn" style="background:#FFF; color:#25D366;"><i class="fa-brands fa-whatsapp"></i></a>
+  <!-- Master Footer -->
+  <footer class="main-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices and Foods Official Logo">
+          </a>
+          <p>
+            MDMA Spices and Foods represents the gold standard of single-origin Indian spices and gourmet food products. Sourced ethically from generational growers, sorted with precision, and packed fresh in aroma-lock hygiene pouches.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
 
-        <!-- Featured Product CTA Box -->
-        <div style="background: #0A0A08; color: #FFF; border: 1px solid var(--border-gold); border-radius: 12px; padding: 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
-          <div>
-            <span style="font-size: 0.8rem; color: var(--color-gold-light); text-transform: uppercase;">Featured In This Story</span>
-            <h3 style="font-size: 1.3rem; color: #FFF; margin: 4px 0 6px 0;">MDMA Pure Salem Turmeric Powder</h3>
-            <span style="color: var(--color-gold); font-weight: 800; font-size: 1.2rem;">₹180</span>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About MDMA</a></li>
+            <li><a href="shop.html"><i class="fa-solid fa-angle-right"></i> Shop Catalog</a></li>
+            <li><a href="category.html"><i class="fa-solid fa-angle-right"></i> Browse Categories</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Spice Journal</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="faq.html"><i class="fa-solid fa-angle-right"></i> FAQs &amp; Help</a></li>
+            <li><a href="order-tracking.html"><i class="fa-solid fa-angle-right"></i> Track My Order</a></li>
+            <li><a href="shipping-policy.html"><i class="fa-solid fa-angle-right"></i> Shipping Policy</a></li>
+            <li><a href="refund-policy.html"><i class="fa-solid fa-angle-right"></i> Returns &amp; Refunds</a></li>
+            <li><a href="terms-conditions.html"><i class="fa-solid fa-angle-right"></i> Terms &amp; Conditions</a></li>
+            <li><a href="privacy-policy.html"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact MDMA</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Headquarters (Placeholder):</strong><br>
+              MDMA Spices &amp; Foods Estate,<br>
+              Connaught Place, New Delhi - 110001
+            </div>
           </div>
-          <a href="product.html?id=1" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Order Salem Turmeric</a>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>+91 98765 43210 (Placeholder)</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>care@mdmaspices.com</div>
+          </div>
         </div>
       </div>
     </div>
-  </article>
 
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="container footer-bottom">
-      <div class="footer-bottom-inner">
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
         <div>© 2026 MDMA Spices and Foods. All Rights Reserved.</div>
         <div class="footer-bottom-badges">
-          <a href="blog.html" style="color: var(--color-gold-light);">Back to Journal</a>
+          <div class="footer-badge-item"><i class="fa-solid fa-shield-check"></i> 100% Purity Guarantee</div>
+          <div class="footer-badge-item"><i class="fa-solid fa-truck"></i> Express Safe Shipping</div>
+          <div class="footer-badge-item"><i class="fa-solid fa-lock"></i> SSL Secured Payments</div>
         </div>
       </div>
     </div>
@@ -158,6 +322,8 @@
   <script src="js/cart.js"></script>
   <script src="js/wishlist.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/account.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

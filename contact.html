@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — MDMA Spices and Foods</title>
-  <meta name="description" content="Get in touch with MDMA Spices and Foods for culinary inquiries, wholesale distribution, order support, and feedback.">
+  <meta name="description"
+    content="Get in touch with MDMA Spices and Foods for culinary inquiries, wholesale distribution, order support, and feedback.">
   <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content">
-      <div class="top-bar-left"><span class="top-bar-badge">Support</span><span>We are here to assist your culinary journey</span></div>
-      <div class="top-bar-center"><span>Pure • Natural • Healthy</span></div>
-      <div class="top-bar-right"><a href="order-tracking.html" class="top-bar-link"><i class="fa-solid fa-truck-fast"></i> Track Order</a></div>
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Special Offer</span>
+        <span>Get 10% OFF on your first order with code: <strong>MDMA10</strong></span>
+      </div>
+      <div class="top-bar-center">
+        <span>Pure • Natural • Healthy</span>
+        <span>|</span>
+        <span>Authentic Indian Spices &amp; Gourmet Foods</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="order-tracking.html" class="top-bar-link"><i class="fa-solid fa-truck-fast"></i> Track Order</a>
+        <a href="contact.html" class="top-bar-link"><i class="fa-solid fa-headset"></i> Support</a>
+      </div>
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Main Header -->
   <header class="main-header">
     <div class="container header-inner">
-      <a href="index.html" class="header-logo"><img src="assets/logo/mdma-logo.svg" alt="MDMA Spices"></a>
+      <a href="index.html" class="header-logo">
+        <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices and Foods Official Logo">
+      </a>
+
       <nav class="nav-menu">
         <a href="index.html" class="nav-link">Home</a>
         <a href="shop.html" class="nav-link">Shop</a>
-        <a href="category.html" class="nav-link">Categories</a>
+        <div class="nav-item-dropdown">
+          <a href="category.html" class="nav-link">Categories <i class="fa-solid fa-chevron-down"
+              style="font-size: 0.75rem; margin-left: 2px;"></i></a>
+          <div class="nav-dropdown">
+            <a href="category.html?cat=ground-spices" class="dropdown-link">Ground Spices <i
+                class="fa-solid fa-pepper-hot"></i></a>
+            <a href="category.html?cat=whole-spices" class="dropdown-link">Whole Spices <i
+                class="fa-solid fa-seedling"></i></a>
+            <a href="category.html?cat=signature-blends" class="dropdown-link">Signature Blends <i
+                class="fa-solid fa-mortar-pestle"></i></a>
+            <a href="category.html?cat=organic-herbs" class="dropdown-link">Organic Herbs <i
+                class="fa-solid fa-leaf"></i></a>
+            <a href="category.html?cat=dry-fruits-nuts" class="dropdown-link">Dry Fruits &amp; Nuts <i
+                class="fa-solid fa-bowl-rice"></i></a>
+            <a href="category.html?cat=traditional-foods" class="dropdown-link">Traditional Foods <i
+                class="fa-solid fa-bottle-droplet"></i></a>
+          </div>
+        </div>
         <a href="about.html" class="nav-link">About Us</a>
+        <a href="shop.html?featured=true" class="nav-link">Our Products</a>
+        <a href="about.html#why-mdma" class="nav-link">Why MDMA</a>
         <a href="blog.html" class="nav-link">Blog</a>
         <a href="contact.html" class="nav-link active">Contact</a>
       </nav>
+
       <div class="header-actions">
-        <button class="header-action-btn open-search-modal"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <a href="wishlist.html" class="header-action-btn"><i class="fa-regular fa-heart"></i></a>
-        <a href="cart.html" class="header-action-btn"><i class="fa-solid fa-basket-shopping"></i></a>
-        <a href="shop.html" class="header-cta-btn"><i class="fa-solid fa-bag-shopping"></i> Shop Now</a>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <button class="header-action-btn open-search-modal" title="Search Spices" aria-label="Search Spices">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="my-account.html" class="header-action-btn" title="My Account" aria-label="My Account">
+          <i class="fa-regular fa-user"></i>
+        </a>
+        <a href="wishlist.html" class="header-action-btn" title="Saved Wishlist" aria-label="Saved Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge header-wishlist-badge" id="header-wishlist-badge" style="display: none;">0</span>
+        </a>
+        <a href="cart.html" class="header-action-btn" title="Shopping Cart" aria-label="Shopping Cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="action-badge header-cart-badge" id="header-cart-badge" style="display: none;">0</span>
+        </a>
+        <a href="shop.html" class="header-cta-btn">
+          <i class="fa-solid fa-bag-shopping"></i> Shop Now
+        </a>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
   </header>
@@ -49,14 +100,57 @@
   <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
   <div class="mobile-nav-drawer" id="mobile-nav-drawer">
     <div class="mobile-drawer-header">
-      <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices">
-      <button class="close-drawer-btn" id="close-mobile-drawer"><i class="fa-solid fa-xmark"></i></button>
+      <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices and Foods">
+      <button class="close-drawer-btn" id="close-mobile-drawer" aria-label="Close Navigation Drawer"><i
+          class="fa-solid fa-xmark"></i></button>
     </div>
     <div class="mobile-nav-list">
       <a href="index.html" class="mobile-nav-link">Home <i class="fa-solid fa-angle-right"></i></a>
-      <a href="shop.html" class="mobile-nav-link">Shop <i class="fa-solid fa-angle-right"></i></a>
-      <a href="about.html" class="mobile-nav-link">About <i class="fa-solid fa-angle-right"></i></a>
-      <a href="contact.html" class="mobile-nav-link active">Contact <i class="fa-solid fa-angle-right"></i></a>
+      <a href="shop.html" class="mobile-nav-link">Shop All Spices <i class="fa-solid fa-angle-right"></i></a>
+      <a href="category.html" class="mobile-nav-link">Categories <i class="fa-solid fa-angle-right"></i></a>
+      <a href="about.html" class="mobile-nav-link">About MDMA <i class="fa-solid fa-angle-right"></i></a>
+      <a href="wishlist.html" class="mobile-nav-link">My Wishlist <i class="fa-solid fa-angle-right"></i></a>
+      <a href="cart.html" class="mobile-nav-link">My Cart <i class="fa-solid fa-angle-right"></i></a>
+      <a href="my-account.html" class="mobile-nav-link">My Account <i class="fa-solid fa-angle-right"></i></a>
+      <a href="order-tracking.html" class="mobile-nav-link">Track Order <i class="fa-solid fa-angle-right"></i></a>
+      <a href="blog.html" class="mobile-nav-link">Spice Journal <i class="fa-solid fa-angle-right"></i></a>
+      <a href="contact.html" class="mobile-nav-link active">Contact Support <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <div class="mobile-contact-info">
+        <p><i class="fa-solid fa-phone" style="color: var(--color-gold);"></i> +91 98765 43210 (Placeholder)</p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--color-gold);"></i> care@mdmaspices.com</p>
+      </div>
+      <a href="shop.html" class="btn btn-primary btn-block"><i class="fa-solid fa-store"></i> Shop Now</a>
+    </div>
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-box">
+      <div class="search-form-header">
+        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search MDMA Spices &amp;
+          Foods</h3>
+        <button class="close-search-btn" id="close-search-modal" aria-label="Close Search Modal"><i
+            class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form action="search.html" method="GET">
+        <div class="search-input-group">
+          <input type="text" name="q" id="header-search-input" placeholder="Type turmeric, saffron, cardamom, masala..."
+            autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit Search"><i
+              class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </form>
+      <div class="search-quick-tags">
+        <span>Popular:</span>
+        <a href="search.html?q=Turmeric" class="tag-btn">Salem Turmeric</a>
+        <a href="search.html?q=Cardamom" class="tag-btn">Idukki Cardamom</a>
+        <a href="search.html?q=Garam+Masala" class="tag-btn">Heritage Garam Masala</a>
+        <a href="search.html?q=Pepper" class="tag-btn">Tellicherry Pepper</a>
+        <a href="search.html?q=Saffron" class="tag-btn">Kashmiri Saffron</a>
+      </div>
+      <div class="search-live-results" id="search-live-results"></div>
     </div>
   </div>
 
@@ -72,138 +166,258 @@
   </div>
 
   <!-- Contact Hero & Details -->
-  <section class="section section-light" style="padding-top: 40px;">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Get in Touch</span>
-        <h1 class="section-title">We'd Love to Hear From You</h1>
-        <p class="section-subtitle">Have a question about our single-origin spices, bulk order queries, or order tracking? Reach out to our dedicated support team.</p>
-      </div>
+  <main class="main-content">
+    <section class="section section-light" style="padding-top: 40px;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h1 class="section-title">We'd Love to Hear From You</h1>
+          <p class="section-subtitle">Have a question about our single-origin spices, bulk order queries, or order
+            tracking? Reach out to our dedicated support team.</p>
+        </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1.35fr; gap: 40px; margin-bottom: 60px;" class="contact-layout">
-        <!-- Contact Info Column -->
-        <div>
-          <div style="background: var(--bg-dark-primary); color: #FFF; border: 1px solid var(--border-gold); border-radius: var(--border-radius-md); padding: 36px 30px; box-shadow: var(--shadow-dark-card);">
-            <h3 style="color: var(--color-gold-light); font-size: 1.4rem; margin-bottom: 24px;">Contact Information</h3>
-            
-            <div style="display: flex; flex-direction: column; gap: 24px;">
-              <div style="display: flex; gap: 16px; align-items: flex-start;">
-                <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; color: var(--color-gold); font-size: 1.1rem; flex-shrink: 0;">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div>
-                  <h5 style="font-size: 1rem; margin-bottom: 4px; color: #FFF;">Corporate Headquarters (Placeholder)</h5>
-                  <p style="font-size: 0.88rem; color: var(--text-light-muted); line-height: 1.6;">
-                    MDMA Spices &amp; Foods Private Limited<br>
-                    Estate Tower, Connaught Place<br>
-                    New Delhi, Delhi - 110001
-                  </p>
-                </div>
-              </div>
+        <div class="contact-layout"
+          style="display: grid; grid-template-columns: 1fr 1.35fr; gap: 40px; margin-bottom: 60px;">
+          <!-- Contact Info Column -->
+          <div>
+            <div
+              style="background: var(--bg-dark-primary); color: #FFF; border: 1px solid var(--border-gold); border-radius: var(--border-radius-md); padding: 36px 30px; box-shadow: var(--shadow-dark-card);">
+              <h3 style="color: var(--color-gold-light); font-size: 1.4rem; margin-bottom: 24px;">Contact Information
+              </h3>
 
-              <div style="display: flex; gap: 16px; align-items: flex-start;">
-                <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; color: var(--color-gold); font-size: 1.1rem; flex-shrink: 0;">
-                  <i class="fa-solid fa-phone"></i>
+              <div style="display: flex; flex-direction: column; gap: 24px;">
+                <div style="display: flex; gap: 16px; align-items: flex-start;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; color: var(--color-gold); font-size: 1.1rem; flex-shrink: 0;">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <h5 style="font-size: 1rem; margin-bottom: 4px; color: #FFF;">Corporate Headquarters (Placeholder)
+                    </h5>
+                    <p style="font-size: 0.88rem; color: var(--text-light-muted); line-height: 1.6;">
+                      MDMA Spices &amp; Foods Private Limited<br>
+                      Estate Tower, Connaught Place<br>
+                      New Delhi, Delhi - 110001
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h5 style="font-size: 1rem; margin-bottom: 4px; color: #FFF;">Phone Support</h5>
-                  <p style="font-size: 0.88rem; color: var(--text-light-muted);">
-                    +91 98765 43210 (Mon-Sat, 9:00 AM - 7:00 PM IST)
-                  </p>
-                </div>
-              </div>
 
-              <div style="display: flex; gap: 16px; align-items: flex-start;">
-                <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; color: var(--color-gold); font-size: 1.1rem; flex-shrink: 0;">
-                  <i class="fa-solid fa-envelope"></i>
+                <div style="display: flex; gap: 16px; align-items: flex-start;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; color: var(--color-gold); font-size: 1.1rem; flex-shrink: 0;">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <h5 style="font-size: 1rem; margin-bottom: 4px; color: #FFF;">Phone Support</h5>
+                    <p style="font-size: 0.88rem; color: var(--text-light-muted);">
+                      +91 98765 43210 (Mon-Sat, 9:00 AM - 7:00 PM IST)
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h5 style="font-size: 1rem; margin-bottom: 4px; color: #FFF;">Email Support</h5>
-                  <p style="font-size: 0.88rem; color: var(--text-light-muted);">
-                    care@mdmaspices.com<br>
-                    wholesale@mdmaspices.com
-                  </p>
-                </div>
-              </div>
 
-              <div style="display: flex; gap: 16px; align-items: flex-start;">
-                <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; color: var(--color-gold); font-size: 1.1rem; flex-shrink: 0;">
-                  <i class="fa-solid fa-clock"></i>
+                <div style="display: flex; gap: 16px; align-items: flex-start;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; color: var(--color-gold); font-size: 1.1rem; flex-shrink: 0;">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h5 style="font-size: 1rem; margin-bottom: 4px; color: #FFF;">Email Support</h5>
+                    <p style="font-size: 0.88rem; color: var(--text-light-muted);">
+                      care@mdmaspices.com<br>
+                      wholesale@mdmaspices.com
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h5 style="font-size: 1rem; margin-bottom: 4px; color: #FFF;">Business Hours</h5>
-                  <p style="font-size: 0.88rem; color: var(--text-light-muted);">
-                    Monday to Saturday: 9:00 AM – 7:00 PM<br>
-                    Sunday: Closed (Online Orders 24/7)
-                  </p>
+
+                <div style="display: flex; gap: 16px; align-items: flex-start;">
+                  <div
+                    style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; color: var(--color-gold); font-size: 1.1rem; flex-shrink: 0;">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div>
+                    <h5 style="font-size: 1rem; margin-bottom: 4px; color: #FFF;">Business Hours</h5>
+                    <p style="font-size: 0.88rem; color: var(--text-light-muted);">
+                      Monday to Saturday: 9:00 AM – 7:00 PM<br>
+                      Sunday: Closed (Online Orders 24/7)
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Contact Form -->
+          <div
+            style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 36px 32px; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.4rem; margin-bottom: 20px;">Send Us a Message</h3>
+
+            <form
+              onsubmit="event.preventDefault(); showToast('success', 'Message Sent!', 'Thank you! Our spice representative will reply within 24 hours.'); this.reset();">
+              <div class="form-grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="form-group">
+                  <label class="form-label" for="contact_name">Your Full Name *</label>
+                  <input type="text" id="contact_name" class="form-control" placeholder="e.g. Sakhil Mondal" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact_email">Your Email Address *</label>
+                  <input type="email" id="contact_email" class="form-control" placeholder="you@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="form-group">
+                  <label class="form-label" for="contact_phone">Phone Number</label>
+                  <input type="tel" id="contact_phone" class="form-control" placeholder="+91 98765 43210">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact_subject">Subject / Inquiry Type *</label>
+                  <select id="contact_subject" class="form-control" required>
+                    <option value="">Select a subject...</option>
+                    <option value="order">Order &amp; Delivery Query</option>
+                    <option value="product">Product &amp; Ingredient Information</option>
+                    <option value="wholesale">Wholesale / B2B Distribution</option>
+                    <option value="feedback">Feedback &amp; Suggestions</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact_msg">Your Message *</label>
+                <textarea id="contact_msg" class="form-control" rows="5"
+                  placeholder="Write your question or message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
         </div>
 
-        <!-- Contact Form -->
-        <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 36px 32px; box-shadow: var(--shadow-sm);">
-          <h3 style="font-size: 1.4rem; margin-bottom: 20px;">Send Us a Message</h3>
-
-          <form onsubmit="event.preventDefault(); showToast('success', 'Message Sent!', 'Thank you! Our spice representative will reply within 24 hours.'); this.reset();">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-              <div class="form-group">
-                <label class="form-label" for="contact_name">Your Full Name *</label>
-                <input type="text" id="contact_name" class="form-control" placeholder="e.g. Sakhil Mondal" required>
+        <!-- Interactive Google Map Section -->
+        <div class="contact-map-card" style="margin-top: 50px; background: var(--bg-light-card); border: 1px solid var(--border-gold); border-radius: var(--border-radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+          <div style="padding: 24px 28px; background: var(--bg-dark-primary); color: #FFF; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; border-bottom: 1px solid var(--border-gold);">
+            <div>
+              <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--color-gold-light); font-weight: 700; letter-spacing: 0.08em; margin-bottom: 4px;">
+                <i class="fa-solid fa-location-dot"></i> Flagship Experience Center &amp; Head Office
               </div>
-              <div class="form-group">
-                <label class="form-label" for="contact_email">Your Email Address *</label>
-                <input type="email" id="contact_email" class="form-control" placeholder="you@example.com" required>
-              </div>
+              <h3 style="font-size: 1.25rem; color: #FFF; margin: 0;">MDMA Spices &amp; Foods Headquarters</h3>
             </div>
+            <a href="https://maps.google.com/?q=Connaught+Place,+New+Delhi" target="_blank" rel="noopener" class="btn btn-outline-gold btn-sm" style="display: inline-flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+            </a>
+          </div>
+          
+          <div style="position: relative; width: 100%; height: 420px; background: #E5E3DF;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.11482718464!2d77.21193796977539!3d28.6324294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b043238f%3A0xf6407e32230495f2!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0; display: block;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="MDMA Spices &amp; Foods Location Map">
+            </iframe>
+          </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-              <div class="form-group">
-                <label class="form-label" for="contact_phone">Phone Number</label>
-                <input type="tel" id="contact_phone" class="form-control" placeholder="+91 98765 43210">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="contact_subject">Subject / Inquiry Type *</label>
-                <select id="contact_subject" class="form-control" required>
-                  <option value="">Select a subject...</option>
-                  <option value="order">Order &amp; Delivery Query</option>
-                  <option value="product">Product &amp; Ingredient Information</option>
-                  <option value="wholesale">Wholesale / B2B Distribution</option>
-                  <option value="feedback">Feedback &amp; Suggestions</option>
-                </select>
-              </div>
+          <div style="padding: 18px 24px; background: var(--bg-light-secondary); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; font-size: 0.88rem; color: var(--text-dark-muted); border-top: 1px solid var(--border-light);">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-building" style="color: var(--color-gold-dark);"></i>
+              <span>Estate Tower, Connaught Place, New Delhi - 110001</span>
             </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact_msg">Your Message *</label>
-              <textarea id="contact_msg" class="form-control" rows="5" placeholder="Write your question or message here..." required></textarea>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-square-parking" style="color: var(--color-green);"></i>
+              <span>Valet &amp; Visitor Parking Available</span>
             </div>
-
-            <button type="submit" class="btn btn-primary btn-lg">
-              <i class="fa-solid fa-paper-plane"></i> Send Message
-            </button>
-          </form>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-calendar-check" style="color: var(--color-gold-dark);"></i>
+              <span>Open Mon – Sat: 9:00 AM – 7:00 PM</span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <!-- Google Maps Placeholder Container -->
-      <div style="border-radius: var(--border-radius-md); overflow: hidden; border: 1px solid var(--border-light); background: var(--bg-light-secondary); padding: 40px; text-align: center;">
-        <i class="fa-solid fa-map-location-dot" style="font-size: 3rem; color: var(--color-gold); margin-bottom: 12px;"></i>
-        <h3 style="font-size: 1.3rem; margin-bottom: 6px;">Visit MDMA Distribution &amp; Experience Center</h3>
-        <p style="color: var(--text-dark-muted); font-size: 0.9rem; max-width: 500px; margin: 0 auto 16px auto;">Connaught Place, New Delhi - 110001 (Placeholder Location)</p>
-        <span style="font-size: 0.8rem; color: #888; background: #FFF; padding: 4px 12px; border-radius: 4px; border: 1px solid var(--border-light);">Interactive Map Placeholder</span>
+  <!-- Master Footer -->
+  <footer class="main-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/logo/mdma-logo.svg" alt="MDMA Spices and Foods Official Logo">
+          </a>
+          <p>
+            MDMA Spices and Foods represents the gold standard of single-origin Indian spices and gourmet food products.
+            Sourced ethically from generational growers, sorted with precision, and packed fresh in aroma-lock hygiene
+            pouches.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn"
+              aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn"
+              aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-icon-btn"
+              aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About MDMA</a></li>
+            <li><a href="shop.html"><i class="fa-solid fa-angle-right"></i> Shop Catalog</a></li>
+            <li><a href="category.html"><i class="fa-solid fa-angle-right"></i> Browse Categories</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Spice Journal</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="faq.html"><i class="fa-solid fa-angle-right"></i> FAQs &amp; Help</a></li>
+            <li><a href="order-tracking.html"><i class="fa-solid fa-angle-right"></i> Track My Order</a></li>
+            <li><a href="shipping-policy.html"><i class="fa-solid fa-angle-right"></i> Shipping Policy</a></li>
+            <li><a href="refund-policy.html"><i class="fa-solid fa-angle-right"></i> Returns &amp; Refunds</a></li>
+            <li><a href="terms-conditions.html"><i class="fa-solid fa-angle-right"></i> Terms &amp; Conditions</a></li>
+            <li><a href="privacy-policy.html"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact MDMA</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Headquarters (Placeholder):</strong><br>
+              MDMA Spices &amp; Foods Estate,<br>
+              Connaught Place, New Delhi - 110001
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>+91 98765 43210 (Placeholder)</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>care@mdmaspices.com</div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="container footer-bottom">
-      <div class="footer-bottom-inner">
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
         <div>© 2026 MDMA Spices and Foods. All Rights Reserved.</div>
         <div class="footer-bottom-badges">
-          <a href="faq.html" style="color: var(--color-gold-light);">View FAQs</a>
+          <div class="footer-badge-item"><i class="fa-solid fa-shield-check"></i> 100% Purity Guarantee</div>
+          <div class="footer-badge-item"><i class="fa-solid fa-truck"></i> Express Safe Shipping</div>
+          <div class="footer-badge-item"><i class="fa-solid fa-lock"></i> SSL Secured Payments</div>
         </div>
       </div>
     </div>
@@ -213,6 +427,9 @@
   <script src="js/cart.js"></script>
   <script src="js/wishlist.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/account.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

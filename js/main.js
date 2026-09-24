@@ -1,9 +1,10 @@
 /**
- * MDMA SPICES AND FOODS — Core UI Controller & Global Orchestrator
+ * MDMA SPICES AND FOODS — Master UI Controller & Global Orchestrator
+ * Fully modular and ready for backend / WordPress WooCommerce API integration.
  */
 
-// Toast Notifications System
-function showToast(type = 'success', title = 'Success', message = '') {
+// Global Toast Notification System
+function showToast(type = 'success', title = 'Notification', message = '') {
   let container = document.getElementById('toast-container');
   if (!container) {
     container = document.createElement('div');
@@ -28,7 +29,7 @@ function showToast(type = 'success', title = 'Success', message = '') {
       <div class="toast-title">${title}</div>
       <div class="toast-message">${message}</div>
     </div>
-    <button class="toast-close" onclick="this.parentElement.remove()"><i class="fa-solid fa-xmark"></i></button>
+    <button class="toast-close" onclick="this.parentElement.remove()" aria-label="Close Notification"><i class="fa-solid fa-xmark"></i></button>
   `;
 
   container.appendChild(toast);
@@ -39,49 +40,54 @@ function showToast(type = 'success', title = 'Success', message = '') {
   }, 4000);
 }
 
-// Update Header Badges
+// Update Header Badges across entire website
 function updateHeaderBadges() {
-  const cartBadge = document.getElementById('header-cart-badge');
-  const wishlistBadge = document.getElementById('header-wishlist-badge');
+  const cartBadges = document.querySelectorAll('.header-cart-badge, #header-cart-badge');
+  const wishlistBadges = document.querySelectorAll('.header-wishlist-badge, #header-wishlist-badge');
 
-  if (typeof getCart === 'function' && cartBadge) {
+  if (typeof getCart === 'function') {
     const cart = getCart();
-    const count = cart.reduce((sum, item) => sum + item.qty, 0);
-    cartBadge.textContent = count;
-    cartBadge.style.display = count > 0 ? 'flex' : 'none';
+    const count = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+    cartBadges.forEach(badge => {
+      badge.textContent = count;
+      badge.style.display = count > 0 ? 'flex' : 'none';
+    });
   }
 
-  if (typeof getWishlist === 'function' && wishlistBadge) {
+  if (typeof getWishlist === 'function') {
     const wishlist = getWishlist();
-    wishlistBadge.textContent = wishlist.length;
-    wishlistBadge.style.display = wishlist.length > 0 ? 'flex' : 'none';
+    const count = wishlist.length;
+    wishlistBadges.forEach(badge => {
+      badge.textContent = count;
+      badge.style.display = count > 0 ? 'flex' : 'none';
+    });
   }
 }
 
-// Sticky Header & Scroll Reveal
+// Sticky Header & Scroll Effects
 function initScrollEffects() {
   const header = document.querySelector('.main-header');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 40) {
       header?.classList.add('scrolled');
     } else {
       header?.classList.remove('scrolled');
     }
 
-    // Scroll reveal observer
+    // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
     reveals.forEach(element => {
       const windowHeight = window.innerHeight;
       const elementTop = element.getBoundingClientRect().top;
-      const elementVisible = 120;
+      const elementVisible = 100;
       if (elementTop < windowHeight - elementVisible) {
         element.classList.add('active');
       }
     });
-  });
+  }, { passive: true });
 }
 
-// Mobile Menu Drawer
+// Mobile Menu Drawer Handler
 function initMobileMenu() {
   const toggleBtn = document.getElementById('mobile-menu-toggle');
   const closeBtn = document.getElementById('close-mobile-drawer');
@@ -103,18 +109,25 @@ function initMobileMenu() {
   toggleBtn?.addEventListener('click', openDrawer);
   closeBtn?.addEventListener('click', closeDrawer);
   overlay?.addEventListener('click', closeDrawer);
+
+  // Close drawer on clicking links inside
+  drawer?.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', closeDrawer);
+  });
 }
 
-// Search Modal Popup
+// Search Modal Popup Handler
 function initSearchModal() {
   const openBtns = document.querySelectorAll('.open-search-modal');
   const closeBtn = document.getElementById('close-search-modal');
   const modal = document.getElementById('search-modal');
+  const searchInput = document.getElementById('header-search-input');
 
   openBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
       modal?.classList.add('active');
-      document.getElementById('header-search-input')?.focus();
+      setTimeout(() => searchInput?.focus(), 150);
     });
   });
 
@@ -124,6 +137,13 @@ function initSearchModal() {
 
   modal?.addEventListener('click', (e) => {
     if (e.target === modal) {
+      modal.classList.remove('active');
+    }
+  });
+
+  // ESC key closes search modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal?.classList.contains('active')) {
       modal.classList.remove('active');
     }
   });
@@ -146,61 +166,61 @@ function openQuickView(productId) {
 
   modalBackdrop.innerHTML = `
     <div class="modal-card">
-      <button class="modal-close-btn" onclick="closeQuickView()"><i class="fa-solid fa-xmark"></i></button>
-      <div style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 30px; align-items: center;" class="quickview-grid">
+      <button class="modal-close-btn" onclick="closeQuickView()" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 28px; align-items: center;" class="quickview-grid">
         <div style="border-radius: 12px; overflow: hidden; background: #121210; border: 1px solid var(--border-gold);">
-          <img src="${product.image}" alt="${product.name}" style="width: 100%; height: 360px; object-fit: cover;">
+          <img src="${product.image}" alt="${product.name}" style="width: 100%; height: clamp(260px, 35vw, 360px); object-fit: cover;">
         </div>
         <div>
-          <div style="font-size: 0.82rem; font-weight: 700; color: var(--color-gold); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px;">${product.category}</div>
-          <h2 style="color: #FFFFFF; font-size: 1.6rem; margin-bottom: 10px;">${product.name}</h2>
+          <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-gold); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px;">${product.category}</div>
+          <h2 style="color: #FFFFFF; font-size: clamp(1.2rem, 2.5vw, 1.6rem); margin-bottom: 8px;">${product.name}</h2>
           
-          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 14px;">
-            <div class="stars">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+            <div class="stars" style="color: #F5A623;">
               ${'<i class="fa-solid fa-star"></i>'.repeat(Math.floor(product.rating))}
               ${product.rating % 1 !== 0 ? '<i class="fa-solid fa-star-half-stroke"></i>' : ''}
             </div>
-            <span style="color: var(--text-light-muted); font-size: 0.85rem;">(${product.reviewCount || 50} verified reviews)</span>
+            <span style="color: var(--text-light-muted); font-size: 0.82rem;">(${product.reviewCount || 50} verified reviews)</span>
           </div>
 
-          <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 18px;">
-            <span style="font-size: 1.6rem; font-weight: 800; color: var(--color-gold-light);">₹${product.price}</span>
-            ${product.oldPrice ? `<span style="font-size: 1.1rem; color: #888; text-decoration: line-through;">₹${product.oldPrice}</span>` : ''}
-            ${product.oldPrice ? `<span style="background: #2D6A4F; color: #FFF; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px;">Save ₹${product.oldPrice - product.price}</span>` : ''}
+          <div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px; flex-wrap: wrap;">
+            <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-gold-light);">₹${product.price}</span>
+            ${product.oldPrice ? `<span style="font-size: 1rem; color: #888; text-decoration: line-through;">₹${product.oldPrice}</span>` : ''}
+            ${product.oldPrice ? `<span style="background: #2D6A4F; color: #FFF; font-size: 0.72rem; font-weight: 700; padding: 2px 6px; border-radius: 4px;">Save ₹${product.oldPrice - product.price}</span>` : ''}
           </div>
 
-          <p style="color: var(--text-light-muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 20px;">
+          <p style="color: var(--text-light-muted); font-size: 0.9rem; line-height: 1.55; margin-bottom: 16px;">
             ${product.shortDesc}
           </p>
 
           <!-- Weight Variations -->
-          <div style="margin-bottom: 20px;">
-            <label style="display: block; font-size: 0.85rem; font-weight: 700; color: var(--color-gold-light); margin-bottom: 8px;">Select Pack Size:</label>
-            <div style="display: flex; gap: 8px;" id="qv-weight-options">
+          <div style="margin-bottom: 16px;">
+            <label style="display: block; font-size: 0.82rem; font-weight: 700; color: var(--color-gold-light); margin-bottom: 6px;">Select Pack Size:</label>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="qv-weight-options">
               ${product.weightOptions.map((w, idx) => `
-                <button type="button" class="qv-weight-btn ${idx === 0 ? 'active' : ''}" onclick="selectQvWeight(this, '${w}')" style="padding: 6px 14px; border: 1px solid var(--border-gold); background: ${idx === 0 ? 'var(--color-gold)' : 'rgba(255,255,255,0.05)'}; color: ${idx === 0 ? '#000' : '#FFF'}; font-weight: 700; border-radius: 6px; font-size: 0.85rem; cursor: pointer;">${w}</button>
+                <button type="button" class="qv-weight-btn ${idx === 0 ? 'active' : ''}" onclick="selectQvWeight(this, '${w}')" style="padding: 6px 12px; border: 1px solid var(--border-gold); background: ${idx === 0 ? 'var(--color-gold)' : 'rgba(255,255,255,0.05)'}; color: ${idx === 0 ? '#000' : '#FFF'}; font-weight: 700; border-radius: 6px; font-size: 0.82rem; cursor: pointer;">${w}</button>
               `).join('')}
             </div>
           </div>
 
           <!-- Quantity & Action -->
-          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
             <div class="qty-picker" style="background: rgba(255,255,255,0.05); color: #FFF;">
-              <button class="qty-btn" onclick="adjustQvQty(-1)"><i class="fa-solid fa-minus"></i></button>
+              <button class="qty-btn" onclick="adjustQvQty(-1)" aria-label="Decrease Quantity"><i class="fa-solid fa-minus"></i></button>
               <input type="text" id="qv-qty-input" class="qty-input" value="1" readonly style="color: #FFF;">
-              <button class="qty-btn" onclick="adjustQvQty(1)"><i class="fa-solid fa-plus"></i></button>
+              <button class="qty-btn" onclick="adjustQvQty(1)" aria-label="Increase Quantity"><i class="fa-solid fa-plus"></i></button>
             </div>
             
             <button class="btn btn-primary" style="flex-grow: 1;" onclick="handleQvAddToCart(${product.id})">
               <i class="fa-solid fa-bag-shopping"></i> Add to Cart
             </button>
             
-            <button class="card-action-btn wishlist-btn ${isWish ? 'wishlist-active' : ''}" onclick="toggleWishlist(${product.id})" style="width: 44px; height: 44px;">
+            <button class="card-action-btn wishlist-btn ${isWish ? 'wishlist-active' : ''}" onclick="toggleWishlist(${product.id})" style="width: 42px; height: 42px;" aria-label="Save to Wishlist">
               <i class="fa-${isWish ? 'solid' : 'regular'} fa-heart"></i>
             </button>
           </div>
 
-          <a href="product.html?id=${product.id}" style="color: var(--color-gold); font-size: 0.88rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">
+          <a href="product.html?id=${product.id}" style="color: var(--color-gold); font-size: 0.85rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">
             View Full Product Information &amp; Lab Details <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
@@ -209,6 +229,9 @@ function openQuickView(productId) {
   `;
 
   modalBackdrop.classList.add('active');
+  modalBackdrop.onclick = (e) => {
+    if (e.target === modalBackdrop) closeQuickView();
+  };
 }
 
 let selectedQvWeightVal = '';
@@ -255,7 +278,6 @@ function initAccordions() {
       const item = header.parentElement;
       const isActive = item.classList.contains('active');
       
-      // Close other siblings
       const siblingItems = item.parentElement.querySelectorAll('.faq-item');
       siblingItems.forEach(sib => sib.classList.remove('active'));
 
@@ -281,7 +303,25 @@ function initNewsletter() {
   });
 }
 
-// Master Initialization
+// Auto highlight active nav links based on URL
+function highlightActiveNav() {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-menu .nav-link, .mobile-nav-list .mobile-nav-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    const pureHref = href.split('?')[0].split('#')[0];
+    const isHome = (currentPath === '' || currentPath === 'index.html') && (pureHref === 'index.html' || pureHref === './' || pureHref === '');
+    const isExactMatch = pureHref === currentPath && !href.includes('#') && !href.includes('?');
+
+    if (isHome || isExactMatch) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+}
+
+// Master Initialization with Safe Execution
 document.addEventListener('DOMContentLoaded', () => {
   updateHeaderBadges();
   initScrollEffects();
@@ -289,6 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearchModal();
   initAccordions();
   initNewsletter();
+  highlightActiveNav();
 
   if (typeof initHeaderSearch === 'function') initHeaderSearch();
   if (typeof renderCartPage === 'function') renderCartPage();
