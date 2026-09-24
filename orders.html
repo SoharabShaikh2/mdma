@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Orders History — MDMA Spices and Foods</title>
   <meta name="description" content="View past spice orders, track in-transit packages, and reorder favourite blends.">
-  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
-  
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-logo.png">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
   <!-- Top Announcement Bar -->
@@ -145,13 +147,17 @@
   <div class="search-modal" id="search-modal">
     <div class="search-modal-box">
       <div class="search-form-header">
-        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search MDMA Spices &amp; Foods</h3>
-        <button class="close-search-btn" id="close-search-modal" aria-label="Close Search Modal"><i class="fa-solid fa-xmark"></i></button>
+        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search MDMA Spices &amp;
+          Foods</h3>
+        <button class="close-search-btn" id="close-search-modal" aria-label="Close Search Modal"><i
+            class="fa-solid fa-xmark"></i></button>
       </div>
       <form action="search.html" method="GET">
         <div class="search-input-group">
-          <input type="text" name="q" id="header-search-input" placeholder="Type turmeric, saffron, cardamom, masala..." autocomplete="off">
-          <button type="submit" class="search-submit-btn" aria-label="Submit Search"><i class="fa-solid fa-arrow-right"></i></button>
+          <input type="text" name="q" id="header-search-input" placeholder="Type turmeric, saffron, cardamom, masala..."
+            autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit Search"><i
+              class="fa-solid fa-arrow-right"></i></button>
         </div>
       </form>
       <div class="search-quick-tags">
@@ -183,16 +189,19 @@
   <main class="main-content">
     <section class="section section-light" style="padding-top: 40px; min-height: 65vh;">
       <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
           <h1 style="font-size: 2.2rem;">Order History</h1>
           <a href="shop.html" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-store"></i> Shop More Spices</a>
         </div>
 
-        <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 24px; box-shadow: var(--shadow-sm);">
+        <div
+          style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 24px; box-shadow: var(--shadow-sm);">
           <div class="table-responsive">
             <table style="width: 100%; border-collapse: collapse; text-align: left; min-width: 600px;">
               <thead>
-                <tr style="border-bottom: 2px solid var(--border-light); font-size: 0.85rem; text-transform: uppercase; color: var(--text-dark-muted);">
+                <tr
+                  style="border-bottom: 2px solid var(--border-light); font-size: 0.85rem; text-transform: uppercase; color: var(--text-dark-muted);">
                   <th style="padding: 14px 12px;">Order ID</th>
                   <th style="padding: 14px 12px;">Date</th>
                   <th style="padding: 14px 12px;">Products</th>
@@ -318,4 +327,5 @@
   <script src="js/account.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

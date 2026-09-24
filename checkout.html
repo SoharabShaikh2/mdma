@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout — MDMA Spices and Foods</title>
   <meta name="description" content="Secure simulated checkout for MDMA Spices and Foods orders.">
-  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
-  
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-logo.png">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
   <!-- Top Announcement Bar -->
@@ -144,13 +146,17 @@
   <div class="search-modal" id="search-modal">
     <div class="search-modal-box">
       <div class="search-form-header">
-        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search MDMA Spices &amp; Foods</h3>
-        <button class="close-search-btn" id="close-search-modal" aria-label="Close Search Modal"><i class="fa-solid fa-xmark"></i></button>
+        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search MDMA Spices &amp;
+          Foods</h3>
+        <button class="close-search-btn" id="close-search-modal" aria-label="Close Search Modal"><i
+            class="fa-solid fa-xmark"></i></button>
       </div>
       <form action="search.html" method="GET">
         <div class="search-input-group">
-          <input type="text" name="q" id="header-search-input" placeholder="Type turmeric, saffron, cardamom, masala..." autocomplete="off">
-          <button type="submit" class="search-submit-btn" aria-label="Submit Search"><i class="fa-solid fa-arrow-right"></i></button>
+          <input type="text" name="q" id="header-search-input" placeholder="Type turmeric, saffron, cardamom, masala..."
+            autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit Search"><i
+              class="fa-solid fa-arrow-right"></i></button>
         </div>
       </form>
       <div class="search-quick-tags">
@@ -183,7 +189,8 @@
     <section class="section section-light" style="padding-top: 30px; min-height: 80vh;">
       <div class="container">
         <div style="margin-bottom: 24px;">
-          <a href="cart.html" style="color: var(--color-gold-dark); font-weight: 700; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
+          <a href="cart.html"
+            style="color: var(--color-gold-dark); font-weight: 700; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px;">
             <i class="fa-solid fa-arrow-left"></i> Return to Shopping Cart
           </a>
         </div>
@@ -193,73 +200,90 @@
             <!-- Left: Checkout Forms -->
             <div>
               <!-- Section 1: Customer Contact -->
-              <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 28px; margin-bottom: 24px;">
+              <div
+                style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 28px; margin-bottom: 24px;">
                 <h3 style="font-size: 1.25rem; margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
-                  <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--color-gold); color: #000; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; font-weight: 800;">1</span>
+                  <span
+                    style="width: 28px; height: 28px; border-radius: 50%; background: var(--color-gold); color: #000; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; font-weight: 800;">1</span>
                   Contact Information
                 </h3>
                 <div class="form-grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
                   <div class="form-group">
                     <label class="form-label" for="billing_email">Email Address *</label>
-                    <input type="email" id="billing_email" class="form-control" placeholder="you@example.com" value="customer@mdmaspices.com" required>
+                    <input type="email" id="billing_email" class="form-control" placeholder="you@example.com"
+                      value="customer@mdmaspices.com" required>
                   </div>
                   <div class="form-group">
                     <label class="form-label" for="billing_phone">Mobile Number *</label>
-                    <input type="tel" id="billing_phone" class="form-control" placeholder="10-digit mobile number" value="+91 98765 43210" required>
+                    <input type="tel" id="billing_phone" class="form-control" placeholder="10-digit mobile number"
+                      value="+91 98765 43210" required>
                   </div>
                 </div>
               </div>
 
               <!-- Section 2: Shipping Address -->
-              <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 28px; margin-bottom: 24px;">
+              <div
+                style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 28px; margin-bottom: 24px;">
                 <h3 style="font-size: 1.25rem; margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
-                  <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--color-gold); color: #000; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; font-weight: 800;">2</span>
+                  <span
+                    style="width: 28px; height: 28px; border-radius: 50%; background: var(--color-gold); color: #000; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; font-weight: 800;">2</span>
                   Shipping Address
                 </h3>
-                <div class="form-grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 14px;">
+                <div class="form-grid-2"
+                  style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 14px;">
                   <div class="form-group">
                     <label class="form-label" for="billing_fname">First Name *</label>
-                    <input type="text" id="billing_fname" class="form-control" placeholder="e.g. Sakhil" value="Sakhil" required>
+                    <input type="text" id="billing_fname" class="form-control" placeholder="e.g. Sakhil" value="Sakhil"
+                      required>
                   </div>
                   <div class="form-group">
                     <label class="form-label" for="billing_lname">Last Name *</label>
-                    <input type="text" id="billing_lname" class="form-control" placeholder="e.g. Mondal" value="Mondal" required>
+                    <input type="text" id="billing_lname" class="form-control" placeholder="e.g. Mondal" value="Mondal"
+                      required>
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label class="form-label" for="billing_address">Street Address / House No. *</label>
-                  <input type="text" id="billing_address" class="form-control" placeholder="House/Flat number, building, street" value="14B Royal Palms, Connaught Place" required>
+                  <input type="text" id="billing_address" class="form-control"
+                    placeholder="House/Flat number, building, street" value="14B Royal Palms, Connaught Place" required>
                 </div>
 
                 <div class="form-grid-3" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
                   <div class="form-group">
                     <label class="form-label" for="billing_city">City *</label>
-                    <input type="text" id="billing_city" class="form-control" placeholder="New Delhi" value="New Delhi" required>
+                    <input type="text" id="billing_city" class="form-control" placeholder="New Delhi" value="New Delhi"
+                      required>
                   </div>
                   <div class="form-group">
                     <label class="form-label" for="billing_state">State *</label>
-                    <input type="text" id="billing_state" class="form-control" placeholder="Delhi" value="Delhi" required>
+                    <input type="text" id="billing_state" class="form-control" placeholder="Delhi" value="Delhi"
+                      required>
                   </div>
                   <div class="form-group">
                     <label class="form-label" for="billing_pincode">PIN Code *</label>
-                    <input type="text" id="billing_pincode" class="form-control" placeholder="110001" value="110001" required>
+                    <input type="text" id="billing_pincode" class="form-control" placeholder="110001" value="110001"
+                      required>
                   </div>
                 </div>
               </div>
 
               <!-- Section 3: Delivery Options -->
-              <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 28px; margin-bottom: 24px;">
+              <div
+                style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 28px; margin-bottom: 24px;">
                 <h3 style="font-size: 1.25rem; margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
-                  <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--color-gold); color: #000; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; font-weight: 800;">3</span>
+                  <span
+                    style="width: 28px; height: 28px; border-radius: 50%; background: var(--color-gold); color: #000; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; font-weight: 800;">3</span>
                   Delivery Method
                 </h3>
-                <label style="display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; border: 1.5px solid var(--border-gold); background: rgba(212, 175, 55, 0.05); border-radius: 8px; cursor: pointer; margin-bottom: 10px;">
+                <label
+                  style="display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; border: 1.5px solid var(--border-gold); background: rgba(212, 175, 55, 0.05); border-radius: 8px; cursor: pointer; margin-bottom: 10px;">
                   <div style="display: flex; align-items: center; gap: 12px;">
                     <input type="radio" name="delivery_method" value="Standard" checked>
                     <div>
                       <strong>Standard Delivery (3-5 Business Days)</strong>
-                      <div style="font-size: 0.8rem; color: var(--text-dark-muted);">Dispatched in secure aroma-barrier pouch</div>
+                      <div style="font-size: 0.8rem; color: var(--text-dark-muted);">Dispatched in secure aroma-barrier
+                        pouch</div>
                     </div>
                   </div>
                   <strong style="color: #2D6A4F;">Included</strong>
@@ -267,30 +291,38 @@
               </div>
 
               <!-- Section 4: Payment Selection -->
-              <div style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 28px;">
+              <div
+                style="background: var(--bg-light-card); border: 1px solid var(--border-light); border-radius: var(--border-radius-md); padding: 28px;">
                 <h3 style="font-size: 1.25rem; margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
-                  <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--color-gold); color: #000; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; font-weight: 800;">4</span>
+                  <span
+                    style="width: 28px; height: 28px; border-radius: 50%; background: var(--color-gold); color: #000; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; font-weight: 800;">4</span>
                   Select Payment Mode (Simulated)
                 </h3>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                  <label style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid var(--border-light); border-radius: 8px; cursor: pointer;">
+                  <label
+                    style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid var(--border-light); border-radius: 8px; cursor: pointer;">
                     <input type="radio" name="payment_method" value="UPI (Google Pay / PhonePe)" checked>
                     <i class="fa-solid fa-qrcode" style="color: var(--color-gold-dark); font-size: 1.2rem;"></i>
                     <span>UPI / Instant QR (Google Pay, PhonePe, Paytm)</span>
                   </label>
-                  <label style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid var(--border-light); border-radius: 8px; cursor: pointer;">
+                  <label
+                    style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid var(--border-light); border-radius: 8px; cursor: pointer;">
                     <input type="radio" name="payment_method" value="Credit / Debit Card">
                     <i class="fa-solid fa-credit-card" style="color: var(--color-gold-dark); font-size: 1.2rem;"></i>
                     <span>Credit / Debit Card (Visa, MasterCard, RuPay)</span>
                   </label>
-                  <label style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid var(--border-light); border-radius: 8px; cursor: pointer;">
+                  <label
+                    style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid var(--border-light); border-radius: 8px; cursor: pointer;">
                     <input type="radio" name="payment_method" value="Net Banking">
-                    <i class="fa-solid fa-building-columns" style="color: var(--color-gold-dark); font-size: 1.2rem;"></i>
+                    <i class="fa-solid fa-building-columns"
+                      style="color: var(--color-gold-dark); font-size: 1.2rem;"></i>
                     <span>Net Banking (All Major Indian Banks)</span>
                   </label>
-                  <label style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid var(--border-light); border-radius: 8px; cursor: pointer;">
+                  <label
+                    style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid var(--border-light); border-radius: 8px; cursor: pointer;">
                     <input type="radio" name="payment_method" value="Cash on Delivery (COD)">
-                    <i class="fa-solid fa-hand-holding-dollar" style="color: var(--color-gold-dark); font-size: 1.2rem;"></i>
+                    <i class="fa-solid fa-hand-holding-dollar"
+                      style="color: var(--color-gold-dark); font-size: 1.2rem;"></i>
                     <span>Cash on Delivery (COD)</span>
                   </label>
                 </div>
@@ -299,9 +331,12 @@
 
             <!-- Right: Order Summary Sidebar -->
             <div>
-              <div style="background: var(--bg-light-card); border: 1px solid var(--border-gold); border-radius: var(--border-radius-md); padding: 28px; box-shadow: var(--shadow-sm); position: sticky; top: 100px;">
-                <h3 style="font-size: 1.25rem; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border-light);">Order Summary</h3>
-                
+              <div
+                style="background: var(--bg-light-card); border: 1px solid var(--border-gold); border-radius: var(--border-radius-md); padding: 28px; box-shadow: var(--shadow-sm); position: sticky; top: 100px;">
+                <h3
+                  style="font-size: 1.25rem; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border-light);">
+                  Order Summary</h3>
+
                 <div id="checkout-items-summary">
                   <!-- Rendered by js/checkout.js -->
                 </div>
@@ -310,12 +345,14 @@
                   <!-- Rendered by js/checkout.js -->
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 24px; font-size: 1.05rem;">
+                <button type="submit" class="btn btn-primary btn-block btn-lg"
+                  style="margin-top: 24px; font-size: 1.05rem;">
                   <i class="fa-solid fa-lock"></i> Place Order Now
                 </button>
 
                 <div style="text-align: center; margin-top: 16px; font-size: 0.8rem; color: var(--text-dark-muted);">
-                  By placing this order, you agree to MDMA's <a href="terms-conditions.html" style="color: var(--color-gold-dark); text-decoration: underline;">Terms &amp; Conditions</a>.
+                  By placing this order, you agree to MDMA's <a href="terms-conditions.html"
+                    style="color: var(--color-gold-dark); text-decoration: underline;">Terms &amp; Conditions</a>.
                 </div>
               </div>
             </div>
@@ -418,4 +455,5 @@
   <script src="js/account.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

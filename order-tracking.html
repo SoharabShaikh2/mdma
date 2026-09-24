@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Track Order Status — MDMA Spices and Foods</title>
-  <meta name="description" content="Track your MDMA spice shipment in real-time. View live stages from quality packaging to your doorstep.">
-  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-icon.svg">
-  
+  <meta name="description"
+    content="Track your MDMA spice shipment in real-time. View live stages from quality packaging to your doorstep.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/mdma-logo.png">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
   <!-- Top Announcement Bar -->
@@ -128,7 +131,8 @@
       <a href="wishlist.html" class="mobile-nav-link">My Wishlist <i class="fa-solid fa-angle-right"></i></a>
       <a href="cart.html" class="mobile-nav-link">My Cart <i class="fa-solid fa-angle-right"></i></a>
       <a href="my-account.html" class="mobile-nav-link">My Account <i class="fa-solid fa-angle-right"></i></a>
-      <a href="order-tracking.html" class="mobile-nav-link active">Track Order <i class="fa-solid fa-angle-right"></i></a>
+      <a href="order-tracking.html" class="mobile-nav-link active">Track Order <i
+          class="fa-solid fa-angle-right"></i></a>
       <a href="contact.html" class="mobile-nav-link">Contact Support <i class="fa-solid fa-angle-right"></i></a>
     </div>
     <div class="mobile-drawer-footer">
@@ -144,13 +148,17 @@
   <div class="search-modal" id="search-modal">
     <div class="search-modal-box">
       <div class="search-form-header">
-        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search MDMA Spices &amp; Foods</h3>
-        <button class="close-search-btn" id="close-search-modal" aria-label="Close Search Modal"><i class="fa-solid fa-xmark"></i></button>
+        <h3><i class="fa-solid fa-magnifying-glass" style="color: var(--color-gold);"></i> Search MDMA Spices &amp;
+          Foods</h3>
+        <button class="close-search-btn" id="close-search-modal" aria-label="Close Search Modal"><i
+            class="fa-solid fa-xmark"></i></button>
       </div>
       <form action="search.html" method="GET">
         <div class="search-input-group">
-          <input type="text" name="q" id="header-search-input" placeholder="Type turmeric, saffron, cardamom, masala..." autocomplete="off">
-          <button type="submit" class="search-submit-btn" aria-label="Submit Search"><i class="fa-solid fa-arrow-right"></i></button>
+          <input type="text" name="q" id="header-search-input" placeholder="Type turmeric, saffron, cardamom, masala..."
+            autocomplete="off">
+          <button type="submit" class="search-submit-btn" aria-label="Submit Search"><i
+              class="fa-solid fa-arrow-right"></i></button>
         </div>
       </form>
       <div class="search-quick-tags">
@@ -182,22 +190,31 @@
       <div class="container">
         <div style="max-width: 600px; margin: 0 auto 40px auto; text-align: center;">
           <h1 style="font-size: 2.2rem; margin-bottom: 12px;">Track Your Shipment</h1>
-          <p style="color: var(--text-dark-muted); margin-bottom: 24px;">Enter your MDMA Order Reference ID (e.g. <strong>MDMA-947201</strong>) to check live status.</p>
+          <p style="color: var(--text-dark-muted); margin-bottom: 24px;">Enter your MDMA Order Reference ID (e.g.
+            <strong>MDMA-947201</strong>) to check live status.</p>
 
           <form action="order-tracking.html" method="GET" style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <input type="text" name="orderId" id="tracking-search-input" placeholder="e.g. MDMA-947201" class="form-control" style="padding: 14px 20px; font-size: 1.05rem; border-radius: 99px; text-transform: uppercase; flex: 1; min-width: 240px;">
-            <button type="submit" class="btn btn-primary" style="padding: 14px 28px;"><i class="fa-solid fa-location-crosshairs"></i> Track</button>
+            <input type="text" name="orderId" id="tracking-search-input" placeholder="e.g. MDMA-947201"
+              class="form-control"
+              style="padding: 14px 20px; font-size: 1.05rem; border-radius: 99px; text-transform: uppercase; flex: 1; min-width: 240px;">
+            <button type="submit" class="btn btn-primary" style="padding: 14px 28px;"><i
+                class="fa-solid fa-location-crosshairs"></i> Track</button>
           </form>
         </div>
 
         <!-- Tracking Timeline Card -->
-        <div style="background: var(--bg-dark-primary); color: #FFF; border: 1px solid var(--border-gold); border-radius: var(--border-radius-lg); padding: 40px; box-shadow: var(--shadow-dark-card); max-width: 900px; margin: 0 auto;">
-          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-gold); padding-bottom: 20px; margin-bottom: 30px; flex-wrap: wrap; gap: 12px;">
+        <div
+          style="background: var(--bg-dark-primary); color: #FFF; border: 1px solid var(--border-gold); border-radius: var(--border-radius-lg); padding: 40px; box-shadow: var(--shadow-dark-card); max-width: 900px; margin: 0 auto;">
+          <div
+            style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-gold); padding-bottom: 20px; margin-bottom: 30px; flex-wrap: wrap; gap: 12px;">
             <div>
-              <span style="font-size: 0.8rem; color: var(--color-gold-light); text-transform: uppercase; letter-spacing: 0.08em;">Tracking Order</span>
+              <span
+                style="font-size: 0.8rem; color: var(--color-gold-light); text-transform: uppercase; letter-spacing: 0.08em;">Tracking
+                Order</span>
               <h2 style="font-size: 1.6rem; color: #FFF;" id="tracking-order-id">MDMA-947201</h2>
             </div>
-            <div style="background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); padding: 6px 14px; border-radius: 99px; font-size: 0.85rem; color: var(--color-gold-light);">
+            <div
+              style="background: rgba(212,175,55,0.15); border: 1px solid var(--border-gold); padding: 6px 14px; border-radius: 99px; font-size: 0.85rem; color: var(--color-gold-light);">
               <i class="fa-solid fa-truck-fast"></i> Express Safe Transit
             </div>
           </div>
@@ -303,4 +320,5 @@
   <script src="js/account.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
