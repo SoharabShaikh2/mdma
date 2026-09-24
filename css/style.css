@@ -756,34 +756,48 @@ h6 {
 .main-footer {
   background: linear-gradient(180deg, #0A0A08 0%, #050505 100%);
   color: var(--text-light);
-  border-top: 1px solid var(--border-gold);
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
   position: relative;
   overflow: hidden;
   width: 100%;
   margin-top: auto;
 }
 
+.main-footer .container,
+.main-footer .footer-top,
+.main-footer .footer-bottom-inner {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(24px, 4.5vw, 60px);
+  padding-right: clamp(24px, 4.5vw, 60px);
+}
+
 .footer-top {
-  padding: clamp(50px, 7vw, 80px) 0 clamp(35px, 5vw, 50px) 0;
+  padding-top: clamp(50px, 7vw, 80px);
+  padding-bottom: clamp(35px, 5vw, 50px);
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.3fr;
-  gap: clamp(24px, 3.5vw, 40px);
+  grid-template-columns: 1.45fr 1fr 1fr 1.2fr;
+  gap: clamp(28px, 3.5vw, 48px);
+  align-items: start;
 }
 
 .footer-about .footer-logo img {
-  height: 54px;
-  margin-bottom: 20px;
+  height: clamp(38px, 4.5vw, 48px);
+  width: auto;
+  max-width: 190px;
+  margin-bottom: 18px;
 }
 
 .footer-about p {
   color: var(--text-light-muted);
-  font-size: 0.92rem;
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.68;
   margin-bottom: 22px;
-  max-width: 320px;
+  max-width: 290px;
 }
 
 .footer-socials {
@@ -792,16 +806,17 @@ h6 {
 }
 
 .social-icon-btn {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.22);
   color: var(--text-light);
   transition: all var(--transition-fast);
+  font-size: 0.95rem;
 }
 
 .social-icon-btn:hover {
@@ -814,10 +829,12 @@ h6 {
 
 .footer-col h4 {
   color: var(--color-gold-light);
-  font-size: 1.15rem;
-  margin-bottom: 22px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 20px;
   position: relative;
   padding-bottom: 10px;
+  letter-spacing: 0.02em;
 }
 
 .footer-col h4::after {
@@ -825,18 +842,19 @@ h6 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 32px;
+  width: 28px;
   height: 2px;
   background: var(--color-gold);
+  border-radius: 2px;
 }
 
 .footer-links li {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .footer-links a {
   color: var(--text-light-muted);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -844,31 +862,33 @@ h6 {
 }
 
 .footer-links a:hover {
-  color: var(--color-gold);
+  color: var(--color-gold-light);
   transform: translateX(4px);
 }
 
 .footer-contact-item {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
-  margin-bottom: 16px;
+  gap: 12px;
+  margin-bottom: 14px;
   color: var(--text-light-muted);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
 }
 
 .footer-contact-item i {
   color: var(--color-gold);
-  font-size: 1rem;
-  margin-top: 4px;
+  font-size: 0.95rem;
+  margin-top: 3px;
   flex-shrink: 0;
 }
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 22px 0;
-  font-size: 0.85rem;
+  padding: 20px 0;
+  font-size: 0.82rem;
   color: var(--text-light-muted);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .footer-bottom-inner {
@@ -882,7 +902,7 @@ h6 {
 .footer-bottom-badges {
   display: flex;
   align-items: center;
-  gap: clamp(12px, 2vw, 20px);
+  gap: clamp(12px, 2vw, 22px);
   font-size: 0.8rem;
   flex-wrap: wrap;
 }
@@ -892,6 +912,7 @@ h6 {
   align-items: center;
   gap: 6px;
   color: var(--color-gold-light);
+  font-weight: 500;
 }
 
 /* ==========================================================================

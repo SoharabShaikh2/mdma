@@ -168,8 +168,8 @@
   }
   
   .footer-grid {
-    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-    gap: 30px;
+    grid-template-columns: 1.35fr 1fr 1fr 1.15fr;
+    gap: 28px;
   }
   
   .showcase-wrapper {
@@ -350,9 +350,21 @@
     flex-shrink: 0;
   }
   
+  .main-footer .container,
+  .main-footer .footer-top,
+  .main-footer .footer-bottom-inner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .footer-top {
+    padding-top: 40px !important;
+    padding-bottom: 28px !important;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 28px;
   }
   
   .footer-bottom-inner {
@@ -363,6 +375,7 @@
 
   .footer-bottom-badges {
     justify-content: center;
+    gap: 12px;
   }
 
   .quickview-grid {
