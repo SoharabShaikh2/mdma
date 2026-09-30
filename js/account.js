@@ -15,7 +15,7 @@ function seedDemoOrdersIfEmpty() {
         customer: {
           name: "Sakhil Mondal",
           email: "customer@mdmaspices.com",
-          phone: "+91 98765 43210",
+          phone: "+91 9958593750",
           address: "14B Royal Palms, Connaught Place, New Delhi - 110001"
         },
         paymentMethod: "UPI (Google Pay)",
@@ -47,7 +47,7 @@ function seedDemoOrdersIfEmpty() {
         customer: {
           name: "Sakhil Mondal",
           email: "customer@mdmaspices.com",
-          phone: "+91 98765 43210",
+          phone: "+91 9958593750",
           address: "14B Royal Palms, Connaught Place, New Delhi - 110001"
         },
         paymentMethod: "Credit Card (Visa)",

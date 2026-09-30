@@ -139,7 +139,7 @@
     </div>
     <div class="mobile-drawer-footer">
       <div class="mobile-contact-info">
-        <p><i class="fa-solid fa-phone" style="color: var(--color-gold);"></i> +91 98765 43210 (Support)</p>
+        <p><i class="fa-solid fa-phone" style="color: var(--color-gold);"></i> +91 9958593750 (Support)</p>
         <p><i class="fa-solid fa-envelope" style="color: var(--color-gold);"></i> care@mdmaspices.com</p>
       </div>
       <a href="shop.html" class="btn btn-primary btn-block"><i class="fa-solid fa-bag-shopping"></i> Shop Now</a>
@@ -590,8 +590,196 @@
       </div>
     </section>
 
+
+        <!-- SECTION 4A — DEHYDRATED FOODS SHOWCASE (CLIENT ASSETS) -->
+    <section class="section section-light" id="dehydrated-foods-showcase">
+      <div class="container">
+        <div
+          style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <!-- <span class="section-tag" style="margin-bottom: 8px;"><i class="fa-solid fa-leaf"
+                style="color: #2D6A4F;"></i> 100% Pure &amp; Natural • Top Rated Pantry Picks</span> -->
+            <h2 class="section-title" style="margin-bottom: 0;">Explore Our Top Products</h2>
+            <p class="section-subtitle" style="margin-top: 6px; margin-bottom: 0;">Discover our most popular products, carefully selected for quality and value.</p>
+          </div>
+          <a href="category.html?cat=dehydrated-foods" class="btn btn-primary"><i class="fa-solid fa-apple-whole"></i>
+            View All Products</a>
+        </div>
+
+        <div class="products-grid" id="homepage-dehydrated-foods-grid">
+          <!-- 1. Apple -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="240" data-rating="4.9">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-apple.jpeg" alt="Crispy Dehydrated Apple Rings"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-organic">100% Natural</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="101" onclick="toggleWishlist(101)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(101)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(101)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=101" class="product-title">Crispy Dehydrated Apple Rings</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(82)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹240</span>
+                <span class="old-price">₹290</span>
+                <span class="discount-badge">17% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(101, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Dragon Fruit -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="320" data-rating="5.0">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-dragon-fruit.jpeg" alt="Exotic Dehydrated Dragon Fruit Slices"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">Bestseller</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="102" onclick="toggleWishlist(102)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(102)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(102)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=102" class="product-title">Exotic Dehydrated Dragon Fruit Slices</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(114)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹320</span>
+                <span class="old-price">₹380</span>
+                <span class="discount-badge">16% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(102, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Lime -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="190" data-rating="4.8">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-lime.jpeg" alt="Sun-Cured Dehydrated Lime Wheels"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-sale">Zesty Pick</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="103" onclick="toggleWishlist(103)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(103)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(103)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=103" class="product-title">Sun-Cured Dehydrated Lime Wheels</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-count">(56)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹190</span>
+                <span class="old-price">₹230</span>
+                <span class="discount-badge">17% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(103, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Mango -->
+          <div class="product-card" data-category="dehydrated-foods" data-price="280" data-rating="4.9">
+            <div class="product-media">
+              <img src="assets/clientassets/dehydrated-mango.jpeg" alt="Royal Dehydrated Alphonso Mango Slices"
+                class="product-img" loading="lazy">
+              <span class="product-badge badge-bestseller">Chef's Choice</span>
+              <div class="product-card-actions">
+                <button class="card-action-btn wishlist-btn" data-id="104" onclick="toggleWishlist(104)"
+                  title="Wishlist" aria-label="Save to Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <button class="card-action-btn" onclick="openQuickView(104)" title="Quick View" aria-label="Quick View">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <button class="card-quickview-btn" onclick="openQuickView(104)">
+                <i class="fa-solid fa-magnifying-glass-plus"></i> Quick View
+              </button>
+            </div>
+            <div class="product-content">
+              <div class="product-category">Dehydrated Foods</div>
+              <a href="product.html?id=104" class="product-title">Royal Dehydrated Alphonso Mango Slices</a>
+              <div class="product-rating">
+                <div class="stars" style="color: #F5A623;">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(160)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">₹280</span>
+                <span class="old-price">₹340</span>
+                <span class="discount-badge">18% OFF</span>
+              </div>
+              <div class="product-card-footer">
+                <button class="card-add-cart-btn" onclick="addToCart(104, 1)">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SECTION 2 — TRUST / USP SECTION -->
-    <section class="section section-dark-secondary"
+    <!-- <section class="section section-dark-secondary"
       style="border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold);">
       <div class="container">
         <div class="usp-grid">
@@ -622,77 +810,7 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- SECTION 3 — CURATED COLLECTIONS / CATEGORIES -->
-    <section class="section section-light" id="categories-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Curated Collections</span>
-          <h2 class="section-title">Explore Our 4 Signature Categories</h2>
-          <p class="section-subtitle">Discover nutrient-dense dehydrated foods, sun-crafted dehydrated masalas, virgin
-            cold-pressed oils, and single-origin heritage spices.</p>
-        </div>
-
-        <div class="category-grid">
-          <!-- Category 1: Dehydrated Foods (Client Images) -->
-          <a href="category.html?cat=dehydrated-foods" class="category-card">
-            <img src="assets/clientassets/dehydrated-dragon-fruit.jpeg"
-              alt="Dehydrated Foods &amp; Gourmet Fruit Crisps" class="category-card-bg">
-            <div class="category-card-overlay"></div>
-            <div class="category-card-content">
-              <span class="category-card-count">8 Products Available</span>
-              <h3 class="category-card-title">Dehydrated Foods</h3>
-              <p class="category-card-desc">100% natural fruit crisps: dragon fruit, mango, apple, pineapple, orange,
-                lime, pear &amp; papaya.</p>
-              <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
-            </div>
-          </a>
-
-          <!-- Category 2: Dehydrated Masalas -->
-          <a href="category.html?cat=dehydrated-masala" class="category-card">
-            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
-              alt="Dehydrated Masalas" class="category-card-bg">
-            <div class="category-card-overlay"></div>
-            <div class="category-card-content">
-              <span class="category-card-count">6 Products Available</span>
-              <h3 class="category-card-title">Dehydrated Masalas</h3>
-              <p class="category-card-desc">Heritage Garam Masala, Shahi Biryani, Royal Chai Spice &amp; Kasuri Methi
-                herb blends.</p>
-              <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
-            </div>
-          </a>
-
-          <!-- Category 3: Pure Cold-Pressed Oils -->
-          <a href="category.html?cat=pure-oil" class="category-card">
-            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
-              alt="Pure Cold-Pressed Oils" class="category-card-bg">
-            <div class="category-card-overlay"></div>
-            <div class="category-card-content">
-              <span class="category-card-count">4 Products Available</span>
-              <h3 class="category-card-title">Pure Cold-Pressed Oils</h3>
-              <p class="category-card-desc">Kolhu wood-pressed virgin mustard, raw sesame (til), virgin coconut &amp;
-                groundnut oils.</p>
-              <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
-            </div>
-          </a>
-
-          <!-- Category 4: Heritage Spices & Seasonings -->
-          <a href="category.html?cat=heritage-spices" class="category-card">
-            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80"
-              alt="Heritage Spices &amp; Seasonings" class="category-card-bg">
-            <div class="category-card-overlay"></div>
-            <div class="category-card-content">
-              <span class="category-card-count">6 Products Available</span>
-              <h3 class="category-card-title">Heritage Spices</h3>
-              <p class="category-card-desc">Salem Turmeric, Tellicherry Pepper, 8mm+ Idukki Cardamom &amp; Himalayan
-                Rock Salt.</p>
-              <span class="category-explore-link">Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
+    </section> -->
 
     <!-- SECTION 4A — DEHYDRATED FOODS SHOWCASE (CLIENT ASSETS) -->
     <section class="section section-cream" id="dehydrated-foods-showcase">
@@ -702,7 +820,7 @@
           <div>
             <span class="section-tag" style="margin-bottom: 8px;"><i class="fa-solid fa-leaf"
                 style="color: #2D6A4F;"></i> 100% Pure &amp; Natural • Top Rated Pantry Picks</span>
-            <h2 class="section-title" style="margin-bottom: 0;">Dehydrated Fruit Crisps</h2>
+            <h2 class="section-title" style="margin-bottom: 0;">Dehydrated Fruit </h2>
             <p class="section-subtitle" style="margin-top: 6px; margin-bottom: 0;">Authentic sun-cured and gently
               dehydrated fruit snacks packed with natural flavor, and zero preservatives.</p>
           </div>
@@ -1059,7 +1177,7 @@
           <div>
             <span class="section-tag" style="margin-bottom: 8px;"><i class="fa-solid fa-mortar-pestle"
                 style="color: var(--color-gold);"></i> Heritage Secret Formulations</span>
-            <h2 class="section-title" style="margin-bottom: 0;">Dehydrated Masalas &amp; Signature Blends</h2>
+            <h2 class="section-title" style="margin-bottom: 0;">Dehydrated Masalas</h2>
             <p class="section-subtitle" style="margin-top: 6px; margin-bottom: 0;">Artisanal spice formulations
               slow-ground from sun-cured dehydrated whole aromatics for royal gravies and teas.</p>
           </div>
@@ -1332,8 +1450,7 @@
             <span class="section-tag" style="margin-bottom: 8px;"><i class="fa-solid fa-bottle-droplet"
                 style="color: var(--color-gold);"></i> Kolhu Pressed &amp; Single Origin</span>
             <h2 class="section-title" style="margin-bottom: 0;">Pure Cold-Pressed Oils</h2>
-            <p class="section-subtitle" style="margin-top: 6px; margin-bottom: 0;">Virgin wood-pressed unrefined oils
-              alongside high-potency Salem turmeric.</p>
+            <p class="section-subtitle" style="margin-top: 6px; margin-bottom: 0;">Pure mustard oil crafted for authentic taste, rich aroma, and everyday healthy cooking.</p>
           </div>
           <a href="shop.html" class="btn btn-outline-dark"><i class="fa-solid fa-store"></i> Browse Full Catalog</a>
         </div>
@@ -2092,13 +2209,15 @@
             <i class="fa-solid fa-location-dot"></i>
             <div>
               <strong>Headquarters (Placeholder):</strong><br>
-              MDMA Spices &amp; Foods Estate,<br>
-              Connaught Place, New Delhi - 110001
+              MDMA SPICES AND FOODS PRIVATE LIMITED <br>
+              Raninagar 
+Murshidabad 
+West Bengal-742308
             </div>
           </div>
           <div class="footer-contact-item">
             <i class="fa-solid fa-phone"></i>
-            <div>+91 98765 43210 (Placeholder)</div>
+            <div>+91 9958593750 (Placeholder)</div>
           </div>
           <div class="footer-contact-item">
             <i class="fa-solid fa-envelope"></i>
