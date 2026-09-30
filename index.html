@@ -177,114 +177,416 @@
 
   <!-- Main Content Wrapper -->
   <main class="main-content">
-    <!-- SECTION 1 — HERO BANNER -->
-    <section class="hero-section section-dark"
-      style="position: relative; min-height: 85vh; display: flex; align-items: center; overflow: hidden; background: radial-gradient(circle at 75% 50%, rgba(158, 42, 43, 0.25) 0%, rgba(30, 77, 43, 0.15) 35%, #050505 80%);">
-      <!-- Subtle Floating Spice Motifs / Particles -->
-      <div style="position: absolute; top: 12%; left: 8%; opacity: 0.15; pointer-events: none;" class="animate-float">
+    <!-- SECTION 1 — HERO BANNER SLIDER (PRODUCT SHOWCASE) -->
+    <section class="hero-section section-dark hero-slider-section" id="hero-slider-section"
+      aria-label="Featured Products Showcase Slider">
+      <!-- Ambient Floating Motifs -->
+      <div style="position: absolute; top: 10%; left: 6%; opacity: 0.12; pointer-events: none;" class="animate-float">
         <i class="fa-solid fa-star-of-life" style="font-size: 3rem; color: var(--color-gold);"></i>
       </div>
-      <div style="position: absolute; bottom: 18%; left: 45%; opacity: 0.15; pointer-events: none;"
+      <div style="position: absolute; bottom: 15%; left: 42%; opacity: 0.12; pointer-events: none;"
         class="animate-float-delay">
         <i class="fa-solid fa-seedling" style="font-size: 2.5rem; color: #40916C;"></i>
       </div>
-      <div style="position: absolute; top: 25%; right: 48%; opacity: 0.2; pointer-events: none;" class="animate-float">
+      <div style="position: absolute; top: 20%; right: 45%; opacity: 0.15; pointer-events: none;" class="animate-float">
         <i class="fa-solid fa-pepper-hot" style="font-size: 2.2rem; color: var(--color-red);"></i>
       </div>
 
-      <div class="container" style="position: relative; z-index: 2; padding-top: 30px; padding-bottom: 30px;">
-        <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; align-items: center;"
-          class="hero-grid">
-          <!-- Left Content -->
-          <div class="hero-content">
-            <div class="section-tag" style="margin-bottom: 18px;">
-              <i class="fa-solid fa-award"></i> The Royal Standard of Indian Spices
-            </div>
+      <!-- Slider Track with Multiple Slides -->
+      <div class="hero-slider-track" id="hero-slider-track">
 
-            <h1 style="font-size: clamp(2.3rem, 4.5vw, 4rem); line-height: 1.15; margin-bottom: 22px; color: #FFFFFF;">
-              Pure Taste. <br>
-              <span
-                style="background: linear-gradient(135deg, #F5E08E 0%, #D4AF37 50%, #C0392B 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Natural
-                Goodness.</span>
-            </h1>
+        <!-- SLIDE 1: Dehydrated Foods (Product 1 Showcase) -->
+        <div class="hero-slide active" data-slide="0" role="group" aria-roledescription="slide"
+          aria-label="1 of 3: Dehydrated Fruit Crisps">
+          <div class="container hero-slide-container">
+            <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; align-items: center;"
+              class="hero-grid">
 
-            <p
-              style="font-size: clamp(1rem, 1.8vw, 1.15rem); color: var(--text-light-muted); line-height: 1.7; margin-bottom: 32px; max-width: 540px;">
-              Discover premium-quality spices, slow-ground powders, and authentic pantry foods crafted with
-              uncompromised purity, heritage tradition, and meticulous care.
-            </p>
-
-            <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 36px;">
-              <a href="shop.html" class="btn btn-primary btn-lg">
-                <i class="fa-solid fa-bag-shopping"></i> Shop Now
-              </a>
-              <a href="category.html" class="btn btn-outline-white btn-lg">
-                <i class="fa-solid fa-compass"></i> Explore Categories
-              </a>
-            </div>
-
-            <!-- Trust Badges Under Hero -->
-            <div
-              style="display: flex; align-items: center; gap: 20px; padding-top: 22px; border-top: 1px solid var(--border-gold); flex-wrap: wrap;">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <i class="fa-solid fa-circle-check" style="color: var(--color-gold); font-size: 1.15rem;"></i>
-                <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-light);">100% Unadulterated</span>
-              </div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <i class="fa-solid fa-leaf" style="color: #40916C; font-size: 1.15rem;"></i>
-                <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-light);">Cold Ground Fresh</span>
-              </div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <i class="fa-solid fa-shield-heart" style="color: var(--color-red); font-size: 1.15rem;"></i>
-                <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-light);">Hygienically Packed</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Visual Showcase -->
-          <div class="hero-visual" style="position: relative; text-align: center;">
-            <div style="position: relative; max-width: 500px; margin: 0 auto;">
-              <!-- Outer Gold Halo -->
-              <div
-                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: clamp(280px, 40vw, 420px); height: clamp(280px, 40vw, 420px); border-radius: 50%; background: radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, rgba(158, 42, 43, 0.15) 50%, transparent 70%); filter: blur(25px); pointer-events: none;">
-              </div>
-
-              <!-- Hero Featured Composition Image -->
-              <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1000&q=80"
-                alt="MDMA Premium Spices Selection"
-                style="width: 100%; border-radius: 20px; border: 2px solid var(--border-gold); box-shadow: 0 20px 50px rgba(0,0,0,0.7); object-fit: cover; aspect-ratio: 1/1;"
-                class="animate-float">
-
-              <!-- Floating Quality Tag -->
-              <div
-                style="position: absolute; bottom: -15px; left: -10px; background: rgba(18, 18, 16, 0.95); backdrop-filter: blur(10px); border: 1px solid var(--border-gold-strong); border-radius: 12px; padding: 12px 16px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                <div
-                  style="width: 40px; height: 40px; border-radius: 50%; background: var(--color-gold); color: #070707; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
-                  <i class="fa-solid fa-crown"></i>
+              <!-- Left Content -->
+              <div class="hero-content">
+                <div class="section-tag" style="margin-bottom: 18px;">
+                  <i class="fa-solid fa-apple-whole"></i> 100% Pure • Sun-Dehydrated Gourmet Snacks
                 </div>
-                <div style="text-align: left;">
-                  <div
-                    style="font-size: 0.72rem; font-weight: 700; color: var(--color-gold-light); text-transform: uppercase;">
-                    Heritage Purity</div>
-                  <div style="font-size: 0.9rem; font-weight: 800; color: #FFFFFF;">Single-Origin Harvests</div>
+
+                <h1
+                  style="font-size: clamp(2.2rem, 4.2vw, 3.8rem); line-height: 1.15; margin-bottom: 20px; color: #FFFFFF;">
+                  Pure Taste. <br>
+                  <span class="hero-gold-gradient">Natural Goodness.</span>
+                </h1>
+
+                <p
+                  style="font-size: clamp(0.98rem, 1.6vw, 1.12rem); color: var(--text-light-muted); line-height: 1.7; margin-bottom: 30px; max-width: 530px;">
+                  Discover slow-dehydrated crisp natural fruit slices packed with essential dietary fiber, antioxidants,
+                  and pure sun-ripened sweetness with zero added sugar or preservatives.
+                </p>
+
+                <div class="hero-cta-group">
+                  <a href="#dehydrated-foods-showcase" class="btn btn-primary btn-lg">
+                    <i class="fa-solid fa-bag-shopping"></i> View Products
+                  </a>
+                  <a href="category.html?cat=dehydrated-foods" class="btn btn-outline-white btn-lg">
+                    <i class="fa-solid fa-compass"></i> Explore Collection
+                  </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="hero-trust-badges">
+                  <div class="hero-trust-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>100% Unadulterated</span>
+                  </div>
+                  <div class="hero-trust-item">
+                    <i class="fa-solid fa-leaf" style="color: #40916C;"></i>
+                    <span>Cold Dehydrated Fresh</span>
+                  </div>
+                  <div class="hero-trust-item">
+                    <i class="fa-solid fa-shield-heart" style="color: var(--color-red);"></i>
+                    <span>Hygienically Packed</span>
+                  </div>
                 </div>
               </div>
 
-              <!-- Floating Rating Tag -->
-              <div
-                style="position: absolute; top: 15px; right: -10px; background: rgba(18, 18, 16, 0.95); backdrop-filter: blur(10px); border: 1px solid var(--border-gold-strong); border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                <div class="stars" style="color: #F5A623;">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <span style="font-weight: 800; color: #FFF; font-size: 0.88rem;">4.9/5.0</span>
+              <!-- Right Product Showcase (SaaS Product UI Mockup Card) -->
+              <div class="hero-visual">
+                <a href="#dehydrated-foods-showcase" class="saas-product-mockup"
+                  title="Click to view Dehydrated Fruit Crisps">
+                  <div class="mockup-window-header">
+                    <div class="mockup-window-controls">
+                      <span class="control-dot red"></span>
+                      <span class="control-dot yellow"></span>
+                      <span class="control-dot green"></span>
+                    </div>
+                    <div class="mockup-window-title">
+                      <i class="fa-solid fa-cubes-stacked"></i> MDMA Dehydrated Series #102
+                    </div>
+                    <div class="mockup-status-badge">
+                      <span class="pulse-dot"></span> In Stock
+                    </div>
+                  </div>
+
+                  <div class="mockup-visual-body">
+                    <div class="mockup-image-wrap">
+                      <img src="assets/clientassets/dehydrated-dragon-fruit.jpeg"
+                        alt="MDMA Exotic Dehydrated Dragon Fruit" class="mockup-product-img" loading="eager">
+                    </div>
+
+                    <!-- Floating Telemetry Chips -->
+                    <div class="mockup-badge mockup-badge-topleft">
+                      <div class="badge-icon"><i class="fa-solid fa-crown"></i></div>
+                      <div class="badge-text">
+                        <span class="badge-sub">Heritage Standard</span>
+                        <strong class="badge-main">100% Sun-Cured</strong>
+                      </div>
+                    </div>
+
+                    <div class="mockup-badge mockup-badge-topright">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                          class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <span class="badge-score">5.0 / 5.0</span>
+                    </div>
+
+                    <div class="mockup-badge mockup-badge-bottomleft">
+                      <div class="badge-nutrition-item">
+                        <span class="nutri-label">Purity</span>
+                        <span class="nutri-val">100% Raw</span>
+                      </div>
+                      <div class="badge-nutrition-divider"></div>
+                      <div class="badge-nutrition-item">
+                        <span class="nutri-label">Fiber</span>
+                        <span class="nutri-val">9.0g / 100g</span>
+                      </div>
+                    </div>
+
+                    <div class="mockup-badge mockup-badge-bottomright">
+                      <div class="badge-price-label">Starting At</div>
+                      <div class="badge-price-val">₹240 <span class="badge-old-price">₹290</span></div>
+                    </div>
+                  </div>
+
+                  <div class="mockup-footer-action">
+                    <span class="mockup-footer-label">Explore 8 Signature Dehydrated Foods</span>
+                    <span class="mockup-footer-cta">View Products <i class="fa-solid fa-arrow-right"></i></span>
+                  </div>
+                </a>
               </div>
+
             </div>
           </div>
         </div>
+
+        <!-- SLIDE 2: Dehydrated Masalas (Product 2 Showcase) -->
+        <div class="hero-slide" data-slide="1" role="group" aria-roledescription="slide"
+          aria-label="2 of 3: Dehydrated Royal Masalas">
+          <div class="container hero-slide-container">
+            <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; align-items: center;"
+              class="hero-grid">
+
+              <!-- Left Content -->
+              <div class="hero-content">
+                <div class="section-tag" style="margin-bottom: 18px;">
+                  <i class="fa-solid fa-mortar-pestle"></i> Secret 18-Spice Royal Formulations
+                </div>
+
+                <h1
+                  style="font-size: clamp(2.2rem, 4.2vw, 3.8rem); line-height: 1.15; margin-bottom: 20px; color: #FFFFFF;">
+                  Royal Heritage. <br>
+                  <span class="hero-gold-gradient">Authentic Masala Blends.</span>
+                </h1>
+
+                <p
+                  style="font-size: clamp(0.98rem, 1.6vw, 1.12rem); color: var(--text-light-muted); line-height: 1.7; margin-bottom: 30px; max-width: 530px;">
+                  Slow-stone ground formulations blended from 18 sun-cured dehydrated whole aromatics. Unlocks rich
+                  essential oils, authentic fragrance, and 100% unadulterated taste in every pinch.
+                </p>
+
+                <div class="hero-cta-group">
+                  <a href="#dehydrated-masala-showcase" class="btn btn-primary btn-lg">
+                    <i class="fa-solid fa-bag-shopping"></i> View Products
+                  </a>
+                  <a href="category.html?cat=dehydrated-masala" class="btn btn-outline-white btn-lg">
+                    <i class="fa-solid fa-compass"></i> Explore Masalas
+                  </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="hero-trust-badges">
+                  <div class="hero-trust-item">
+                    <i class="fa-solid fa-crown"></i>
+                    <span>18 Whole Spices</span>
+                  </div>
+                  <div class="hero-trust-item">
+                    <i class="fa-solid fa-mortar-pestle" style="color: #40916C;"></i>
+                    <span>Slow Stone-Ground</span>
+                  </div>
+                  <div class="hero-trust-item">
+                    <i class="fa-solid fa-award" style="color: var(--color-red);"></i>
+                    <span>Aroma-Locked Foil</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Product Showcase (SaaS Product UI Mockup Card) -->
+              <div class="hero-visual">
+                <a href="#dehydrated-masala-showcase" class="saas-product-mockup"
+                  title="Click to view Royal Masala Blends">
+                  <div class="mockup-window-header">
+                    <div class="mockup-window-controls">
+                      <span class="control-dot red"></span>
+                      <span class="control-dot yellow"></span>
+                      <span class="control-dot green"></span>
+                    </div>
+                    <div class="mockup-window-title">
+                      <i class="fa-solid fa-mortar-pestle"></i> MDMA Royal Garam Masala #201
+                    </div>
+                    <div class="mockup-status-badge">
+                      <span class="pulse-dot"></span> Bestseller
+                    </div>
+                  </div>
+
+                  <div class="mockup-visual-body">
+                    <div class="mockup-image-wrap">
+                      <img
+                        src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
+                        alt="MDMA Dehydrated Royal Garam Masala" class="mockup-product-img" loading="lazy">
+                    </div>
+
+                    <!-- Floating Telemetry Chips -->
+                    <div class="mockup-badge mockup-badge-topleft">
+                      <div class="badge-icon"><i class="fa-solid fa-award"></i></div>
+                      <div class="badge-text">
+                        <span class="badge-sub">Royal Recipe</span>
+                        <strong class="badge-main">18 Whole Spices</strong>
+                      </div>
+                    </div>
+
+                    <div class="mockup-badge mockup-badge-topright">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                          class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <span class="badge-score">4.9 / 5.0</span>
+                    </div>
+
+                    <div class="mockup-badge mockup-badge-bottomleft">
+                      <div class="badge-nutrition-item">
+                        <span class="nutri-label">Fillers</span>
+                        <span class="nutri-val">0% Starch</span>
+                      </div>
+                      <div class="badge-nutrition-divider"></div>
+                      <div class="badge-nutrition-item">
+                        <span class="nutri-label">Aroma</span>
+                        <span class="nutri-val">Locked-In</span>
+                      </div>
+                    </div>
+
+                    <div class="mockup-badge mockup-badge-bottomright">
+                      <div class="badge-price-label">Starting At</div>
+                      <div class="badge-price-val">₹240 <span class="badge-old-price">₹290</span></div>
+                    </div>
+                  </div>
+
+                  <div class="mockup-footer-action">
+                    <span class="mockup-footer-label">Explore 6 Artisanal Masala Blends</span>
+                    <span class="mockup-footer-cta">View Products <i class="fa-solid fa-arrow-right"></i></span>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3: Pure Cold-Pressed Oils & Spices (Product 3 Showcase) -->
+        <div class="hero-slide" data-slide="2" role="group" aria-roledescription="slide"
+          aria-label="3 of 3: Pure Cold-Pressed Oils & Single-Origin Spices">
+          <div class="container hero-slide-container">
+            <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; align-items: center;"
+              class="hero-grid">
+
+              <!-- Left Content -->
+              <div class="hero-content">
+                <div class="section-tag" style="margin-bottom: 18px;">
+                  <i class="fa-solid fa-bottle-droplet"></i> Kolhu Wood-Pressed &amp; Single Origin
+                </div>
+
+                <h1
+                  style="font-size: clamp(2.2rem, 4.2vw, 3.8rem); line-height: 1.15; margin-bottom: 20px; color: #FFFFFF;">
+                  Single-Origin Harvests. <br>
+                  <span class="hero-gold-gradient">Virgin Cold-Pressed Oils.</span>
+                </h1>
+
+                <p
+                  style="font-size: clamp(0.98rem, 1.6vw, 1.12rem); color: var(--text-light-muted); line-height: 1.7; margin-bottom: 30px; max-width: 530px;">
+                  Traditional Kolhu wood-pressed unrefined mustard, sesame, and coconut oils packed with vital
+                  micro-nutrients. Sourced alongside high-curcumin Salem turmeric and bold Malabar peppercorns.
+                </p>
+
+                <div class="hero-cta-group">
+                  <a href="#oils-spices-showcase" class="btn btn-primary btn-lg">
+                    <i class="fa-solid fa-bag-shopping"></i> View Products
+                  </a>
+                  <a href="category.html?cat=pure-oil" class="btn btn-outline-white btn-lg">
+                    <i class="fa-solid fa-compass"></i> Explore Collection
+                  </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="hero-trust-badges">
+                  <div class="hero-trust-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>100% Wood-Pressed Virgin</span>
+                  </div>
+                  <div class="hero-trust-item">
+                    <i class="fa-solid fa-seedling" style="color: #40916C;"></i>
+                    <span>Salem High-Curcumin</span>
+                  </div>
+                  <div class="hero-trust-item">
+                    <i class="fa-solid fa-certificate" style="color: var(--color-red);"></i>
+                    <span>Lab-Tested Purity</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Product Showcase (SaaS Product UI Mockup Card) -->
+              <div class="hero-visual">
+                <a href="#oils-spices-showcase" class="saas-product-mockup"
+                  title="Click to view Pure Cold-Pressed Oils & Spices">
+                  <div class="mockup-window-header">
+                    <div class="mockup-window-controls">
+                      <span class="control-dot red"></span>
+                      <span class="control-dot yellow"></span>
+                      <span class="control-dot green"></span>
+                    </div>
+                    <div class="mockup-window-title">
+                      <i class="fa-solid fa-bottle-droplet"></i> MDMA Kachi Ghani Mustard Oil #301
+                    </div>
+                    <div class="mockup-status-badge">
+                      <span class="pulse-dot"></span> 100% Virgin
+                    </div>
+                  </div>
+
+                  <div class="mockup-visual-body">
+                    <div class="mockup-image-wrap">
+                      <img
+                        src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
+                        alt="MDMA Pure Cold-Pressed Oils" class="mockup-product-img" loading="lazy">
+                    </div>
+
+                    <!-- Floating Telemetry Chips -->
+                    <div class="mockup-badge mockup-badge-topleft">
+                      <div class="badge-icon"><i class="fa-solid fa-droplet"></i></div>
+                      <div class="badge-text">
+                        <span class="badge-sub">Extraction</span>
+                        <strong class="badge-main">Kolhu Pressed</strong>
+                      </div>
+                    </div>
+
+                    <div class="mockup-badge mockup-badge-topright">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                          class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                      </div>
+                      <span class="badge-score">4.9 / 5.0</span>
+                    </div>
+
+                    <div class="mockup-badge mockup-badge-bottomleft">
+                      <div class="badge-nutrition-item">
+                        <span class="nutri-label">Refining</span>
+                        <span class="nutri-val">Zero Heat</span>
+                      </div>
+                      <div class="badge-nutrition-divider"></div>
+                      <div class="badge-nutrition-item">
+                        <span class="nutri-label">Purity</span>
+                        <span class="nutri-val">100% Virgin</span>
+                      </div>
+                    </div>
+
+                    <div class="mockup-badge mockup-badge-bottomright">
+                      <div class="badge-price-label">Starting At</div>
+                      <div class="badge-price-val">₹240 <span class="badge-old-price">₹290</span></div>
+                    </div>
+                  </div>
+
+                  <div class="mockup-footer-action">
+                    <span class="mockup-footer-label">Explore Pure Oils &amp; Single-Origin Spices</span>
+                    <span class="mockup-footer-cta">View Products <i class="fa-solid fa-arrow-right"></i></span>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Slider Navigation Arrows -->
+      <button class="hero-slider-arrow hero-slider-prev" id="hero-slider-prev" aria-label="Previous Slide">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="hero-slider-arrow hero-slider-next" id="hero-slider-next" aria-label="Next Slide">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <!-- Slider Pagination Indicators -->
+      <div class="hero-slider-pagination" id="hero-slider-pagination" role="tablist" aria-label="Hero Slides">
+        <button class="hero-pagination-dot active" data-slide-index="0" role="tab" aria-selected="true"
+          aria-label="Slide 1: Dehydrated Foods">
+          <span class="pagination-dot-fill"></span>
+          <span class="pagination-dot-label">01. Dehydrated Foods</span>
+        </button>
+        <button class="hero-pagination-dot" data-slide-index="1" role="tab" aria-selected="false"
+          aria-label="Slide 2: Royal Masalas">
+          <span class="pagination-dot-fill"></span>
+          <span class="pagination-dot-label">02. Royal Masalas</span>
+        </button>
+        <button class="hero-pagination-dot" data-slide-index="2" role="tab" aria-selected="false"
+          aria-label="Slide 3: Pure Oils &amp; Spices">
+          <span class="pagination-dot-fill"></span>
+          <span class="pagination-dot-label">03. Pure Oils &amp; Spices</span>
+        </button>
       </div>
     </section>
 
