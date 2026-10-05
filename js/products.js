@@ -1,21 +1,21 @@
 /**
  * MDMA SPICES AND FOODS — Centralized Product Catalog & Helper API
  * Master catalog organized into 4 core categories:
- * 1. Dehydrated Foods (using client assets)
- * 2. Spices Masala
- * 3. Pure Cold-Pressed Oils
+ * 1. Dried Fruits and vegetables (using client assets)
+ * 2. Dried Spices Powder
+ * 3. Pure Cold Preessed Oil
  * 4. Dry Snacks
  */
 
 const MDMA_PRODUCTS = [
   // =========================================================================
-  // 1. DEHYDRATED FOODS (Using authentic client assets in assets/clientassets/)
+  // 1. Dried Fruits and vegetables (Using authentic client assets in assets/clientassets/)
   // =========================================================================
   {
     id: 101,
     name: "Crispy Dehydrated Apple Rings",
     slug: "dehydrated-apple-rings",
-    category: "Dehydrated Foods",
+    category: "Dried Fruits and vegetables",
     categorySlug: "dehydrated-foods",
     price: 240,
     oldPrice: 290,
@@ -41,7 +41,7 @@ const MDMA_PRODUCTS = [
     id: 102,
     name: "Exotic Dehydrated Dragon Fruit Slices",
     slug: "dehydrated-dragon-fruit-slices",
-    category: "Dehydrated Foods",
+    category: "Dried Fruits and vegetables",
     categorySlug: "dehydrated-foods",
     price: 320,
     oldPrice: 380,
@@ -67,7 +67,7 @@ const MDMA_PRODUCTS = [
     id: 103,
     name: "Sun-Cured Dehydrated Lime Wheels",
     slug: "dehydrated-lime-wheels",
-    category: "Dehydrated Foods",
+    category: "Dried Fruits and vegetables",
     categorySlug: "dehydrated-foods",
     price: 190,
     oldPrice: 230,
@@ -93,7 +93,7 @@ const MDMA_PRODUCTS = [
     id: 104,
     name: "Royal Dehydrated Alphonso Mango Slices",
     slug: "dehydrated-mango-slices",
-    category: "Dehydrated Foods",
+    category: "Dried Fruits and vegetables",
     categorySlug: "dehydrated-foods",
     price: 280,
     oldPrice: 340,
@@ -119,7 +119,7 @@ const MDMA_PRODUCTS = [
     id: 105,
     name: "Sweet Dehydrated Orange Slices",
     slug: "dehydrated-orange-slices",
-    category: "Dehydrated Foods",
+    category: "Dried Fruits and vegetables",
     categorySlug: "dehydrated-foods",
     price: 220,
     oldPrice: 260,
@@ -145,7 +145,7 @@ const MDMA_PRODUCTS = [
     id: 106,
     name: "Sun-Dried Dehydrated Papaya Chunks",
     slug: "dehydrated-papaya-chunks",
-    category: "Dehydrated Foods",
+    category: "Dried Fruits and vegetables",
     categorySlug: "dehydrated-foods",
     price: 210,
     oldPrice: 250,
@@ -171,7 +171,7 @@ const MDMA_PRODUCTS = [
     id: 107,
     name: "Crisp Dehydrated Pear Slices",
     slug: "dehydrated-pear-slices",
-    category: "Dehydrated Foods",
+    category: "Dried Fruits and vegetables",
     categorySlug: "dehydrated-foods",
     price: 230,
     oldPrice: 270,
@@ -197,7 +197,7 @@ const MDMA_PRODUCTS = [
     id: 108,
     name: "Tropical Dehydrated Pineapple Rings",
     slug: "dehydrated-pineapple-rings",
-    category: "Dehydrated Foods",
+    category: "Dried Fruits and vegetables",
     categorySlug: "dehydrated-foods",
     price: 260,
     oldPrice: 310,
@@ -221,13 +221,13 @@ const MDMA_PRODUCTS = [
   },
 
   // =========================================================================
-  // 2. Spices Masala & HERITAGE BLENDS
+  // 2. Dried Spices Powder & HERITAGE BLENDS
   // =========================================================================
   {
     id: 201,
     name: "Dehydrated Royal Heritage Garam Masala",
     slug: "dehydrated-royal-garam-masala",
-    category: "Spices Masala",
+    category: "Dried Spices Powder",
     categorySlug: "dehydrated-masala",
     price: 240,
     oldPrice: 290,
@@ -253,7 +253,7 @@ const MDMA_PRODUCTS = [
     id: 202,
     name: "Dehydrated Shahi Dum Biryani Masala",
     slug: "dehydrated-shahi-biryani-masala",
-    category: "Spices Masala",
+    category: "Dried Spices Powder",
     categorySlug: "dehydrated-masala",
     price: 260,
     oldPrice: 310,
@@ -279,7 +279,7 @@ const MDMA_PRODUCTS = [
     id: 203,
     name: "Dehydrated Royal Chai Spice Masala",
     slug: "dehydrated-royal-chai-masala",
-    category: "Spices Masala",
+    category: "Dried Spices Powder",
     categorySlug: "dehydrated-masala",
     price: 195,
     oldPrice: 230,
@@ -305,7 +305,7 @@ const MDMA_PRODUCTS = [
     id: 204,
     name: "Dehydrated Kasuri Methi & Herb Masala",
     slug: "dehydrated-kasuri-methi-masala",
-    category: "Spices Masala",
+    category: "Dried Spices Powder",
     categorySlug: "dehydrated-masala",
     price: 180,
     oldPrice: 220,
@@ -331,7 +331,7 @@ const MDMA_PRODUCTS = [
     id: 205,
     name: "Dehydrated Sambhar & Rasam Masala",
     slug: "dehydrated-sambhar-rasam-masala",
-    category: "Spices Masala",
+    category: "Dried Spices Powder",
     categorySlug: "dehydrated-masala",
     price: 190,
     oldPrice: 230,
@@ -357,7 +357,7 @@ const MDMA_PRODUCTS = [
     id: 206,
     name: "Dehydrated Kitchen King Gourmet Masala",
     slug: "dehydrated-kitchen-king-masala",
-    category: "Spices Masala",
+    category: "Dried Spices Powder",
     categorySlug: "dehydrated-masala",
     price: 210,
     oldPrice: 250,
@@ -381,13 +381,13 @@ const MDMA_PRODUCTS = [
   },
 
   // =========================================================================
-  // 3. PURE COLD-PRESSED OILS
+  // 3. Pure Cold Preessed Oil
   // =========================================================================
   {
     id: 301,
     name: "Cold-Pressed Kachi Ghani Mustard Oil",
     slug: "cold-pressed-mustard-oil",
-    category: "Pure Cold-Pressed Oils",
+    category: "Pure Cold Preessed Oil",
     categorySlug: "pure-oil",
     price: 240,
     oldPrice: 290,
@@ -413,7 +413,7 @@ const MDMA_PRODUCTS = [
     id: 302,
     name: "Traditional Wood-Pressed Sesame (Til) Oil",
     slug: "wood-pressed-sesame-oil",
-    category: "Pure Cold-Pressed Oils",
+    category: "Pure Cold Preessed Oil",
     categorySlug: "pure-oil",
     price: 340,
     oldPrice: 400,
@@ -439,7 +439,7 @@ const MDMA_PRODUCTS = [
     id: 303,
     name: "Pure Cold-Pressed Extra Virgin Coconut Oil",
     slug: "cold-pressed-coconut-oil",
-    category: "Pure Cold-Pressed Oils",
+    category: "Pure Cold Preessed Oil",
     categorySlug: "pure-oil",
     price: 360,
     oldPrice: 420,
@@ -465,7 +465,7 @@ const MDMA_PRODUCTS = [
     id: 304,
     name: "Wood-Pressed Golden Groundnut Oil",
     slug: "wood-pressed-groundnut-oil",
-    category: "Pure Cold-Pressed Oils",
+    category: "Pure Cold Preessed Oil",
     categorySlug: "pure-oil",
     price: 280,
     oldPrice: 330,
@@ -651,21 +651,21 @@ const MDMA_PRODUCTS = [
 
 const MDMA_CATEGORIES = [
   {
-    name: "Dehydrated Foods",
+    name: "Dried Fruits and vegetables",
     slug: "dehydrated-foods",
     count: 8,
     image: "assets/clientassets/dehydrated-dragon-fruit.jpeg",
     description: "100% natural, nutrient-dense Dehydrated Fruitss and gourmet pantry crisps with zero added sugar, sulfur, or artificial preservatives."
   },
   {
-    name: "Spices Masala",
+    name: "Dried Spices Powder",
     slug: "dehydrated-masala",
     count: 6,
     image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
     description: "Heritage recipes crafted from sun-dried and dehydrated whole spices, slow-ground to preserve intense culinary aroma and natural oils."
   },
   {
-    name: "Pure Cold-Pressed Oils",
+    name: "Pure Cold Preessed Oil",
     slug: "pure-oil",
     count: 4,
     image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80",
