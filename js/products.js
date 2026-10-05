@@ -2,9 +2,9 @@
  * MDMA SPICES AND FOODS — Centralized Product Catalog & Helper API
  * Master catalog organized into 4 core categories:
  * 1. Dehydrated Foods (using client assets)
- * 2. Dehydrated Masalas
+ * 2. Spices Masala
  * 3. Pure Cold-Pressed Oils
- * 4. Heritage Spices & Seasonings
+ * 4. Dry Snacks
  */
 
 const MDMA_PRODUCTS = [
@@ -221,13 +221,13 @@ const MDMA_PRODUCTS = [
   },
 
   // =========================================================================
-  // 2. DEHYDRATED MASALAS & HERITAGE BLENDS
+  // 2. Spices Masala & HERITAGE BLENDS
   // =========================================================================
   {
     id: 201,
     name: "Dehydrated Royal Heritage Garam Masala",
     slug: "dehydrated-royal-garam-masala",
-    category: "Dehydrated Masalas",
+    category: "Spices Masala",
     categorySlug: "dehydrated-masala",
     price: 240,
     oldPrice: 290,
@@ -253,7 +253,7 @@ const MDMA_PRODUCTS = [
     id: 202,
     name: "Dehydrated Shahi Dum Biryani Masala",
     slug: "dehydrated-shahi-biryani-masala",
-    category: "Dehydrated Masalas",
+    category: "Spices Masala",
     categorySlug: "dehydrated-masala",
     price: 260,
     oldPrice: 310,
@@ -279,7 +279,7 @@ const MDMA_PRODUCTS = [
     id: 203,
     name: "Dehydrated Royal Chai Spice Masala",
     slug: "dehydrated-royal-chai-masala",
-    category: "Dehydrated Masalas",
+    category: "Spices Masala",
     categorySlug: "dehydrated-masala",
     price: 195,
     oldPrice: 230,
@@ -305,7 +305,7 @@ const MDMA_PRODUCTS = [
     id: 204,
     name: "Dehydrated Kasuri Methi & Herb Masala",
     slug: "dehydrated-kasuri-methi-masala",
-    category: "Dehydrated Masalas",
+    category: "Spices Masala",
     categorySlug: "dehydrated-masala",
     price: 180,
     oldPrice: 220,
@@ -331,7 +331,7 @@ const MDMA_PRODUCTS = [
     id: 205,
     name: "Dehydrated Sambhar & Rasam Masala",
     slug: "dehydrated-sambhar-rasam-masala",
-    category: "Dehydrated Masalas",
+    category: "Spices Masala",
     categorySlug: "dehydrated-masala",
     price: 190,
     oldPrice: 230,
@@ -357,7 +357,7 @@ const MDMA_PRODUCTS = [
     id: 206,
     name: "Dehydrated Kitchen King Gourmet Masala",
     slug: "dehydrated-kitchen-king-masala",
-    category: "Dehydrated Masalas",
+    category: "Spices Masala",
     categorySlug: "dehydrated-masala",
     price: 210,
     oldPrice: 250,
@@ -489,13 +489,13 @@ const MDMA_PRODUCTS = [
   },
 
   // =========================================================================
-  // 4. HERITAGE SPICES & SEASONINGS
+  // 4. Dry Snacks
   // =========================================================================
   {
     id: 401,
     name: "Pure Salem Turmeric Powder",
     slug: "pure-salem-turmeric-powder",
-    category: "Heritage Spices & Seasonings",
+    category: "Dry Snacks",
     categorySlug: "heritage-spices",
     price: 180,
     oldPrice: 220,
@@ -521,7 +521,7 @@ const MDMA_PRODUCTS = [
     id: 402,
     name: "Malabar Bold Black Pepper",
     slug: "malabar-bold-black-pepper",
-    category: "Heritage Spices & Seasonings",
+    category: "Dry Snacks",
     categorySlug: "heritage-spices",
     price: 380,
     oldPrice: 450,
@@ -547,7 +547,7 @@ const MDMA_PRODUCTS = [
     id: 403,
     name: "Royal Idukki Green Cardamom (8mm+)",
     slug: "royal-idukki-green-cardamom",
-    category: "Heritage Spices & Seasonings",
+    category: "Dry Snacks",
     categorySlug: "heritage-spices",
     price: 650,
     oldPrice: 780,
@@ -573,7 +573,7 @@ const MDMA_PRODUCTS = [
     id: 404,
     name: "Guntur Stemless Red Chilli Powder",
     slug: "guntur-red-chilli-powder",
-    category: "Heritage Spices & Seasonings",
+    category: "Dry Snacks",
     categorySlug: "heritage-spices",
     price: 210,
     oldPrice: 260,
@@ -599,7 +599,7 @@ const MDMA_PRODUCTS = [
     id: 405,
     name: "Grade A1 Kashmir Pampore Saffron (Kesar)",
     slug: "kashmir-pampore-saffron",
-    category: "Heritage Spices & Seasonings",
+    category: "Dry Snacks",
     categorySlug: "heritage-spices",
     price: 950,
     oldPrice: 1150,
@@ -625,7 +625,7 @@ const MDMA_PRODUCTS = [
     id: 406,
     name: "Natural Himalayan Pink Rock Salt",
     slug: "himalayan-pink-rock-salt",
-    category: "Heritage Spices & Seasonings",
+    category: "Dry Snacks",
     categorySlug: "heritage-spices",
     price: 110,
     oldPrice: 140,
@@ -655,10 +655,10 @@ const MDMA_CATEGORIES = [
     slug: "dehydrated-foods",
     count: 8,
     image: "assets/clientassets/dehydrated-dragon-fruit.jpeg",
-    description: "100% natural, nutrient-dense dehydrated fruits and gourmet pantry crisps with zero added sugar, sulfur, or artificial preservatives."
+    description: "100% natural, nutrient-dense Dehydrated Fruitss and gourmet pantry crisps with zero added sugar, sulfur, or artificial preservatives."
   },
   {
-    name: "Dehydrated Masalas",
+    name: "Spices Masala",
     slug: "dehydrated-masala",
     count: 6,
     image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
@@ -672,7 +672,7 @@ const MDMA_CATEGORIES = [
     description: "Kolhu wood-pressed virgin oils extracted cold without chemical solvents or heat processing for pristine natural nutrition."
   },
   {
-    name: "Heritage Spices & Seasonings",
+    name: "Dry Snacks",
     slug: "heritage-spices",
     count: 6,
     image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
