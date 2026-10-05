@@ -168,46 +168,46 @@ function openQuickView(productId) {
     <div class="modal-card">
       <button class="modal-close-btn" onclick="closeQuickView()" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
       <div style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 28px; align-items: center;" class="quickview-grid">
-        <div style="border-radius: 12px; overflow: hidden; background: #121210; border: 1px solid var(--border-gold);">
+        <div style="border-radius: 12px; overflow: hidden; background: #F8F9FA; border: 1px solid var(--border-light);">
           <img src="${product.image}" alt="${product.name}" style="width: 100%; height: clamp(260px, 35vw, 360px); object-fit: cover;">
         </div>
         <div>
-          <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-gold); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px;">${product.category}</div>
-          <h2 style="color: #FFFFFF; font-size: clamp(1.2rem, 2.5vw, 1.6rem); margin-bottom: 8px;">${product.name}</h2>
+          <div style="font-size: 0.8rem; font-weight: 700; color: var(--text-dark-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px;">${product.category}</div>
+          <h2 style="color: var(--text-dark); font-size: clamp(1.2rem, 2.5vw, 1.6rem); margin-bottom: 8px;">${product.name}</h2>
           
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
-            <div class="stars" style="color: #F5A623;">
+            <div class="stars" style="color: #EAB308;">
               ${'<i class="fa-solid fa-star"></i>'.repeat(Math.floor(product.rating))}
               ${product.rating % 1 !== 0 ? '<i class="fa-solid fa-star-half-stroke"></i>' : ''}
             </div>
-            <span style="color: var(--text-light-muted); font-size: 0.82rem;">(${product.reviewCount || 50} verified reviews)</span>
+            <span style="color: var(--text-dark-muted); font-size: 0.82rem;">(${product.reviewCount || 50} verified reviews)</span>
           </div>
 
           <div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px; flex-wrap: wrap;">
-            <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-gold-light);">₹${product.price}</span>
-            ${product.oldPrice ? `<span style="font-size: 1rem; color: #888; text-decoration: line-through;">₹${product.oldPrice}</span>` : ''}
-            ${product.oldPrice ? `<span style="background: #2D6A4F; color: #FFF; font-size: 0.72rem; font-weight: 700; padding: 2px 6px; border-radius: 4px;">Save ₹${product.oldPrice - product.price}</span>` : ''}
+            <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary);">₹${product.price}</span>
+            ${product.oldPrice ? `<span style="font-size: 1rem; color: #9CA3AF; text-decoration: line-through;">₹${product.oldPrice}</span>` : ''}
+            ${product.oldPrice ? `<span style="background: var(--color-primary-subtle); color: var(--color-primary); border: 1px solid #FECACA; font-size: 0.72rem; font-weight: 700; padding: 2px 6px; border-radius: 4px;">Save ₹${product.oldPrice - product.price}</span>` : ''}
           </div>
 
-          <p style="color: var(--text-light-muted); font-size: 0.9rem; line-height: 1.55; margin-bottom: 16px;">
+          <p style="color: var(--text-dark-muted); font-size: 0.9rem; line-height: 1.55; margin-bottom: 16px;">
             ${product.shortDesc}
           </p>
 
           <!-- Weight Variations -->
           <div style="margin-bottom: 16px;">
-            <label style="display: block; font-size: 0.82rem; font-weight: 700; color: var(--color-gold-light); margin-bottom: 6px;">Select Pack Size:</label>
+            <label style="display: block; font-size: 0.82rem; font-weight: 700; color: var(--text-dark); margin-bottom: 6px;">Select Pack Size:</label>
             <div style="display: flex; gap: 8px; flex-wrap: wrap;" id="qv-weight-options">
               ${product.weightOptions.map((w, idx) => `
-                <button type="button" class="qv-weight-btn ${idx === 0 ? 'active' : ''}" onclick="selectQvWeight(this, '${w}')" style="padding: 6px 12px; border: 1px solid var(--border-gold); background: ${idx === 0 ? 'var(--color-gold)' : 'rgba(255,255,255,0.05)'}; color: ${idx === 0 ? '#000' : '#FFF'}; font-weight: 700; border-radius: 6px; font-size: 0.82rem; cursor: pointer;">${w}</button>
+                <button type="button" class="qv-weight-btn ${idx === 0 ? 'active' : ''}" onclick="selectQvWeight(this, '${w}')" style="padding: 6px 12px; border: 1px solid var(--border-light); background: ${idx === 0 ? 'var(--color-primary)' : '#F3F4F6'}; color: ${idx === 0 ? '#FFF' : 'var(--text-dark)'}; font-weight: 700; border-radius: 6px; font-size: 0.82rem; cursor: pointer;">${w}</button>
               `).join('')}
             </div>
           </div>
 
           <!-- Quantity & Action -->
           <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
-            <div class="qty-picker" style="background: rgba(255,255,255,0.05); color: #FFF;">
+            <div class="qty-picker" style="background: #F9FAFB; color: var(--text-dark); border: 1px solid var(--border-light);">
               <button class="qty-btn" onclick="adjustQvQty(-1)" aria-label="Decrease Quantity"><i class="fa-solid fa-minus"></i></button>
-              <input type="text" id="qv-qty-input" class="qty-input" value="1" readonly style="color: #FFF;">
+              <input type="text" id="qv-qty-input" class="qty-input" value="1" readonly style="color: var(--text-dark);">
               <button class="qty-btn" onclick="adjustQvQty(1)" aria-label="Increase Quantity"><i class="fa-solid fa-plus"></i></button>
             </div>
             
@@ -220,7 +220,7 @@ function openQuickView(productId) {
             </button>
           </div>
 
-          <a href="product.html?id=${product.id}" style="color: var(--color-gold); font-size: 0.85rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">
+          <a href="product.html?id=${product.id}" style="color: var(--color-primary); font-size: 0.85rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">
             View Full Product Information &amp; Lab Details <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
@@ -238,11 +238,13 @@ let selectedQvWeightVal = '';
 
 function selectQvWeight(el, weight) {
   document.querySelectorAll('.qv-weight-btn').forEach(btn => {
-    btn.style.background = 'rgba(255,255,255,0.05)';
-    btn.style.color = '#FFF';
+    btn.style.background = '#F3F4F6';
+    btn.style.color = 'var(--text-dark)';
+    btn.style.borderColor = 'var(--border-light)';
   });
-  el.style.background = 'var(--color-gold)';
-  el.style.color = '#000';
+  el.style.background = 'var(--color-primary)';
+  el.style.color = '#FFF';
+  el.style.borderColor = 'var(--color-primary)';
   selectedQvWeightVal = weight;
 }
 

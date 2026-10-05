@@ -205,13 +205,13 @@ function renderCartPage() {
 
   let html = `
     <!-- Free Shipping Progress -->
-    <div style="background: rgba(212, 175, 55, 0.1); border: 1px solid var(--border-gold); padding: 16px 20px; border-radius: var(--border-radius-md); margin-bottom: 24px;">
+    <div style="background: var(--bg-light-secondary); border: 1px solid var(--border-light); padding: 16px 20px; border-radius: var(--border-radius-md); margin-bottom: 24px;">
       <div style="display: flex; justify-content: space-between; font-size: 0.88rem; margin-bottom: 8px; flex-wrap: wrap; gap: 6px;">
         <span>${freeShipText}</span>
         <span style="font-weight: 700;">${percentToFree}%</span>
       </div>
       <div style="height: 6px; background: rgba(0,0,0,0.08); border-radius: 99px; overflow: hidden;">
-        <div style="width: ${percentToFree}%; height: 100%; background: linear-gradient(90deg, var(--color-green), var(--color-gold)); transition: width 0.4s ease;"></div>
+        <div style="width: ${percentToFree}%; height: 100%; background: var(--color-primary); transition: width 0.4s ease;"></div>
       </div>
     </div>
 
